@@ -277,22 +277,19 @@
 
       
         <h1 id="密码学概述"><a href="#密码学概述" class="headerlink" title="密码学概述"></a>密码学概述</h1><span id="more"></span>
-
 <h2 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h2><h3 id="古典密码学"><a href="#古典密码学" class="headerlink" title="古典密码学"></a>古典密码学</h3><p>目的：保护信息</p>
 <p><strong>·替换法</strong>：使用固定信息将原文替换为密文</p>
 <p>加密方式：单表替换，多表替换</p>
 <pre><code>单表替换：原文和密文使用同一张表；
 
 多表替换：非常复杂，多张表原文、密文进行对比。
-</code></pre>
-<p>多表替换举例：</p>
+</code></pre><p>多表替换举例：</p>
 <pre><code>表单1：abcde-swtrp 表单2：abcde-chfhk
 
 明文：bee    密钥：221
 
 密文：hkp
-</code></pre>
-<p><strong>·移位法</strong>：按照字母移动</p>
+</code></pre><p><strong>·移位法</strong>：按照字母移动</p>
 <p>凯撒加密</p>
 <p><strong>古典密码学破解</strong>：</p>
 <p>频率分析法：概率论——研究字母或字母组合在密文中出现的频率。E出现频率最高，X出现频率最低：“ETAOIN SHRDLU”</p>
@@ -308,38 +305,34 @@
 <pre><code>·   密码不要常见；
 ·   密码不要设置为同一个，“撞库”；
 ·   设置特殊标记
-</code></pre>
-<h3 id="ASCII编码"><a href="#ASCII编码" class="headerlink" title="ASCII编码"></a>ASCII编码</h3><p>American Standard Code for Information Interchange</p>
+</code></pre><h3 id="ASCII编码"><a href="#ASCII编码" class="headerlink" title="ASCII编码"></a>ASCII编码</h3><p>American Standard Code for Information Interchange</p>
 <p><strong>代码实现凯撒加密解密</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">public class KaiSaEn &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String input = &quot;Hello World ! &quot; ;</span><br><span class="line">        //原文右移动3位</span><br><span class="line">        int key = 3 ;</span><br><span class="line">        String s = encryptKaisa(input);</span><br><span class="line">        System.out.println(&quot;加密==&quot;+s);</span><br><span class="line">        String ans = decryptKaisa(s,key);</span><br><span class="line">        System.out.println(&quot;解密==&quot;+ans);</span><br><span class="line">    &#125;</span><br><span class="line">    //解密</span><br><span class="line">    private  static  String decryptKaisa(String s , int key)&#123;</span><br><span class="line">        char[] chars =  s.toCharArray() ;</span><br><span class="line">        StringBuilder sb = new StringBuilder() ;</span><br><span class="line">        for (char aChar : chars) &#123;</span><br><span class="line">            int b = aChar ;</span><br><span class="line">            //偏移数据</span><br><span class="line">            b -= key ;</span><br><span class="line">            char newb =(char) b ;</span><br><span class="line">            sb.append(newb) ;</span><br><span class="line">        &#125;</span><br><span class="line">        return sb.toString() ;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private static String encryptKaisa(String input) &#123;</span><br><span class="line">        char[] chars = input.toCharArray() ;</span><br><span class="line">        StringBuilder sb = new StringBuilder() ;</span><br><span class="line">        for (char aChar : chars) &#123;</span><br><span class="line">            int b = aChar ;</span><br><span class="line">            b = b + 3 ;</span><br><span class="line">            char newb = (char) b ;</span><br><span class="line">            sb.append(newb) ;</span><br><span class="line">        &#125;</span><br><span class="line">        //System.out.println(sb.toString());</span><br><span class="line">        return sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <h3 id="频率分析法-——-概率论"><a href="#频率分析法-——-概率论" class="headerlink" title="频率分析法 —— 概率论"></a>频率分析法 —— 概率论</h3><p>·密码棒</p>
 <p>·目的：不知道密钥情况下进行破解密文</p>
 <p>方法：拿到密文选出频率最高的字母，比如最高的是j，对应明文为e;以此类推</p>
 <h3 id="Byte和Bit的关系（总搞混）"><a href="#Byte和Bit的关系（总搞混）" class="headerlink" title="Byte和Bit的关系（总搞混）"></a>Byte和Bit的关系（总搞混）</h3><p><strong>Byte</strong>：字节，数据<strong>存储</strong>的基本单位，比如移动硬盘1T，单位是Byte</p>
 <p><strong>Bit</strong>：位，用0或1表示，是数据<strong>传输</strong>的单位</p>
-<p><strong>关系</strong>：1Byte &#x3D; 8Bit</p>
+<p><strong>关系</strong>：1Byte = 8Bit</p>
 <p>举个栗子：</p>
 <p>a的Byte表示：97；bit表示为：1100001（二进制）</p>
 <p><strong>代码实现Byte和Bit互相转化</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">public class ByteBit &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String a = &quot;a&quot; ;</span><br><span class="line">        //得到字节数组</span><br><span class="line">        byte[] bytes = a.getBytes() ;</span><br><span class="line">        for (byte aByte : bytes) &#123;</span><br><span class="line">            int c = aByte ;</span><br><span class="line">            //byte字节对应bit</span><br><span class="line">            String s = Integer.toBinaryString(c);</span><br><span class="line">            System.out.println(s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>而中文对应的utf-8是3个字节，高位编码自动补全</p>
 <p>如果是GBK，一个中文对应2个字节</p>
 <h3 id="DES"><a href="#DES" class="headerlink" title="DES"></a>DES</h3><p>具体见另一篇博客（x</p>
-<h3 id="base64浅谈"><a href="#base64浅谈" class="headerlink" title="base64浅谈"></a>base64浅谈</h3><p><strong>不是加密算法，是可读性算法</strong><br>原理：3字节为一组，1字节&#x3D;8位，共24位，base64把3个字节转换成4组，每组6位，缺少2位，要在高位补0。</p>
+<h3 id="base64浅谈"><a href="#base64浅谈" class="headerlink" title="base64浅谈"></a>base64浅谈</h3><p><strong>不是加密算法，是可读性算法</strong><br>原理：3字节为一组，1字节=8位，共24位，base64把3个字节转换成4组，每组6位，缺少2位，要在高位补0。</p>
 <p><strong>好处</strong>：base64取后6位，前2位会去掉，可以把base64控制到0-63之间（0：000000，1：111111）</p>
 <p><strong>坏处</strong>：内存占用变大</p>
 <p>目的：可读性，否则得到乱码</p>
-<p>由64个字符组成：A-Z,a-z,0-9,+,&#x2F;</p>
+<p>由64个字符组成：A-Z,a-z,0-9,+,/</p>
 <p>base58是用在比特币里面的编码方式，</p>
 <pre><code>·没有数字0和字母o,
 
 ·没有大写字母I和小写i,
 
 ·没有+和/。
-</code></pre>
-<h3 id="加密模式"><a href="#加密模式" class="headerlink" title="加密模式"></a>加密模式</h3><h4 id="·ECB-电子密码本"><a href="#·ECB-电子密码本" class="headerlink" title="·ECB:电子密码本"></a>·ECB:电子密码本</h4><p>把加密消息分割后独立加密再组合</p>
+</code></pre><h3 id="加密模式"><a href="#加密模式" class="headerlink" title="加密模式"></a>加密模式</h3><h4 id="·ECB-电子密码本"><a href="#·ECB-电子密码本" class="headerlink" title="·ECB:电子密码本"></a>·ECB:电子密码本</h4><p>把加密消息分割后独立加密再组合</p>
 <p><strong>优点</strong>：<br>并行处理，速度快</p>
 <p><strong>缺点</strong>：<br>使用同一个key，安全性弱</p>
 <h4 id="·CBC-密码块链接"><a href="#·CBC-密码块链接" class="headerlink" title="·CBC:密码块链接"></a>·CBC:密码块链接</h4><p>每个明文块先与前一个密文块异或后在加密，每个密文块都依赖于它前面所有明文块。</p>
@@ -350,7 +343,6 @@
 <p>常见：RSA,ECC</p>
 <p>或取公钥和私钥：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">import com.sun.org.apache.xml.internal.security.utils.Base64;</span><br><span class="line"></span><br><span class="line">import java.security.KeyPair;</span><br><span class="line">import java.security.KeyPairGenerator ;</span><br><span class="line">import java.security.PrivateKey;</span><br><span class="line">import java.security.PublicKey;</span><br><span class="line"></span><br><span class="line">public class Rsa &#123;</span><br><span class="line">    public static void main(String[] args)throws Exception &#123;</span><br><span class="line">        //创建密钥对</span><br><span class="line">//生成器对象</span><br><span class="line">String algorithm = &quot;RSA&quot; ;</span><br><span class="line">KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(algorithm) ;</span><br><span class="line">//生成密钥对</span><br><span class="line">KeyPair keyPair =  keyPairGenerator.generateKeyPair() ;</span><br><span class="line">PrivateKey aPrivate = keyPair.getPrivate();</span><br><span class="line">PublicKey aPublic = keyPair.getPublic();</span><br><span class="line">//获取私钥字节数组</span><br><span class="line">byte[] privateEncoded = aPrivate.getEncoded() ;</span><br><span class="line">        byte[] publicEncodeed = aPublic.getEncoded() ;</span><br><span class="line">//base64转码</span><br><span class="line">String privateEncodeString = Base64.encode(privateEncoded) ;</span><br><span class="line">String publicEncodeString = Base64.encode(publicEncodeed) ;</span><br><span class="line">//打印</span><br><span class="line">System.out.println(privateEncodeString);</span><br><span class="line">System.out.println(publicEncodeString);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <h3 id="数字签名"><a href="#数字签名" class="headerlink" title="数字签名"></a>数字签名</h3><p>公钥数字签名，只有信息的发送者才能产生别人无法伪造的一段数字串覆盖在文件上。</p>
 <h4 id="数字证书"><a href="#数字证书" class="headerlink" title="数字证书"></a>数字证书</h4><p>认证机构把公钥A、通过自己的私钥对认证机构加密、再和数字签名A打包生成证书返回给服务器。</p>
 <p>点开一个网址就能看到。</p>
@@ -363,7 +355,6 @@
 
 如果可靠，客户端使用证书中服务器公钥，对信息加密，然后与服务器交换加密信息。(exchange encrypted data)
 </code></pre>
-
     </div>
 
     

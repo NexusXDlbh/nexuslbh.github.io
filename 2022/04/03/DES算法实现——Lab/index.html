@@ -277,7 +277,6 @@
 
       
         <h1 id="重温DES（Data-Encryption-Standard）"><a href="#重温DES（Data-Encryption-Standard）" class="headerlink" title="重温DES（Data Encryption Standard）"></a>重温DES（<strong>Data Encryption Standard</strong>）</h1><span id="more"></span>
-
 <p>对称加密：使用同一把密钥，分为 流加密 、 块加密</p>
 <p>eg:</p>
 <p>流加密12345，分别加密1，2，3，4，5</p>
@@ -290,8 +289,7 @@
 ·加密后ASCII编码表找不到码会乱码
 
 ·结合base64一起使用
-</code></pre>
-<h2 id="DES结构"><a href="#DES结构" class="headerlink" title="DES结构"></a>DES结构</h2><p>DES也被称为Feistel网络，加密的各个步骤被称为 <strong>轮（round）</strong> ,DES是对称加密密码的代表。</p>
+</code></pre><h2 id="DES结构"><a href="#DES结构" class="headerlink" title="DES结构"></a>DES结构</h2><p>DES也被称为Feistel网络，加密的各个步骤被称为 <strong>轮（round）</strong> ,DES是对称加密密码的代表。</p>
 <p><strong>关键思想：</strong> 将待加密信息分为两部分，如64位信息平均分为32位。</p>
 <p><strong>子密钥（subkey）：</strong> 是本轮加密使用的密钥（本轮的意思就是每一轮都需要使用一个不同的子密钥），故是局部密钥。</p>
 <p><strong>轮函数：</strong> 根据“右侧”和子密钥生成，对“左侧”进行加密的比特序列，<strong>轮函数是密码系统的核心</strong>。轮函数与左侧进行XOR运算，结果就是<strong>加密后的左侧。</strong></p>

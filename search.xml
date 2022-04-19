@@ -8,7 +8,6 @@
 <li><strong>——高达纪念主题曲《永世的摇篮》</strong></li>
 </ul>
 <span id="more"></span>
-
 <hr>
 <h2 id="学业"><a href="#学业" class="headerlink" title="学业"></a>学业</h2><h3 id="课内"><a href="#课内" class="headerlink" title="课内"></a>课内</h3><p><strong>· 毛概</strong></p>
 <p>再翘课我就是dog~~~~</p>
@@ -28,8 +27,7 @@
 <hr>
 <h2 id="阅读"><a href="#阅读" class="headerlink" title="阅读"></a>阅读</h2><h3 id="《心流——最优体验心理学》"><a href="#《心流——最优体验心理学》" class="headerlink" title="《心流——最优体验心理学》"></a>《心流——最优体验心理学》</h3><p>个人建议：进入心流的最佳方式：</p>
 <pre><code>找一个对个人能力有一点挑战但是又能接住的任务（比如学信号，搭建博客，期末复习，阅读论文，打王者等等），然后会发现时间过得飞快，而且注意力集中不会体会到累的感觉，反而很兴奋。
-</code></pre>
-<p>注意力可以用 “<strong>精神熵</strong>” 这个概念来描述，大家都知道熵增原理，当精神熵消失的时候，就是心流出现并“上瘾”的缘由。</p>
+</code></pre><p>注意力可以用 “<strong>精神熵</strong>” 这个概念来描述，大家都知道熵增原理，当精神熵消失的时候，就是心流出现并“上瘾”的缘由。</p>
 <hr>
 <h2 id="娱乐"><a href="#娱乐" class="headerlink" title="娱乐"></a>娱乐</h2><h3 id="东百往事"><a href="#东百往事" class="headerlink" title="东百往事"></a>东百往事</h3><p>曾经的沈阳大街、曾经的独立宣言、曾经的徒手开砖，都是一场梦吗？我仿佛看到刀哥、虎弟、杀马特团长、小亮、唐老鸭，他们一个个的对我笑，对我招手，然后转身，走了，像风中的尘埃慢慢消逝。</p>
 <p>这是一个坏结局，我对自己说。可恶，但我又做不了什么。</p>
@@ -59,22 +57,92 @@
       </tags>
   </entry>
   <entry>
-    <title>清明</title>
-    <url>/2022/04/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="记录大二下学期第一次进城"><a href="#记录大二下学期第一次进城" class="headerlink" title="记录大二下学期第一次进城"></a>记录大二下学期第一次进城</h2><span id="more"></span>
+    <title>密码学概述</title>
+    <url>/2022/04/05/%E5%AF%86%E7%A0%81%E5%AD%A6%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<h1 id="密码学概述"><a href="#密码学概述" class="headerlink" title="密码学概述"></a>密码学概述</h1><span id="more"></span>
+<h2 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h2><h3 id="古典密码学"><a href="#古典密码学" class="headerlink" title="古典密码学"></a>古典密码学</h3><p>目的：保护信息</p>
+<p><strong>·替换法</strong>：使用固定信息将原文替换为密文</p>
+<p>加密方式：单表替换，多表替换</p>
+<pre><code>单表替换：原文和密文使用同一张表；
 
-<p>玩一把大的，水完毛概直接润<br>小寨鹿港粤菜：叉烧肉 汤 牛柳 还有CoCo Cafe的柠檬百香果双响炮<br>晚上去了大唐不夜城，夜景音乐喷泉</p>
-<h2 id="青龙寺"><a href="#青龙寺" class="headerlink" title="青龙寺"></a>青龙寺</h2><p>樱花超级好看，每一朵都独具韵味</p>
-<p>寺庙里面的树上挂满了祈福的红带，不过我对这方面也不了解，没敢随意去弄。。。心意到了就可以了（x</p>
-<p>离开时看见一些老大爷和老大妈跳着新疆舞（貌似是），特别有精神，希望我老了也能很有精气神hh</p>
-<p>中午吃了韩式传统烤肉，百去不厌，下午从3点睡到6点（5555），不过充满了干劲，这才叫大学生活（牛马假日）</p>
-<p>该juan了（这就去C楼，溜了）</p>
-]]></content>
+多表替换：非常复杂，多张表原文、密文进行对比。
+</code></pre><p>多表替换举例：</p>
+<pre><code>表单1：abcde-swtrp 表单2：abcde-chfhk
+
+明文：bee    密钥：221
+
+密文：hkp
+</code></pre><p><strong>·移位法</strong>：按照字母移动</p>
+<p>凯撒加密</p>
+<p><strong>古典密码学破解</strong>：</p>
+<p>频率分析法：概率论——研究字母或字母组合在密文中出现的频率。E出现频率最高，X出现频率最低：“ETAOIN SHRDLU”</p>
+<h3 id="近代密码学"><a href="#近代密码学" class="headerlink" title="近代密码学"></a>近代密码学</h3><p>eg：恩尼格玛密码机 核心 ： 移位法、替换法</p>
+<p>后来被——图灵破解了（电影：《模仿游戏》</p>
+<h3 id="现代密码学"><a href="#现代密码学" class="headerlink" title="现代密码学"></a>现代密码学</h3><p>1.散列函数（Hash函数）</p>
+<p>eg：MD5,SHA-1,SHA-256</p>
+<p>2.对称加密</p>
+<p><strong>加密解密同一把密钥</strong></p>
+<p>流加密，块加密<br>3.非对称加密</p>
+<p><strong>两把密钥，公约加密，私钥解密  或 私钥加密，公钥解密</strong></p>
+<p><strong>?? 怎样设置密码才安全 ??</strong></p>
+<pre><code>·   密码不要常见；
+·   密码不要设置为同一个，“撞库”；
+·   设置特殊标记
+</code></pre><h3 id="ASCII编码"><a href="#ASCII编码" class="headerlink" title="ASCII编码"></a>ASCII编码</h3><p>American Standard Code for Information Interchange</p>
+<p><strong>代码实现凯撒加密解密</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class KaiSaEn &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String input = &quot;Hello World ! &quot; ;</span><br><span class="line">        //原文右移动3位</span><br><span class="line">        int key = 3 ;</span><br><span class="line">        String s = encryptKaisa(input);</span><br><span class="line">        System.out.println(&quot;加密==&quot;+s);</span><br><span class="line">        String ans = decryptKaisa(s,key);</span><br><span class="line">        System.out.println(&quot;解密==&quot;+ans);</span><br><span class="line">    &#125;</span><br><span class="line">    //解密</span><br><span class="line">    private  static  String decryptKaisa(String s , int key)&#123;</span><br><span class="line">        char[] chars =  s.toCharArray() ;</span><br><span class="line">        StringBuilder sb = new StringBuilder() ;</span><br><span class="line">        for (char aChar : chars) &#123;</span><br><span class="line">            int b = aChar ;</span><br><span class="line">            //偏移数据</span><br><span class="line">            b -= key ;</span><br><span class="line">            char newb =(char) b ;</span><br><span class="line">            sb.append(newb) ;</span><br><span class="line">        &#125;</span><br><span class="line">        return sb.toString() ;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private static String encryptKaisa(String input) &#123;</span><br><span class="line">        char[] chars = input.toCharArray() ;</span><br><span class="line">        StringBuilder sb = new StringBuilder() ;</span><br><span class="line">        for (char aChar : chars) &#123;</span><br><span class="line">            int b = aChar ;</span><br><span class="line">            b = b + 3 ;</span><br><span class="line">            char newb = (char) b ;</span><br><span class="line">            sb.append(newb) ;</span><br><span class="line">        &#125;</span><br><span class="line">        //System.out.println(sb.toString());</span><br><span class="line">        return sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="频率分析法-——-概率论"><a href="#频率分析法-——-概率论" class="headerlink" title="频率分析法 —— 概率论"></a>频率分析法 —— 概率论</h3><p>·密码棒</p>
+<p>·目的：不知道密钥情况下进行破解密文</p>
+<p>方法：拿到密文选出频率最高的字母，比如最高的是j，对应明文为e;以此类推</p>
+<h3 id="Byte和Bit的关系（总搞混）"><a href="#Byte和Bit的关系（总搞混）" class="headerlink" title="Byte和Bit的关系（总搞混）"></a>Byte和Bit的关系（总搞混）</h3><p><strong>Byte</strong>：字节，数据<strong>存储</strong>的基本单位，比如移动硬盘1T，单位是Byte</p>
+<p><strong>Bit</strong>：位，用0或1表示，是数据<strong>传输</strong>的单位</p>
+<p><strong>关系</strong>：1Byte = 8Bit</p>
+<p>举个栗子：</p>
+<p>a的Byte表示：97；bit表示为：1100001（二进制）</p>
+<p><strong>代码实现Byte和Bit互相转化</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class ByteBit &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String a = &quot;a&quot; ;</span><br><span class="line">        //得到字节数组</span><br><span class="line">        byte[] bytes = a.getBytes() ;</span><br><span class="line">        for (byte aByte : bytes) &#123;</span><br><span class="line">            int c = aByte ;</span><br><span class="line">            //byte字节对应bit</span><br><span class="line">            String s = Integer.toBinaryString(c);</span><br><span class="line">            System.out.println(s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>而中文对应的utf-8是3个字节，高位编码自动补全</p>
+<p>如果是GBK，一个中文对应2个字节</p>
+<h3 id="DES"><a href="#DES" class="headerlink" title="DES"></a>DES</h3><p>具体见另一篇博客（x</p>
+<h3 id="base64浅谈"><a href="#base64浅谈" class="headerlink" title="base64浅谈"></a>base64浅谈</h3><p><strong>不是加密算法，是可读性算法</strong><br>原理：3字节为一组，1字节=8位，共24位，base64把3个字节转换成4组，每组6位，缺少2位，要在高位补0。</p>
+<p><strong>好处</strong>：base64取后6位，前2位会去掉，可以把base64控制到0-63之间（0：000000，1：111111）</p>
+<p><strong>坏处</strong>：内存占用变大</p>
+<p>目的：可读性，否则得到乱码</p>
+<p>由64个字符组成：A-Z,a-z,0-9,+,/</p>
+<p>base58是用在比特币里面的编码方式，</p>
+<pre><code>·没有数字0和字母o,
+
+·没有大写字母I和小写i,
+
+·没有+和/。
+</code></pre><h3 id="加密模式"><a href="#加密模式" class="headerlink" title="加密模式"></a>加密模式</h3><h4 id="·ECB-电子密码本"><a href="#·ECB-电子密码本" class="headerlink" title="·ECB:电子密码本"></a>·ECB:电子密码本</h4><p>把加密消息分割后独立加密再组合</p>
+<p><strong>优点</strong>：<br>并行处理，速度快</p>
+<p><strong>缺点</strong>：<br>使用同一个key，安全性弱</p>
+<h4 id="·CBC-密码块链接"><a href="#·CBC-密码块链接" class="headerlink" title="·CBC:密码块链接"></a>·CBC:密码块链接</h4><p>每个明文块先与前一个密文块异或后在加密，每个密文块都依赖于它前面所有明文块。</p>
+<p><strong>优点</strong>：<br>加密强度高</p>
+<p><strong>缺点</strong>：<br>并行处理，慢</p>
+<h3 id="非对称加密"><a href="#非对称加密" class="headerlink" title="非对称加密"></a>非对称加密</h3><p>“现代加密算法”</p>
+<p>必须2个密钥，公钥和私钥（一公一母）</p>
+<p>常见：RSA,ECC</p>
+<p>或取公钥和私钥：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import com.sun.org.apache.xml.internal.security.utils.Base64;</span><br><span class="line"></span><br><span class="line">import java.security.KeyPair;</span><br><span class="line">import java.security.KeyPairGenerator ;</span><br><span class="line">import java.security.PrivateKey;</span><br><span class="line">import java.security.PublicKey;</span><br><span class="line"></span><br><span class="line">public class Rsa &#123;</span><br><span class="line">    public static void main(String[] args)throws Exception &#123;</span><br><span class="line">        //创建密钥对</span><br><span class="line">//生成器对象</span><br><span class="line">String algorithm = &quot;RSA&quot; ;</span><br><span class="line">KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(algorithm) ;</span><br><span class="line">//生成密钥对</span><br><span class="line">KeyPair keyPair =  keyPairGenerator.generateKeyPair() ;</span><br><span class="line">PrivateKey aPrivate = keyPair.getPrivate();</span><br><span class="line">PublicKey aPublic = keyPair.getPublic();</span><br><span class="line">//获取私钥字节数组</span><br><span class="line">byte[] privateEncoded = aPrivate.getEncoded() ;</span><br><span class="line">        byte[] publicEncodeed = aPublic.getEncoded() ;</span><br><span class="line">//base64转码</span><br><span class="line">String privateEncodeString = Base64.encode(privateEncoded) ;</span><br><span class="line">String publicEncodeString = Base64.encode(publicEncodeed) ;</span><br><span class="line">//打印</span><br><span class="line">System.out.println(privateEncodeString);</span><br><span class="line">System.out.println(publicEncodeString);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="数字签名"><a href="#数字签名" class="headerlink" title="数字签名"></a>数字签名</h3><p>公钥数字签名，只有信息的发送者才能产生别人无法伪造的一段数字串覆盖在文件上。</p>
+<h4 id="数字证书"><a href="#数字证书" class="headerlink" title="数字证书"></a>数字证书</h4><p>认证机构把公钥A、通过自己的私钥对认证机构加密、再和数字签名A打包生成证书返回给服务器。</p>
+<p>点开一个网址就能看到。</p>
+<p><strong>CA认证中心</strong></p>
+<p>专门颁发、签发数字证书</p>
+<h4 id="网页加密"><a href="#网页加密" class="headerlink" title="网页加密"></a>网页加密</h4><p>step1：客户端向服务器发送加密请求；(request)</p>
+<p>step2：服务器用自己的私钥加密网页后，连同本身的数字证书一起发送给客户端；(response)</p>
+<p>step3：证书管理器里有证书颁发列表，客户会根据这张表查看解开数字证书的公钥是否在列表内；</p>
+<pre><code>如果数字证书的网址与正在浏览的网址不一样，那就是证书可能被冒用，浏览器发出警告；
+
+如果可靠，客户端使用证书中服务器公钥，对信息加密，然后与服务器交换加密信息。(exchange encrypted data)
+</code></pre>]]></content>
       <categories>
-        <category>Holiday</category>
+        <category>科研</category>
       </categories>
       <tags>
-        <tag>生活</tag>
+        <tag>科研</tag>
       </tags>
   </entry>
   <entry>
@@ -82,7 +150,6 @@
     <url>/2022/04/10/4-10%E5%91%A8%E6%80%9D%E8%80%83/</url>
     <content><![CDATA[<h1 id="周总结"><a href="#周总结" class="headerlink" title="周总结"></a>周总结</h1><p>最近挺魔幻的</p>
 <span id="more"></span>
-
 <h2 id="读书"><a href="#读书" class="headerlink" title="读书"></a>读书</h2><h3 id="专业方面"><a href="#专业方面" class="headerlink" title="专业方面"></a>专业方面</h3><h4 id="计组（这就是内功！听张win-win说——请自行脑补）"><a href="#计组（这就是内功！听张win-win说——请自行脑补）" class="headerlink" title="计组（这就是内功！听张win-win说——请自行脑补）"></a>计组（这就是内功！听张win-win说——请自行脑补）</h4><p>复习了体系结构概况，各种码的作用、运算（问：牛码的作用是什么？（doge））</p>
 <p>其实XD的计组相比之前看过的CSAPP、Themes and Variations都相对更好理解，刘老师讲完之后再去看CSAPP会有这样的感悟：</p>
 <pre><code>1.CSAPP是基本模型的再提高
@@ -90,13 +157,11 @@
 2.基础模块的重要性
 
 3.x86-64很有趣哈哈
-</code></pre>
-<h4 id="模电"><a href="#模电" class="headerlink" title="模电"></a>模电</h4><p>魔电这个名称不是白来的，确实很难，不过在第一次听完杨老师的讲解和后续看上交郑老师的网课的推动下，对模电的理解就像发现了新大陆</p>
+</code></pre><h4 id="模电"><a href="#模电" class="headerlink" title="模电"></a>模电</h4><p>魔电这个名称不是白来的，确实很难，不过在第一次听完杨老师的讲解和后续看上交郑老师的网课的推动下，对模电的理解就像发现了新大陆</p>
 <p>简单提炼下模电目前带给我的思维锻炼：</p>
 <p>eg：放大电路的设计：</p>
 <pre><code>已有的原件——&gt;达到的目的——&gt;不断尝试，每个原件都不可或缺
-</code></pre>
-<p>（学好电路分析基础很重要，戴维南定理非常有趣）</p>
+</code></pre><p>（学好电路分析基础很重要，戴维南定理非常有趣）</p>
 <h4 id="信号与系统"><a href="#信号与系统" class="headerlink" title="信号与系统"></a>信号与系统</h4><p>之前和很多同学交流过：为什么CS的学生要学Signals and Systems，我个人的具体观点如下：</p>
 <p><strong>·日后从事AI或者很庞杂的大project时（比如之前软件所的计算机和天线阵列的project）会用到硬性知识</strong></p>
 <p><strong>·这门课的思想会在几乎所有的事物上体现</strong></p>
@@ -121,38 +186,9 @@
       </tags>
   </entry>
   <entry>
-    <title>图像编码处理基础</title>
-    <url>/2022/04/19/%E5%9B%BE%E5%83%8F%E7%BC%96%E7%A0%81%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[<h1 id="图像方向基础"><a href="#图像方向基础" class="headerlink" title="图像方向基础"></a>图像方向基础</h1><h2 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h2><p>结合本人目前科研项目的经历，图像处理是最关键的一环，它的方方面面知识也可能是idea的来源。</p>
-<p>比较知名的书有《数字图像处理》（冈萨雷斯编写）。不过我的工作并不是对现有图像进行各种变换，所以这本书暂时不适合我。</p>
-<p>在JWC发出推迟考试的通知后，我在校图书馆的海洋里淘到了<strong>《图像编码基础》</strong>这本书，年代较为久远（2006年）但是对我很有启发意义，于是借走拿回宿舍研究，也恰恰是在这本书内，我意识到了学好“信号与系统”这门课的意义（比如二维傅里叶变换等），可以说获益匪浅。</p>
-<p>下面开始讲图像相关的一些基础知识。</p>
-<h2 id="一-图像编码"><a href="#一-图像编码" class="headerlink" title="一.图像编码"></a>一.图像编码</h2><h3 id="1-为什么编码"><a href="#1-为什么编码" class="headerlink" title="1.为什么编码"></a>1.为什么编码</h3><p>图像数据太大，通信传输过程中数据量太大，需要编码方式来减少数据大小。</p>
-<h3 id="2-编码分类"><a href="#2-编码分类" class="headerlink" title="2.编码分类"></a>2.编码分类</h3><p>软件编码（软编）：使用CPU进行编码。</p>
-<p>优点：实现直接、简单，参数调整、升级方便。</p>
-<p>缺点：性能较硬编码低，低码率下质量通常比硬编码要好。</p>
-<p>硬件编码（硬编）：不使用CPU进行编码，使用显卡GPU,专用的DSP、FPGA、ASIC芯片等硬件进行编码。</p>
-<p>优点：性能高，低码率下通常质量低于硬编码器。</p>
-<p>缺点：部分产品在GPU硬件平台移植了优秀的软编码算法（如X264）的，质量基本等同于软编码。</p>
-<h3 id="3-图像数字化"><a href="#3-图像数字化" class="headerlink" title="3.图像数字化"></a>3.图像数字化</h3><p>step（1）将二维图像 $ f(x,y) $ 在二维空间域中采样，有采样定理：</p>
-<p>$$<br>N &#x3D; 2^k \quad , \quad k &#x3D; 2,3,4……<br>$$</p>
-<p>注意：$ N$是图像$ f(x,y) $ 取样点$ N \times N$中的$N$。</p>
-<p>$$<br>N&#x2F;L_x \ge 2u_0 \quad,\quad N&#x2F;L_y \ge 2v_0 \quad (*)<br>$$</p>
-<p>在符$(*)$式条件下不会出现图像相互混叠现象,以上是二维图像取样定理。</p>
-<p>step（2）量化</p>
-]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>CSer</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>DES算法实现——Lab</title>
     <url>/2022/04/03/DES%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0%E2%80%94%E2%80%94Lab/</url>
     <content><![CDATA[<h1 id="重温DES（Data-Encryption-Standard）"><a href="#重温DES（Data-Encryption-Standard）" class="headerlink" title="重温DES（Data Encryption Standard）"></a>重温DES（<strong>Data Encryption Standard</strong>）</h1><span id="more"></span>
-
 <p>对称加密：使用同一把密钥，分为 流加密 、 块加密</p>
 <p>eg:</p>
 <p>流加密12345，分别加密1，2，3，4，5</p>
@@ -165,8 +201,7 @@
 ·加密后ASCII编码表找不到码会乱码
 
 ·结合base64一起使用
-</code></pre>
-<h2 id="DES结构"><a href="#DES结构" class="headerlink" title="DES结构"></a>DES结构</h2><p>DES也被称为Feistel网络，加密的各个步骤被称为 <strong>轮（round）</strong> ,DES是对称加密密码的代表。</p>
+</code></pre><h2 id="DES结构"><a href="#DES结构" class="headerlink" title="DES结构"></a>DES结构</h2><p>DES也被称为Feistel网络，加密的各个步骤被称为 <strong>轮（round）</strong> ,DES是对称加密密码的代表。</p>
 <p><strong>关键思想：</strong> 将待加密信息分为两部分，如64位信息平均分为32位。</p>
 <p><strong>子密钥（subkey）：</strong> 是本轮加密使用的密钥（本轮的意思就是每一轮都需要使用一个不同的子密钥），故是局部密钥。</p>
 <p><strong>轮函数：</strong> 根据“右侧”和子密钥生成，对“左侧”进行加密的比特序列，<strong>轮函数是密码系统的核心</strong>。轮函数与左侧进行XOR运算，结果就是<strong>加密后的左侧。</strong></p>
@@ -194,116 +229,17 @@
       </tags>
   </entry>
   <entry>
-    <title>密码学概述</title>
-    <url>/2022/04/05/%E5%AF%86%E7%A0%81%E5%AD%A6%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<h1 id="密码学概述"><a href="#密码学概述" class="headerlink" title="密码学概述"></a>密码学概述</h1><span id="more"></span>
-
-<h2 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h2><h3 id="古典密码学"><a href="#古典密码学" class="headerlink" title="古典密码学"></a>古典密码学</h3><p>目的：保护信息</p>
-<p><strong>·替换法</strong>：使用固定信息将原文替换为密文</p>
-<p>加密方式：单表替换，多表替换</p>
-<pre><code>单表替换：原文和密文使用同一张表；
-
-多表替换：非常复杂，多张表原文、密文进行对比。
-</code></pre>
-<p>多表替换举例：</p>
-<pre><code>表单1：abcde-swtrp 表单2：abcde-chfhk
-
-明文：bee    密钥：221
-
-密文：hkp
-</code></pre>
-<p><strong>·移位法</strong>：按照字母移动</p>
-<p>凯撒加密</p>
-<p><strong>古典密码学破解</strong>：</p>
-<p>频率分析法：概率论——研究字母或字母组合在密文中出现的频率。E出现频率最高，X出现频率最低：“ETAOIN SHRDLU”</p>
-<h3 id="近代密码学"><a href="#近代密码学" class="headerlink" title="近代密码学"></a>近代密码学</h3><p>eg：恩尼格玛密码机 核心 ： 移位法、替换法</p>
-<p>后来被——图灵破解了（电影：《模仿游戏》</p>
-<h3 id="现代密码学"><a href="#现代密码学" class="headerlink" title="现代密码学"></a>现代密码学</h3><p>1.散列函数（Hash函数）</p>
-<p>eg：MD5,SHA-1,SHA-256</p>
-<p>2.对称加密</p>
-<p><strong>加密解密同一把密钥</strong></p>
-<p>流加密，块加密<br>3.非对称加密</p>
-<p><strong>两把密钥，公约加密，私钥解密  或 私钥加密，公钥解密</strong></p>
-<p><strong>?? 怎样设置密码才安全 ??</strong></p>
-<pre><code>·   密码不要常见；
-·   密码不要设置为同一个，“撞库”；
-·   设置特殊标记
-</code></pre>
-<h3 id="ASCII编码"><a href="#ASCII编码" class="headerlink" title="ASCII编码"></a>ASCII编码</h3><p>American Standard Code for Information Interchange</p>
-<p><strong>代码实现凯撒加密解密</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class KaiSaEn &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String input = &quot;Hello World ! &quot; ;</span><br><span class="line">        //原文右移动3位</span><br><span class="line">        int key = 3 ;</span><br><span class="line">        String s = encryptKaisa(input);</span><br><span class="line">        System.out.println(&quot;加密==&quot;+s);</span><br><span class="line">        String ans = decryptKaisa(s,key);</span><br><span class="line">        System.out.println(&quot;解密==&quot;+ans);</span><br><span class="line">    &#125;</span><br><span class="line">    //解密</span><br><span class="line">    private  static  String decryptKaisa(String s , int key)&#123;</span><br><span class="line">        char[] chars =  s.toCharArray() ;</span><br><span class="line">        StringBuilder sb = new StringBuilder() ;</span><br><span class="line">        for (char aChar : chars) &#123;</span><br><span class="line">            int b = aChar ;</span><br><span class="line">            //偏移数据</span><br><span class="line">            b -= key ;</span><br><span class="line">            char newb =(char) b ;</span><br><span class="line">            sb.append(newb) ;</span><br><span class="line">        &#125;</span><br><span class="line">        return sb.toString() ;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private static String encryptKaisa(String input) &#123;</span><br><span class="line">        char[] chars = input.toCharArray() ;</span><br><span class="line">        StringBuilder sb = new StringBuilder() ;</span><br><span class="line">        for (char aChar : chars) &#123;</span><br><span class="line">            int b = aChar ;</span><br><span class="line">            b = b + 3 ;</span><br><span class="line">            char newb = (char) b ;</span><br><span class="line">            sb.append(newb) ;</span><br><span class="line">        &#125;</span><br><span class="line">        //System.out.println(sb.toString());</span><br><span class="line">        return sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="频率分析法-——-概率论"><a href="#频率分析法-——-概率论" class="headerlink" title="频率分析法 —— 概率论"></a>频率分析法 —— 概率论</h3><p>·密码棒</p>
-<p>·目的：不知道密钥情况下进行破解密文</p>
-<p>方法：拿到密文选出频率最高的字母，比如最高的是j，对应明文为e;以此类推</p>
-<h3 id="Byte和Bit的关系（总搞混）"><a href="#Byte和Bit的关系（总搞混）" class="headerlink" title="Byte和Bit的关系（总搞混）"></a>Byte和Bit的关系（总搞混）</h3><p><strong>Byte</strong>：字节，数据<strong>存储</strong>的基本单位，比如移动硬盘1T，单位是Byte</p>
-<p><strong>Bit</strong>：位，用0或1表示，是数据<strong>传输</strong>的单位</p>
-<p><strong>关系</strong>：1Byte &#x3D; 8Bit</p>
-<p>举个栗子：</p>
-<p>a的Byte表示：97；bit表示为：1100001（二进制）</p>
-<p><strong>代码实现Byte和Bit互相转化</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class ByteBit &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String a = &quot;a&quot; ;</span><br><span class="line">        //得到字节数组</span><br><span class="line">        byte[] bytes = a.getBytes() ;</span><br><span class="line">        for (byte aByte : bytes) &#123;</span><br><span class="line">            int c = aByte ;</span><br><span class="line">            //byte字节对应bit</span><br><span class="line">            String s = Integer.toBinaryString(c);</span><br><span class="line">            System.out.println(s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>而中文对应的utf-8是3个字节，高位编码自动补全</p>
-<p>如果是GBK，一个中文对应2个字节</p>
-<h3 id="DES"><a href="#DES" class="headerlink" title="DES"></a>DES</h3><p>具体见另一篇博客（x</p>
-<h3 id="base64浅谈"><a href="#base64浅谈" class="headerlink" title="base64浅谈"></a>base64浅谈</h3><p><strong>不是加密算法，是可读性算法</strong><br>原理：3字节为一组，1字节&#x3D;8位，共24位，base64把3个字节转换成4组，每组6位，缺少2位，要在高位补0。</p>
-<p><strong>好处</strong>：base64取后6位，前2位会去掉，可以把base64控制到0-63之间（0：000000，1：111111）</p>
-<p><strong>坏处</strong>：内存占用变大</p>
-<p>目的：可读性，否则得到乱码</p>
-<p>由64个字符组成：A-Z,a-z,0-9,+,&#x2F;</p>
-<p>base58是用在比特币里面的编码方式，</p>
-<pre><code>·没有数字0和字母o,
-
-·没有大写字母I和小写i,
-
-·没有+和/。
-</code></pre>
-<h3 id="加密模式"><a href="#加密模式" class="headerlink" title="加密模式"></a>加密模式</h3><h4 id="·ECB-电子密码本"><a href="#·ECB-电子密码本" class="headerlink" title="·ECB:电子密码本"></a>·ECB:电子密码本</h4><p>把加密消息分割后独立加密再组合</p>
-<p><strong>优点</strong>：<br>并行处理，速度快</p>
-<p><strong>缺点</strong>：<br>使用同一个key，安全性弱</p>
-<h4 id="·CBC-密码块链接"><a href="#·CBC-密码块链接" class="headerlink" title="·CBC:密码块链接"></a>·CBC:密码块链接</h4><p>每个明文块先与前一个密文块异或后在加密，每个密文块都依赖于它前面所有明文块。</p>
-<p><strong>优点</strong>：<br>加密强度高</p>
-<p><strong>缺点</strong>：<br>并行处理，慢</p>
-<h3 id="非对称加密"><a href="#非对称加密" class="headerlink" title="非对称加密"></a>非对称加密</h3><p>“现代加密算法”</p>
-<p>必须2个密钥，公钥和私钥（一公一母）</p>
-<p>常见：RSA,ECC</p>
-<p>或取公钥和私钥：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import com.sun.org.apache.xml.internal.security.utils.Base64;</span><br><span class="line"></span><br><span class="line">import java.security.KeyPair;</span><br><span class="line">import java.security.KeyPairGenerator ;</span><br><span class="line">import java.security.PrivateKey;</span><br><span class="line">import java.security.PublicKey;</span><br><span class="line"></span><br><span class="line">public class Rsa &#123;</span><br><span class="line">    public static void main(String[] args)throws Exception &#123;</span><br><span class="line">        //创建密钥对</span><br><span class="line">//生成器对象</span><br><span class="line">String algorithm = &quot;RSA&quot; ;</span><br><span class="line">KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(algorithm) ;</span><br><span class="line">//生成密钥对</span><br><span class="line">KeyPair keyPair =  keyPairGenerator.generateKeyPair() ;</span><br><span class="line">PrivateKey aPrivate = keyPair.getPrivate();</span><br><span class="line">PublicKey aPublic = keyPair.getPublic();</span><br><span class="line">//获取私钥字节数组</span><br><span class="line">byte[] privateEncoded = aPrivate.getEncoded() ;</span><br><span class="line">        byte[] publicEncodeed = aPublic.getEncoded() ;</span><br><span class="line">//base64转码</span><br><span class="line">String privateEncodeString = Base64.encode(privateEncoded) ;</span><br><span class="line">String publicEncodeString = Base64.encode(publicEncodeed) ;</span><br><span class="line">//打印</span><br><span class="line">System.out.println(privateEncodeString);</span><br><span class="line">System.out.println(publicEncodeString);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="数字签名"><a href="#数字签名" class="headerlink" title="数字签名"></a>数字签名</h3><p>公钥数字签名，只有信息的发送者才能产生别人无法伪造的一段数字串覆盖在文件上。</p>
-<h4 id="数字证书"><a href="#数字证书" class="headerlink" title="数字证书"></a>数字证书</h4><p>认证机构把公钥A、通过自己的私钥对认证机构加密、再和数字签名A打包生成证书返回给服务器。</p>
-<p>点开一个网址就能看到。</p>
-<p><strong>CA认证中心</strong></p>
-<p>专门颁发、签发数字证书</p>
-<h4 id="网页加密"><a href="#网页加密" class="headerlink" title="网页加密"></a>网页加密</h4><p>step1：客户端向服务器发送加密请求；(request)</p>
-<p>step2：服务器用自己的私钥加密网页后，连同本身的数字证书一起发送给客户端；(response)</p>
-<p>step3：证书管理器里有证书颁发列表，客户会根据这张表查看解开数字证书的公钥是否在列表内；</p>
-<pre><code>如果数字证书的网址与正在浏览的网址不一样，那就是证书可能被冒用，浏览器发出警告；
-
-如果可靠，客户端使用证书中服务器公钥，对信息加密，然后与服务器交换加密信息。(exchange encrypted data)
-</code></pre>
-]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>科研</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>文献阅读综述</title>
     <url>/2022/04/04/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%BB%BC%E8%BF%B0/</url>
     <content><![CDATA[<h2 id="文章脉络解析"><a href="#文章脉络解析" class="headerlink" title="文章脉络解析"></a><strong>文章脉络解析</strong></h2><span id="more"></span>
-
 <h3 id="1-精读摘要"><a href="#1-精读摘要" class="headerlink" title="1  精读摘要"></a><strong>1</strong>  <strong>精读摘要</strong></h3><p>摘要部分一般分为2-3 段</p>
 <p>第一段，1、背景；2-3、综述现在存在的问题；4、总结句</p>
 <p>第二段，1、概述；2-4、分别简介各组件，及解决方案的逻辑思路；5，点明文中所提解决方案的亮点；6，宏观描述实验效果（6 可以作为第三段）</p>
 <h3 id="2-泛读-Introduction"><a href="#2-泛读-Introduction" class="headerlink" title="2  泛读 Introduction"></a><strong>2</strong>  <strong>泛读</strong> <strong>Introduction</strong></h3><p>Introduction 重在脉络和文章的研究思路：通过背景介绍，引出研究问题，论述研究现状，（这两句可以换顺序），引入our idea（解决问题的逻辑思路），challenges；Contributions.</p>
 <p>（这部分描述一般较为简略，是在逻辑层面论述）</p>
-<p>（自己写作的时候，强烈另开一个Section, Motivation and challenges &#x2F; Limitations。通过图公式等形式，或与别人工作对比，详细阐述研究问题细节，可以区分开别人工作、能人所不能的亮点。）（这个Section 非常重要，做的好，能为说服审稿人起到大半的作用）</p>
+<p>（自己写作的时候，强烈另开一个Section, Motivation and challenges / Limitations。通过图公式等形式，或与别人工作对比，详细阐述研究问题细节，可以区分开别人工作、能人所不能的亮点。）（这个Section 非常重要，做的好，能为说服审稿人起到大半的作用）</p>
 <h3 id="3-related-work"><a href="#3-related-work" class="headerlink" title="3   related work"></a><strong>3</strong>   <strong>related work</strong></h3><p>阅读时可暂时忽略，可放后面，conclusion 前</p>
-<h3 id="4-问题-x2F-模型的-formulation-（公式化）-x2F-formalization-形式化"><a href="#4-问题-x2F-模型的-formulation-（公式化）-x2F-formalization-形式化" class="headerlink" title="4  问题 &#x2F; 模型的 formulation  （公式化） &#x2F; formalization(  形式化 )"></a><strong>4</strong>  <strong>问题</strong> &#x2F; <strong>模型的</strong> <strong>formulation</strong>  <strong>（公式化）</strong> <strong>&#x2F; formalization(</strong>  <strong>形式化</strong> <strong>)</strong></h3><p>细读，但一般较为简单。 该部分主要作用是把逻辑问题，形式化为公式或数学模型，为正式具体的解决方案做好准备。</p>
+<h3 id="4-问题-模型的-formulation-（公式化）-formalization-形式化"><a href="#4-问题-模型的-formulation-（公式化）-formalization-形式化" class="headerlink" title="4  问题 / 模型的 formulation  （公式化） / formalization(  形式化 )"></a><strong>4</strong>  <strong>问题</strong> / <strong>模型的</strong> <strong>formulation</strong>  <strong>（公式化）</strong> <strong>/ formalization(</strong>  <strong>形式化</strong> <strong>)</strong></h3><p>细读，但一般较为简单。 该部分主要作用是把逻辑问题，形式化为公式或数学模型，为正式具体的解决方案做好准备。</p>
 <h3 id="5-系统模型及具体的-solution-，设计细节"><a href="#5-系统模型及具体的-solution-，设计细节" class="headerlink" title="5  系统模型及具体的 solution ，设计细节"></a><strong>5</strong>  <strong>系统模型及具体的</strong> <strong>solution</strong> <strong>，设计细节</strong></h3><p>系统模型，该部分展示的是整体的系统模型，或解决方案架构。 除系统介绍解决方案外，还应详细论述设计细节及原因。（可与Motivation 进行对比区分，一遍遍在不同层面，讲述自己的设计理念）</p>
 <p>具体的solution，没必要细说，大家怎么做的就可以怎么写。需要的提醒的是，在具体的设计前后，尽量添加必要的逻辑的解释。</p>
 <h3 id="6-实验部分"><a href="#6-实验部分" class="headerlink" title="6  实验部分"></a><strong>6</strong>  <strong>实验部分</strong></h3><p>一般包括数据集，实验设计和设置，及实验效果</p>
@@ -331,6 +267,52 @@
       </categories>
       <tags>
         <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>图像编码处理基础</title>
+    <url>/2022/04/19/%E5%9B%BE%E5%83%8F%E7%BC%96%E7%A0%81%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h1 id="图像方向基础"><a href="#图像方向基础" class="headerlink" title="图像方向基础"></a>图像方向基础</h1><h2 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h2><p>结合本人目前科研项目的经历，图像处理是最关键的一环，它的方方面面知识也可能是idea的来源。</p>
+<p>比较知名的书有《数字图像处理》（冈萨雷斯编写）。不过我的工作并不是对现有图像进行各种变换，所以这本书暂时不适合我。</p>
+<p>在JWC发出推迟考试的通知后，我在校图书馆的海洋里淘到了<strong>《图像编码基础》</strong>这本书，年代较为久远（2006年）但是对我很有启发意义，于是借走拿回宿舍研究，也恰恰是在这本书内，我意识到了学好“信号与系统”这门课的意义（比如二维傅里叶变换等），可以说获益匪浅。</p>
+<p>下面开始讲图像相关的一些基础知识。</p>
+<h2 id="一-图像编码"><a href="#一-图像编码" class="headerlink" title="一.图像编码"></a>一.图像编码</h2><h3 id="1-为什么编码"><a href="#1-为什么编码" class="headerlink" title="1.为什么编码"></a>1.为什么编码</h3><p>图像数据太大，通信传输过程中数据量太大，需要编码方式来减少数据大小。</p>
+<h3 id="2-编码分类"><a href="#2-编码分类" class="headerlink" title="2.编码分类"></a>2.编码分类</h3><p>软件编码（软编）：使用CPU进行编码。</p>
+<p>优点：实现直接、简单，参数调整、升级方便。</p>
+<p>缺点：性能较硬编码低，低码率下质量通常比硬编码要好。</p>
+<p>硬件编码（硬编）：不使用CPU进行编码，使用显卡GPU,专用的DSP、FPGA、ASIC芯片等硬件进行编码。</p>
+<p>优点：性能高，低码率下通常质量低于硬编码器。</p>
+<p>缺点：部分产品在GPU硬件平台移植了优秀的软编码算法（如X264）的，质量基本等同于软编码。</p>
+<h3 id="3-图像数字化"><a href="#3-图像数字化" class="headerlink" title="3.图像数字化"></a>3.图像数字化</h3><p>step（1）将二维图像 $ f(x,y) $ 在二维空间域中采样，有采样定理：</p>
+<script type="math/tex; mode=display">
+N = 2^k \quad , \quad k = 2,3,4......</script><p>注意：$ N$是图像$ f(x,y) $ 取样点$ N \times N$中的$N$。</p>
+<script type="math/tex; mode=display">
+N/L_x \ge 2u_0 \quad,\quad N/L_y \ge 2v_0 \quad (*)</script><p>在符$(*)$式条件下不会出现图像相互混叠现象,以上是二维图像取样定理。</p>
+<p>step（2）量化</p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>CSer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>清明</title>
+    <url>/2022/04/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="记录大二下学期第一次进城"><a href="#记录大二下学期第一次进城" class="headerlink" title="记录大二下学期第一次进城"></a>记录大二下学期第一次进城</h2><span id="more"></span>
+<p>玩一把大的，水完毛概直接润<br>小寨鹿港粤菜：叉烧肉 汤 牛柳 还有CoCo Cafe的柠檬百香果双响炮<br>晚上去了大唐不夜城，夜景音乐喷泉</p>
+<h2 id="青龙寺"><a href="#青龙寺" class="headerlink" title="青龙寺"></a>青龙寺</h2><p>樱花超级好看，每一朵都独具韵味</p>
+<p>寺庙里面的树上挂满了祈福的红带，不过我对这方面也不了解，没敢随意去弄。。。心意到了就可以了（x</p>
+<p>离开时看见一些老大爷和老大妈跳着新疆舞（貌似是），特别有精神，希望我老了也能很有精气神hh</p>
+<p>中午吃了韩式传统烤肉，百去不厌，下午从3点睡到6点（5555），不过充满了干劲，这才叫大学生活（牛马假日）</p>
+<p>该juan了（这就去C楼，溜了）</p>
+]]></content>
+      <categories>
+        <category>Holiday</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
 </search>
