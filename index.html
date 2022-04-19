@@ -216,7 +216,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-04-19 21:24:46 / 修改时间：23:15:51" itemprop="dateCreated datePublished" datetime="2022-04-19T21:24:46+08:00">2022-04-19</time>
+              <time title="创建时间：2022-04-19 21:24:46 / 修改时间：23:24:25" itemprop="dateCreated datePublished" datetime="2022-04-19T21:24:46+08:00">2022-04-19</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -248,7 +248,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>719</span>
+              <span>715</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -267,32 +267,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="图像方向基础"><a href="#图像方向基础" class="headerlink" title="图像方向基础"></a>图像方向基础</h1><h2 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h2><pre><code>结合本人目前科研项目的经历，图像处理是最关键的一环，它的方方面面知识也可能是idea的来源。
-
-比较知名的书有《数字图像处理》（冈萨雷斯编写）。不过我的工作并不是对现有图像进行各种变换，所以这本书暂时不适合我。
-
-在JWC发出推迟考试的通知后，我在校图书馆的海洋里淘到了**《图像编码基础》**这本书，年代较为久远（2006年）但是对我很有启发意义，于是借走拿回宿舍研究，也恰恰是在这本书内，我意识到了学好“信号与系统”这门课的意义（比如二维傅里叶变换等），可以说获益匪浅。
-
-下面开始讲图像相关的一些基础知识。
-</code></pre>
+          <h1 id="图像方向基础"><a href="#图像方向基础" class="headerlink" title="图像方向基础"></a>图像方向基础</h1><h2 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h2><p>结合本人目前科研项目的经历，图像处理是最关键的一环，它的方方面面知识也可能是idea的来源。</p>
+<p>比较知名的书有《数字图像处理》（冈萨雷斯编写）。不过我的工作并不是对现有图像进行各种变换，所以这本书暂时不适合我。</p>
+<p>在JWC发出推迟考试的通知后，我在校图书馆的海洋里淘到了<strong>《图像编码基础》</strong>这本书，年代较为久远（2006年）但是对我很有启发意义，于是借走拿回宿舍研究，也恰恰是在这本书内，我意识到了学好“信号与系统”这门课的意义（比如二维傅里叶变换等），可以说获益匪浅。</p>
+<p>下面开始讲图像相关的一些基础知识。</p>
 <h2 id="一-图像编码"><a href="#一-图像编码" class="headerlink" title="一.图像编码"></a>一.图像编码</h2><h3 id="1-为什么编码"><a href="#1-为什么编码" class="headerlink" title="1.为什么编码"></a>1.为什么编码</h3><p>图像数据太大，通信传输过程中数据量太大，需要编码方式来减少数据大小。</p>
 <h3 id="2-编码分类"><a href="#2-编码分类" class="headerlink" title="2.编码分类"></a>2.编码分类</h3><p>软件编码（软编）：使用CPU进行编码。</p>
-<pre><code>优点：实现直接、简单，参数调整、升级方便。
-
-缺点：性能较硬编码低，低码率下质量通常比硬编码要好。
-</code></pre>
+<p>优点：实现直接、简单，参数调整、升级方便。</p>
+<p>缺点：性能较硬编码低，低码率下质量通常比硬编码要好。</p>
 <p>硬件编码（硬编）：不使用CPU进行编码，使用显卡GPU,专用的DSP、FPGA、ASIC芯片等硬件进行编码。</p>
-<pre><code>优点：性能高，低码率下通常质量低于硬编码器。
-
-缺点：部分产品在GPU硬件平台移植了优秀的软编码算法（如X264）的，质量基本等同于软编码。
-</code></pre>
-<h3 id="3-图像数字化"><a href="#3-图像数字化" class="headerlink" title="3.图像数字化"></a>3.图像数字化</h3><p><em>step</em>（1）将二维图像 $ f(x,y) $ 在二维空间域中采样，有采样定理：</p>
+<p>优点：性能高，低码率下通常质量低于硬编码器。</p>
+<p>缺点：部分产品在GPU硬件平台移植了优秀的软编码算法（如X264）的，质量基本等同于软编码。</p>
+<h3 id="3-图像数字化"><a href="#3-图像数字化" class="headerlink" title="3.图像数字化"></a>3.图像数字化</h3><p>step（1）将二维图像 $ f(x,y) $ 在二维空间域中采样，有采样定理：</p>
 <p>$$<br>N &#x3D; 2^k \quad , \quad k &#x3D; 2,3,4……<br>$$</p>
-<pre><code>注意：$ N$是图像$ f(x,y) $ 取样点$ N \times N$中的$N$。
-</code></pre>
+<p>注意：$ N$是图像$ f(x,y) $ 取样点$ N \times N$中的$N$。</p>
 <p>$$<br>N&#x2F;L_x \ge 2u_0 \quad,\quad N&#x2F;L_y \ge 2v_0 \quad (*)<br>$$</p>
 <p>在符$(*)$式条件下不会出现图像相互混叠现象,以上是二维图像取样定理。</p>
-<p><em>step</em>（2）量化</p>
+<p>step（2）量化</p>
 
       
     </div>
