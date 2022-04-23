@@ -20,20 +20,22 @@
     var CONFIG = {"hostname":"nexuslbh.top","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="文章脉络解析">
+  <meta name="description" content="第一次上机实验内容创建进程：由父进程创建子进程并实现父子进程协同工作。 子进程读取一个文件，父进程等待子进程读取完文件后继续执行。 协同工作可以用等待函数来实现，当需要等待子进程运行结束时，可以在父进程中调用等待函数。 实验所需头文件123#include&lt;windows.h&gt;#include&lt;process.h&gt;#include&lt;iostream&gt; windo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="文献阅读综述">
-<meta property="og:url" content="http://nexuslbh.top/2022/04/04/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%BB%BC%E8%BF%B0/index.html">
+<meta property="og:title" content="OS第一次实验">
+<meta property="og:url" content="http://nexuslbh.top/2022/04/23/OS%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/index.html">
 <meta property="og:site_name" content="Nexus World">
-<meta property="og:description" content="文章脉络解析">
+<meta property="og:description" content="第一次上机实验内容创建进程：由父进程创建子进程并实现父子进程协同工作。 子进程读取一个文件，父进程等待子进程读取完文件后继续执行。 协同工作可以用等待函数来实现，当需要等待子进程运行结束时，可以在父进程中调用等待函数。 实验所需头文件123#include&lt;windows.h&gt;#include&lt;process.h&gt;#include&lt;iostream&gt; windo">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-04-04T10:56:48.000Z">
-<meta property="article:modified_time" content="2022-04-18T08:21:24.288Z">
+<meta property="og:image" content="http://nexuslbh.top/2022/04/23/OS%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/fatherRe.jpg">
+<meta property="article:published_time" content="2022-04-23T10:20:05.000Z">
+<meta property="article:modified_time" content="2022-04-23T10:27:07.064Z">
 <meta property="article:author" content="NexusXDlbh">
-<meta property="article:tag" content="科研">
+<meta property="article:tag" content="CSer">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://nexuslbh.top/2022/04/23/OS%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/fatherRe.jpg">
 
-<link rel="canonical" href="http://nexuslbh.top/2022/04/04/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%BB%BC%E8%BF%B0/">
+<link rel="canonical" href="http://nexuslbh.top/2022/04/23/OS%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/">
 
 
 <script id="page-configurations">
@@ -46,7 +48,7 @@
   };
 </script>
 
-  <title>文献阅读综述 | Nexus World</title>
+  <title>OS第一次实验 | Nexus World</title>
   
 
 
@@ -195,7 +197,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://nexuslbh.top/2022/04/04/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%BB%BC%E8%BF%B0/">
+    <link itemprop="mainEntityOfPage" href="http://nexuslbh.top/2022/04/23/OS%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/pic1.gif">
@@ -208,7 +210,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          文献阅读综述
+          OS第一次实验
         </h1>
 
         <div class="post-meta">
@@ -217,23 +219,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-04-04 18:56:48" itemprop="dateCreated datePublished" datetime="2022-04-04T18:56:48+08:00">2022-04-04</time>
+              <time title="创建时间：2022-04-23 18:20:05 / 修改时间：18:27:07" itemprop="dateCreated datePublished" datetime="2022-04-23T18:20:05+08:00">2022-04-23</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-18 16:21:24" itemprop="dateModified" datetime="2022-04-18T16:21:24+08:00">2022-04-18</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%A7%91%E7%A0%94/" itemprop="url" rel="index"><span itemprop="name">科研</span></a>
+                  <a href="/categories/University/" itemprop="url" rel="index"><span itemprop="name">University</span></a>
                 </span>
             </span>
 
@@ -246,8 +242,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2022/04/04/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%BB%BC%E8%BF%B0/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/04/04/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%BB%BC%E8%BF%B0/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/04/23/OS%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/04/23/OS%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -276,36 +272,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="文章脉络解析"><a href="#文章脉络解析" class="headerlink" title="文章脉络解析"></a><strong>文章脉络解析</strong></h2><span id="more"></span>
-<h3 id="1-精读摘要"><a href="#1-精读摘要" class="headerlink" title="1  精读摘要"></a><strong>1</strong>  <strong>精读摘要</strong></h3><p>摘要部分一般分为2-3 段</p>
-<p>第一段，1、背景；2-3、综述现在存在的问题；4、总结句</p>
-<p>第二段，1、概述；2-4、分别简介各组件，及解决方案的逻辑思路；5，点明文中所提解决方案的亮点；6，宏观描述实验效果（6 可以作为第三段）</p>
-<h3 id="2-泛读-Introduction"><a href="#2-泛读-Introduction" class="headerlink" title="2  泛读 Introduction"></a><strong>2</strong>  <strong>泛读</strong> <strong>Introduction</strong></h3><p>Introduction 重在脉络和文章的研究思路：通过背景介绍，引出研究问题，论述研究现状，（这两句可以换顺序），引入our idea（解决问题的逻辑思路），challenges；Contributions.</p>
-<p>（这部分描述一般较为简略，是在逻辑层面论述）</p>
-<p>（自己写作的时候，强烈另开一个Section, Motivation and challenges / Limitations。通过图公式等形式，或与别人工作对比，详细阐述研究问题细节，可以区分开别人工作、能人所不能的亮点。）（这个Section 非常重要，做的好，能为说服审稿人起到大半的作用）</p>
-<h3 id="3-related-work"><a href="#3-related-work" class="headerlink" title="3   related work"></a><strong>3</strong>   <strong>related work</strong></h3><p>阅读时可暂时忽略，可放后面，conclusion 前</p>
-<h3 id="4-问题-模型的-formulation-（公式化）-formalization-形式化"><a href="#4-问题-模型的-formulation-（公式化）-formalization-形式化" class="headerlink" title="4  问题 / 模型的 formulation  （公式化） / formalization(  形式化 )"></a><strong>4</strong>  <strong>问题</strong> / <strong>模型的</strong> <strong>formulation</strong>  <strong>（公式化）</strong> <strong>/ formalization(</strong>  <strong>形式化</strong> <strong>)</strong></h3><p>细读，但一般较为简单。 该部分主要作用是把逻辑问题，形式化为公式或数学模型，为正式具体的解决方案做好准备。</p>
-<h3 id="5-系统模型及具体的-solution-，设计细节"><a href="#5-系统模型及具体的-solution-，设计细节" class="headerlink" title="5  系统模型及具体的 solution ，设计细节"></a><strong>5</strong>  <strong>系统模型及具体的</strong> <strong>solution</strong> <strong>，设计细节</strong></h3><p>系统模型，该部分展示的是整体的系统模型，或解决方案架构。 除系统介绍解决方案外，还应详细论述设计细节及原因。（可与Motivation 进行对比区分，一遍遍在不同层面，讲述自己的设计理念）</p>
-<p>具体的solution，没必要细说，大家怎么做的就可以怎么写。需要的提醒的是，在具体的设计前后，尽量添加必要的逻辑的解释。</p>
-<h3 id="6-实验部分"><a href="#6-实验部分" class="headerlink" title="6  实验部分"></a><strong>6</strong>  <strong>实验部分</strong></h3><p>一般包括数据集，实验设计和设置，及实验效果</p>
-<p>数据集，重点关注，进行数据集积累。一般业内只有很有限的数据集。</p>
-<p>实验设计和设置，可以让你更清晰地认识到，文中解决方案是怎么来应用的，及相关参数值是如何设置的。</p>
-<p>实验效果没必要细说。</p>
-<h1 id="文献阅读需要关注的几个问题"><a href="#文献阅读需要关注的几个问题" class="headerlink" title="文献阅读需要关注的几个问题"></a><strong>文献阅读需要关注的几个问题</strong></h1><h3 id="1-文章研究的问题是什么？"><a href="#1-文章研究的问题是什么？" class="headerlink" title="1.文章研究的问题是什么？"></a><strong>1.文章研究的问题是什么？</strong></h3><p>逻辑层面的研究问题，越准确越细越好。（一般出现在前三章）。观察别人的研究问题，积累并形成新的研究问题。</p>
-<h3 id="2-解决方案的逻辑思路？"><a href="#2-解决方案的逻辑思路？" class="headerlink" title="2. 解决方案的逻辑思路？"></a><strong>2.</strong> <strong>解决方案的逻辑思路？</strong></h3><p>以什么思路，怎么解决的。经得住推敲。（一般出现在前三章）。借鉴别人的研究思路，以创新性地提出自己的解决方案。</p>
-<h3 id="3-具体的解决方案。"><a href="#3-具体的解决方案。" class="headerlink" title="3. 具体的解决方案。"></a><strong>3.</strong> <strong>具体的解决方案。</strong></h3><p>（自己写作的时候，还要加入必要的性能分析，如时间复杂度，收敛性等）</p>
-<h3 id="4-实验部分"><a href="#4-实验部分" class="headerlink" title="4. 实验部分"></a><strong>4.</strong> <strong>实验部分</strong></h3><p>关注点有两个：a. 数据集；b. 文中solution 在实验中是怎么用的，以更清晰地认识solution。根据自己写作需要，可能还会关注实验指标。</p>
-<p>一般阅读时不太需要关注实验效果，因为文中solution 的优势会在设计中解释的很清楚，实验效果就是去验证它。</p>
-<h1 id="根据文献与个人研究相关性不同，对文献的阅读研究程度也不同"><a href="#根据文献与个人研究相关性不同，对文献的阅读研究程度也不同" class="headerlink" title="根据文献与个人研究相关性不同，对文献的阅读研究程度也不同"></a><strong>根据文献与个人研究相关性不同，对文献的阅读研究程度也不同</strong></h1><p><strong>1.</strong> <strong>非常相关</strong></p>
-<p>详细阅读文献，尽可能地搞清楚上述几个问题；</p>
-<p>并进行批判性地讨论，推敲文章的研究问题及解决方案；</p>
-<p>清晰地认清文章的优缺点：优势优在哪儿，劣势劣在哪儿。顺利的话对文章的批判可以产生新的</p>
-<p>idea。</p>
-<p><strong>2.</strong> <strong>一般相关</strong></p>
-<p>问题1 和2 是必须要搞清的；文章研究了什么问题，解决方案的逻辑思路是什么</p>
-<p>问题3 可以粗略掌握，大概知道是怎么解决的，对具体的解决方案有个模糊的认识即可。作用：扩展自己的研究领域，和知识面；借鉴别人的研究思路。</p>
-<p><strong>3.</strong> <strong>不太相关</strong></p>
-<p>把问题1 和2 搞清即可：知道文中研究的问题，及大致的解决方案（解决的逻辑思路）。 阅读目的，了解相关领域还有哪些研究问题，以扩展自身的知识面。</p>
+        <h1 id="第一次上机"><a href="#第一次上机" class="headerlink" title="第一次上机"></a>第一次上机</h1><h2 id="实验内容"><a href="#实验内容" class="headerlink" title="实验内容"></a>实验内容</h2><p>创建进程：由父进程创建子进程并实现父子进程协同工作。</p>
+<p>子进程读取一个文件，父进程等待子进程读取完文件后继续执行。</p>
+<p>协同工作可以用等待函数来实现，当需要等待子进程运行结束时，可以在父进程中调用等待函数。</p>
+<h2 id="实验所需头文件"><a href="#实验所需头文件" class="headerlink" title="实验所需头文件"></a>实验所需头文件</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;windows.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;process.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="windows-h头文件"><a href="#windows-h头文件" class="headerlink" title="windows.h头文件"></a>windows.h头文件</h3><h3 id="process-h头文件"><a href="#process-h头文件" class="headerlink" title="process.h头文件"></a>process.h头文件</h3><p>头文件可以查阅微软官方API：在bing中搜索最好</p>
+<h3 id="文件读写知识"><a href="#文件读写知识" class="headerlink" title="文件读写知识"></a>文件读写知识</h3><h2 id="实验代码"><a href="#实验代码" class="headerlink" title="实验代码"></a>实验代码</h2><h3 id="child-cpp"><a href="#child-cpp" class="headerlink" title="child.cpp"></a>child.cpp</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;子进程开始运行\n&quot;</span>) ;</span><br><span class="line">	<span class="type">const</span> <span class="type">char</span>* sth = <span class="string">&quot;first&quot;</span> ;</span><br><span class="line">	FILE* fp ;</span><br><span class="line">	<span class="keyword">if</span>(fp = <span class="built_in">fopen</span>(<span class="string">&quot;E:\\one.txt&quot;</span>,<span class="string">&quot;w+&quot;</span>))&#123;</span><br><span class="line">		<span class="built_in">fwrite</span>(sth,<span class="built_in">strlen</span>(sth),<span class="number">1</span>,fp);</span><br><span class="line">		<span class="built_in">fwrite</span>(<span class="string">&quot;second&quot;</span>,<span class="built_in">strlen</span>(<span class="string">&quot;second&quot;</span>),<span class="number">1</span>,fp);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;写数据成功\n&quot;</span>);</span><br><span class="line">		<span class="built_in">fclose</span>(fp);</span><br><span class="line">		<span class="comment">//关闭文件</span></span><br><span class="line">		fp = <span class="built_in">fopen</span>(<span class="string">&quot;E:\\one.txt&quot;</span>,<span class="string">&quot;r&quot;</span>);<span class="comment">//以只读方式打开文件 </span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;文件内容如下：\n&quot;</span>);</span><br><span class="line">		<span class="type">char</span> ch = <span class="built_in">fgetc</span>(fp) ;</span><br><span class="line">		<span class="keyword">while</span>(ch!=EOF)&#123;</span><br><span class="line">			<span class="built_in">putchar</span>(ch) ;</span><br><span class="line">			ch = <span class="built_in">fgetc</span>(fp) ;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">fclose</span>(fp) ;</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;文件创建失败\n&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span> ; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="father-cpp"><a href="#father-cpp" class="headerlink" title="father.cpp"></a>father.cpp</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	STARTUPINFO sui ;</span><br><span class="line">	PROCESS_INFORMATION pi ;</span><br><span class="line">	<span class="built_in">ZeroMemory</span>(&amp;sui,<span class="built_in">sizeof</span>(sui)) ;</span><br><span class="line">	sui.cb = <span class="built_in">sizeof</span>(STARTUPINFO) ;</span><br><span class="line">	<span class="type">char</span> content[<span class="number">100</span>] = <span class="string">&quot;&quot;</span> ;</span><br><span class="line">	<span class="keyword">if</span>(<span class="built_in">CreateProcess</span>(<span class="string">&quot;E:\\childtest.exe&quot;</span>,<span class="literal">NULL</span>,<span class="literal">NULL</span>,<span class="literal">NULL</span>,FALSE,CREATE_NEW_CONSOLE,<span class="literal">NULL</span>,<span class="literal">NULL</span>,&amp;sui,&amp;pi))</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">WaitForSingleObject</span>(pi.hProcess,INFINITE);<span class="comment">//一直等下去直到进程结束 </span></span><br><span class="line">		FILE *fp = <span class="built_in">fopen</span>(<span class="string">&quot;E:\\one.txt&quot;</span>,<span class="string">&quot;r&quot;</span>);</span><br><span class="line">		<span class="built_in">fread</span>(content,<span class="built_in">sizeof</span>(<span class="type">char</span>),<span class="number">100</span>,fp);       <span class="comment">//设置读取文件内容的相关参数 </span></span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;子进程创建的文件内容如下:\n\n%s\n\n&quot;</span>,content);</span><br><span class="line">		<span class="built_in">fclose</span>(fp);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;WRONG\n&quot;</span>) ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;END\n&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h3><p><img src="/2022/04/23/OS%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/fatherRe.jpg" alt="img"></p>
 
     </div>
 
@@ -336,7 +310,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://nexuslbh.top/2022/04/04/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%BB%BC%E8%BF%B0/" title="文献阅读综述">http://nexuslbh.top/2022/04/04/文献阅读综述/</a>
+    <a href="http://nexuslbh.top/2022/04/23/OS%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/" title="OS第一次实验">http://nexuslbh.top/2022/04/23/OS第一次实验/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -347,7 +321,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E7%A7%91%E7%A0%94/" rel="tag"># 科研</a>
+              <a href="/tags/CSer/" rel="tag"># CSer</a>
           </div>
 
         
@@ -356,13 +330,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/04/03/DES%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0%E2%80%94%E2%80%94Lab/" rel="prev" title="DES算法实现——Lab">
-      <i class="fa fa-chevron-left"></i> DES算法实现——Lab
+    <a href="/2022/04/20/%E4%BB%80%E4%B9%88%E6%98%AF%E7%A7%91%E7%A0%94/" rel="prev" title="科研入坑指南">
+      <i class="fa fa-chevron-left"></i> 科研入坑指南
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/04/05/%E5%AF%86%E7%A0%81%E5%AD%A6%E6%A6%82%E8%BF%B0/" rel="next" title="密码学概述">
-      密码学概述 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -422,7 +393,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E8%84%89%E7%BB%9C%E8%A7%A3%E6%9E%90"><span class="nav-number">1.</span> <span class="nav-text">文章脉络解析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%B2%BE%E8%AF%BB%E6%91%98%E8%A6%81"><span class="nav-number">1.1.</span> <span class="nav-text">1  精读摘要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%B3%9B%E8%AF%BB-Introduction"><span class="nav-number">1.2.</span> <span class="nav-text">2  泛读 Introduction</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-related-work"><span class="nav-number">1.3.</span> <span class="nav-text">3   related work</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E9%97%AE%E9%A2%98-%E6%A8%A1%E5%9E%8B%E7%9A%84-formulation-%EF%BC%88%E5%85%AC%E5%BC%8F%E5%8C%96%EF%BC%89-formalization-%E5%BD%A2%E5%BC%8F%E5%8C%96"><span class="nav-number">1.4.</span> <span class="nav-text">4  问题 &#x2F; 模型的 formulation  （公式化） &#x2F; formalization(  形式化 )</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%9E%8B%E5%8F%8A%E5%85%B7%E4%BD%93%E7%9A%84-solution-%EF%BC%8C%E8%AE%BE%E8%AE%A1%E7%BB%86%E8%8A%82"><span class="nav-number">1.5.</span> <span class="nav-text">5  系统模型及具体的 solution ，设计细节</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E5%AE%9E%E9%AA%8C%E9%83%A8%E5%88%86"><span class="nav-number">1.6.</span> <span class="nav-text">6  实验部分</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E9%9C%80%E8%A6%81%E5%85%B3%E6%B3%A8%E7%9A%84%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98"><span class="nav-number"></span> <span class="nav-text">文献阅读需要关注的几个问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%96%87%E7%AB%A0%E7%A0%94%E7%A9%B6%E7%9A%84%E9%97%AE%E9%A2%98%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">0.1.</span> <span class="nav-text">1.文章研究的问题是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E7%9A%84%E9%80%BB%E8%BE%91%E6%80%9D%E8%B7%AF%EF%BC%9F"><span class="nav-number">0.2.</span> <span class="nav-text">2. 解决方案的逻辑思路？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%85%B7%E4%BD%93%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E3%80%82"><span class="nav-number">0.3.</span> <span class="nav-text">3. 具体的解决方案。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%AE%9E%E9%AA%8C%E9%83%A8%E5%88%86"><span class="nav-number">0.4.</span> <span class="nav-text">4. 实验部分</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%B9%E6%8D%AE%E6%96%87%E7%8C%AE%E4%B8%8E%E4%B8%AA%E4%BA%BA%E7%A0%94%E7%A9%B6%E7%9B%B8%E5%85%B3%E6%80%A7%E4%B8%8D%E5%90%8C%EF%BC%8C%E5%AF%B9%E6%96%87%E7%8C%AE%E7%9A%84%E9%98%85%E8%AF%BB%E7%A0%94%E7%A9%B6%E7%A8%8B%E5%BA%A6%E4%B9%9F%E4%B8%8D%E5%90%8C"><span class="nav-number"></span> <span class="nav-text">根据文献与个人研究相关性不同，对文献的阅读研究程度也不同</span></a></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%8A%E6%9C%BA"><span class="nav-number">1.</span> <span class="nav-text">第一次上机</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E9%AA%8C%E5%86%85%E5%AE%B9"><span class="nav-number">1.1.</span> <span class="nav-text">实验内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E9%AA%8C%E6%89%80%E9%9C%80%E5%A4%B4%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.</span> <span class="nav-text">实验所需头文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#windows-h%E5%A4%B4%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.1.</span> <span class="nav-text">windows.h头文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#process-h%E5%A4%B4%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.2.</span> <span class="nav-text">process.h头文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99%E7%9F%A5%E8%AF%86"><span class="nav-number">1.2.3.</span> <span class="nav-text">文件读写知识</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E9%AA%8C%E4%BB%A3%E7%A0%81"><span class="nav-number">1.3.</span> <span class="nav-text">实验代码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#child-cpp"><span class="nav-number">1.3.1.</span> <span class="nav-text">child.cpp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#father-cpp"><span class="nav-number">1.3.2.</span> <span class="nav-text">father.cpp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C"><span class="nav-number">1.3.3.</span> <span class="nav-text">运行结果</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
