@@ -47,46 +47,6 @@
       </tags>
   </entry>
   <entry>
-    <title>4-10周总结</title>
-    <url>/2022/04/10/4-10%E5%91%A8%E6%80%9D%E8%80%83/</url>
-    <content><![CDATA[<h1 id="周总结"><a href="#周总结" class="headerlink" title="周总结"></a>周总结</h1><p>最近挺魔幻的</p>
-<span id="more"></span>
-<h2 id="读书"><a href="#读书" class="headerlink" title="读书"></a>读书</h2><h3 id="专业方面"><a href="#专业方面" class="headerlink" title="专业方面"></a>专业方面</h3><h4 id="计组（这就是内功！听张win-win说——请自行脑补）"><a href="#计组（这就是内功！听张win-win说——请自行脑补）" class="headerlink" title="计组（这就是内功！听张win-win说——请自行脑补）"></a>计组（这就是内功！听张win-win说——请自行脑补）</h4><p>复习了体系结构概况，各种码的作用、运算（问：牛码的作用是什么？（doge））</p>
-<p>其实XD的计组相比之前看过的CSAPP、Themes and Variations都相对更好理解，刘老师讲完之后再去看CSAPP会有这样的感悟：</p>
-<pre><code>1.CSAPP是基本模型的再提高
-
-2.基础模块的重要性
-
-3.x86-64很有趣哈哈
-</code></pre><h4 id="模电"><a href="#模电" class="headerlink" title="模电"></a>模电</h4><p>魔电这个名称不是白来的，确实很难，不过在第一次听完杨老师的讲解和后续看上交郑老师的网课的推动下，对模电的理解就像发现了新大陆</p>
-<p>简单提炼下模电目前带给我的思维锻炼：</p>
-<p>eg：放大电路的设计：</p>
-<pre><code>已有的原件——&gt;达到的目的——&gt;不断尝试，每个原件都不可或缺
-</code></pre><p>（学好电路分析基础很重要，戴维南定理非常有趣）</p>
-<h4 id="信号与系统"><a href="#信号与系统" class="headerlink" title="信号与系统"></a>信号与系统</h4><p>之前和很多同学交流过：为什么CS的学生要学Signals and Systems，我个人的具体观点如下：</p>
-<p><strong>·日后从事AI或者很庞杂的大project时（比如之前软件所的计算机和天线阵列的project）会用到硬性知识</strong></p>
-<p><strong>·这门课的思想会在几乎所有的事物上体现</strong></p>
-<p><strong>·崔院长曾说过：这些课在大学里面系统学习的效果要比工作后学习好很多，绝对不一样</strong></p>
-<h4 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h4><p>摆的时候看了人工智能学院焦李成教授的关于FPGA和AI发展的论文，对AI的“前世今生”有了简单的了解。</p>
-<p>project相关部分因为复习期中考试压力较大，所以咕咕咕了哈哈（doge</p>
-<h3 id="课外"><a href="#课外" class="headerlink" title="课外"></a>课外</h3><h4 id="《心流——最优体验心理学》"><a href="#《心流——最优体验心理学》" class="headerlink" title="《心流——最优体验心理学》"></a>《心流——最优体验心理学》</h4><p>一个词：Flow</p>
-<p>剩下的自己去体会</p>
-<h2 id="关于保研、内卷的思考"><a href="#关于保研、内卷的思考" class="headerlink" title="关于保研、内卷的思考"></a>关于保研、内卷的思考</h2><h3 id="先上结论："><a href="#先上结论：" class="headerlink" title="先上结论："></a>先上结论：</h3><p>先做人，后做事</p>
-<p>引用：“硬刀硬枪硬头皮，复杂的社会你给我去学习——”（虎哥大道理）</p>
-<h3 id="论证依据："><a href="#论证依据：" class="headerlink" title="论证依据："></a>论证依据：</h3><p>上知乎搜“西电情侣”，我不多做评价</p>
-<h3 id="个人建议："><a href="#个人建议：" class="headerlink" title="个人建议："></a>个人建议：</h3><p>该干啥干啥去，好好学习，吃饭，睡觉就够了（可能我还不够强吧，毕竟有的同学能凭“本事”弄2位数个奖项挂名，牛</p>
-<h2 id="晚安"><a href="#晚安" class="headerlink" title="晚安"></a>晚安</h2><p><strong>天地不可一日无和气</strong></p>
-<p><strong>人心不可一日无喜神</strong></p>
-<p><strong>——《小窗幽记》</strong></p>
-]]></content>
-      <categories>
-        <category>University</category>
-      </categories>
-      <tags>
-        <tag>University</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>4-23周总结</title>
     <url>/2022/04/23/4-23%E5%91%A8%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<h1 id="4-23周总结"><a href="#4-23周总结" class="headerlink" title="4-23周总结"></a>4-23周总结</h1><p>4.23是世界读书日，快来交流喜欢读的书叭，我在这里也写了一点关于读书的感想~~竟然还有2天就期中考试了</p>
@@ -175,272 +135,43 @@
       </tags>
   </entry>
   <entry>
-    <title>图像编码处理基础</title>
-    <url>/2022/04/19/%E5%9B%BE%E5%83%8F%E7%BC%96%E7%A0%81%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[<h1 id="图像方向基础"><a href="#图像方向基础" class="headerlink" title="图像方向基础"></a>图像方向基础</h1><h2 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h2><p>结合本人目前科研项目的经历，图像处理是最关键的一环，它的方方面面知识也可能是idea的来源。</p>
-<p>比较知名的书有《数字图像处理》（冈萨雷斯编写）。不过我的工作并不是对现有图像进行各种变换，所以这本书暂时不适合我。</p>
-<p>在JWC发出推迟考试的通知后，我在校图书馆的海洋里淘到了<strong>《图像编码基础》</strong>这本书，年代较为久远（2006年）但是对我很有启发意义，于是借走拿回宿舍研究，也恰恰是在这本书内，我意识到了学好“信号与系统”这门课的意义（比如二维傅里叶变换等），可以说获益匪浅。</p>
-<p>下面开始讲图像相关的一些基础知识。</p>
+    <title>4-10周总结</title>
+    <url>/2022/04/10/4-10%E5%91%A8%E6%80%9D%E8%80%83/</url>
+    <content><![CDATA[<h1 id="周总结"><a href="#周总结" class="headerlink" title="周总结"></a>周总结</h1><p>最近挺魔幻的</p>
 <span id="more"></span>
-<h2 id="一-图像编码"><a href="#一-图像编码" class="headerlink" title="一.图像编码"></a>一.图像编码</h2><h3 id="1-为什么编码"><a href="#1-为什么编码" class="headerlink" title="1.为什么编码"></a>1.为什么编码</h3><p>图像数据太大，通信传输过程中数据量太大，需要编码方式来减少数据大小。</p>
-<h3 id="2-编码分类"><a href="#2-编码分类" class="headerlink" title="2.编码分类"></a>2.编码分类</h3><p>软件编码（软编）：使用CPU进行编码。</p>
-<p>优点：实现直接、简单，参数调整、升级方便。</p>
-<p>缺点：性能较硬编码低，低码率下质量通常比硬编码要好。</p>
-<p>硬件编码（硬编）：不使用CPU进行编码，使用显卡GPU,专用的DSP、FPGA、ASIC芯片等硬件进行编码。</p>
-<p>优点：性能高，低码率下通常质量低于硬编码器。</p>
-<p>缺点：部分产品在GPU硬件平台移植了优秀的软编码算法（如X264）的，质量基本等同于软编码。</p>
-<h3 id="3-图像数字化"><a href="#3-图像数字化" class="headerlink" title="3.图像数字化"></a>3.图像数字化</h3><p>step（1）将二维图像 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="6.413ex" height="2.262ex" role="img" focusable="false" viewbox="0 -750 2834.7 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"/></g><g data-mml-node="mo" transform="translate(550,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/></g><g data-mml-node="mi" transform="translate(939,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/></g><g data-mml-node="mo" transform="translate(1511,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"/></g><g data-mml-node="mi" transform="translate(1955.7,0)"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/></g><g data-mml-node="mo" transform="translate(2445.7,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/></g></g></g></svg></mjx-container> 在二维空间域中采样，有采样定理：</p>
-<script type="math/tex; mode=display">
-N = 2^k \quad , \quad k = 2,3,4......</script><p>注意：<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewbox="0 -683 888 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g></g></g></svg></mjx-container>是图像<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="6.413ex" height="2.262ex" role="img" focusable="false" viewbox="0 -750 2834.7 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"/></g><g data-mml-node="mo" transform="translate(550,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/></g><g data-mml-node="mi" transform="translate(939,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/></g><g data-mml-node="mo" transform="translate(1511,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"/></g><g data-mml-node="mi" transform="translate(1955.7,0)"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/></g><g data-mml-node="mo" transform="translate(2445.7,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/></g></g></g></svg></mjx-container> 取样点<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="6.784ex" height="1.545ex" role="img" focusable="false" viewbox="0 -683 2998.4 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g><g data-mml-node="mo" transform="translate(1110.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"/></g><g data-mml-node="mi" transform="translate(2110.4,0)"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g></g></g></svg></mjx-container>中的<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewbox="0 -683 888 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g></g></g></svg></mjx-container>。</p>
-<script type="math/tex; mode=display">
-N/L_x \ge 2u_0 \quad,\quad N/L_y \ge 2v_0 \quad (*)</script><p>在符<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="2.891ex" height="2.262ex" role="img" focusable="false" viewbox="0 -750 1278 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/></g><g data-mml-node="mo" transform="translate(389,0)"><path data-c="2217" d="M229 286Q216 420 216 436Q216 454 240 464Q241 464 245 464T251 465Q263 464 273 456T283 436Q283 419 277 356T270 286L328 328Q384 369 389 372T399 375Q412 375 423 365T435 338Q435 325 425 315Q420 312 357 282T289 250L355 219L425 184Q434 175 434 161Q434 146 425 136T401 125Q393 125 383 131T328 171L270 213Q283 79 283 63Q283 53 276 44T250 35Q231 35 224 44T216 63Q216 80 222 143T229 213L171 171Q115 130 110 127Q106 124 100 124Q87 124 76 134T64 161Q64 166 64 169T67 175T72 181T81 188T94 195T113 204T138 215T170 230T210 250L74 315Q65 324 65 338Q65 353 74 363T98 374Q106 374 116 368T171 328L229 286Z"/></g><g data-mml-node="mo" transform="translate(889,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/></g></g></g></svg></mjx-container>式条件下不会出现图像相互混叠现象,以上是二维图像取样定理。</p>
-<p>step（2）量化</p>
-<p>由连续值经过数值量化过程为离散值。</p>
-<p>最常用：均匀量化（量化区间大小相等）如果区间大小不等，就叫非线性量化。</p>
-<p>通过量化得到量化图像矩阵<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.65ex" xmlns="http://www.w3.org/2000/svg" width="2.378ex" height="2.188ex" role="img" focusable="false" viewbox="0 -680 1051.3 967.2"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D439" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"/></g><g data-mml-node="mi" transform="translate(676,-150) scale(0.707)"><path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"/></g></g></g></g></svg></mjx-container>:</p>
-<script type="math/tex; mode=display">F_q = \begin{pmatrix}
-    f_q(0,0)\quad&f_q(0,1)\quad&......&f_q(0,N-1) \\
-    f_q(1,0)\quad&f_q(1,1)\quad&......&f_q(1,N-1) \\
-    f_q(2,0)\quad&f_q(2,1)\quad&......&f_q(2,N-1) \\
-    ...\quad&...\quad&......&... \\
-    f_q(N-1,0)\quad&f_q(N-1,1)\quad&......&f_q(N-1,N-1)
-\end{pmatrix}</script>]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>CSer</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>密码学概述</title>
-    <url>/2022/04/05/%E5%AF%86%E7%A0%81%E5%AD%A6%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<h1 id="密码学概述"><a href="#密码学概述" class="headerlink" title="密码学概述"></a>密码学概述</h1><span id="more"></span>
-<h2 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h2><h3 id="古典密码学"><a href="#古典密码学" class="headerlink" title="古典密码学"></a>古典密码学</h3><p>目的：保护信息</p>
-<p><strong>·替换法</strong>：使用固定信息将原文替换为密文</p>
-<p>加密方式：单表替换，多表替换</p>
-<pre><code>单表替换：原文和密文使用同一张表；
+<h2 id="读书"><a href="#读书" class="headerlink" title="读书"></a>读书</h2><h3 id="专业方面"><a href="#专业方面" class="headerlink" title="专业方面"></a>专业方面</h3><h4 id="计组（这就是内功！听张win-win说——请自行脑补）"><a href="#计组（这就是内功！听张win-win说——请自行脑补）" class="headerlink" title="计组（这就是内功！听张win-win说——请自行脑补）"></a>计组（这就是内功！听张win-win说——请自行脑补）</h4><p>复习了体系结构概况，各种码的作用、运算（问：牛码的作用是什么？（doge））</p>
+<p>其实XD的计组相比之前看过的CSAPP、Themes and Variations都相对更好理解，刘老师讲完之后再去看CSAPP会有这样的感悟：</p>
+<pre><code>1.CSAPP是基本模型的再提高
 
-多表替换：非常复杂，多张表原文、密文进行对比。
-</code></pre><p>多表替换举例：</p>
-<pre><code>表单1：abcde-swtrp 表单2：abcde-chfhk
+2.基础模块的重要性
 
-明文：bee    密钥：221
-
-密文：hkp
-</code></pre><p><strong>·移位法</strong>：按照字母移动</p>
-<p>凯撒加密</p>
-<p><strong>古典密码学破解</strong>：</p>
-<p>频率分析法：概率论——研究字母或字母组合在密文中出现的频率。E出现频率最高，X出现频率最低：“ETAOIN SHRDLU”</p>
-<h3 id="近代密码学"><a href="#近代密码学" class="headerlink" title="近代密码学"></a>近代密码学</h3><p>eg：恩尼格玛密码机 核心 ： 移位法、替换法</p>
-<p>后来被——图灵破解了（电影：《模仿游戏》</p>
-<h3 id="现代密码学"><a href="#现代密码学" class="headerlink" title="现代密码学"></a>现代密码学</h3><p>1.散列函数（Hash函数）</p>
-<p>eg：MD5,SHA-1,SHA-256</p>
-<p>2.对称加密</p>
-<p><strong>加密解密同一把密钥</strong></p>
-<p>流加密，块加密<br>3.非对称加密</p>
-<p><strong>两把密钥，公约加密，私钥解密  或 私钥加密，公钥解密</strong></p>
-<p><strong>?? 怎样设置密码才安全 ??</strong></p>
-<pre><code>·   密码不要常见；
-·   密码不要设置为同一个，“撞库”；
-·   设置特殊标记
-</code></pre><h3 id="ASCII编码"><a href="#ASCII编码" class="headerlink" title="ASCII编码"></a>ASCII编码</h3><p>American Standard Code for Information Interchange</p>
-<p><strong>代码实现凯撒加密解密</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class KaiSaEn &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String input = &quot;Hello World ! &quot; ;</span><br><span class="line">        //原文右移动3位</span><br><span class="line">        int key = 3 ;</span><br><span class="line">        String s = encryptKaisa(input);</span><br><span class="line">        System.out.println(&quot;加密==&quot;+s);</span><br><span class="line">        String ans = decryptKaisa(s,key);</span><br><span class="line">        System.out.println(&quot;解密==&quot;+ans);</span><br><span class="line">    &#125;</span><br><span class="line">    //解密</span><br><span class="line">    private  static  String decryptKaisa(String s , int key)&#123;</span><br><span class="line">        char[] chars =  s.toCharArray() ;</span><br><span class="line">        StringBuilder sb = new StringBuilder() ;</span><br><span class="line">        for (char aChar : chars) &#123;</span><br><span class="line">            int b = aChar ;</span><br><span class="line">            //偏移数据</span><br><span class="line">            b -= key ;</span><br><span class="line">            char newb =(char) b ;</span><br><span class="line">            sb.append(newb) ;</span><br><span class="line">        &#125;</span><br><span class="line">        return sb.toString() ;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private static String encryptKaisa(String input) &#123;</span><br><span class="line">        char[] chars = input.toCharArray() ;</span><br><span class="line">        StringBuilder sb = new StringBuilder() ;</span><br><span class="line">        for (char aChar : chars) &#123;</span><br><span class="line">            int b = aChar ;</span><br><span class="line">            b = b + 3 ;</span><br><span class="line">            char newb = (char) b ;</span><br><span class="line">            sb.append(newb) ;</span><br><span class="line">        &#125;</span><br><span class="line">        //System.out.println(sb.toString());</span><br><span class="line">        return sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="频率分析法-——-概率论"><a href="#频率分析法-——-概率论" class="headerlink" title="频率分析法 —— 概率论"></a>频率分析法 —— 概率论</h3><p>·密码棒</p>
-<p>·目的：不知道密钥情况下进行破解密文</p>
-<p>方法：拿到密文选出频率最高的字母，比如最高的是j，对应明文为e;以此类推</p>
-<h3 id="Byte和Bit的关系（总搞混）"><a href="#Byte和Bit的关系（总搞混）" class="headerlink" title="Byte和Bit的关系（总搞混）"></a>Byte和Bit的关系（总搞混）</h3><p><strong>Byte</strong>：字节，数据<strong>存储</strong>的基本单位，比如移动硬盘1T，单位是Byte</p>
-<p><strong>Bit</strong>：位，用0或1表示，是数据<strong>传输</strong>的单位</p>
-<p><strong>关系</strong>：1Byte = 8Bit</p>
-<p>举个栗子：</p>
-<p>a的Byte表示：97；bit表示为：1100001（二进制）</p>
-<p><strong>代码实现Byte和Bit互相转化</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class ByteBit &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String a = &quot;a&quot; ;</span><br><span class="line">        //得到字节数组</span><br><span class="line">        byte[] bytes = a.getBytes() ;</span><br><span class="line">        for (byte aByte : bytes) &#123;</span><br><span class="line">            int c = aByte ;</span><br><span class="line">            //byte字节对应bit</span><br><span class="line">            String s = Integer.toBinaryString(c);</span><br><span class="line">            System.out.println(s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>而中文对应的utf-8是3个字节，高位编码自动补全</p>
-<p>如果是GBK，一个中文对应2个字节</p>
-<h3 id="DES"><a href="#DES" class="headerlink" title="DES"></a>DES</h3><p>具体见另一篇博客（x</p>
-<h3 id="base64浅谈"><a href="#base64浅谈" class="headerlink" title="base64浅谈"></a>base64浅谈</h3><p><strong>不是加密算法，是可读性算法</strong><br>原理：3字节为一组，1字节=8位，共24位，base64把3个字节转换成4组，每组6位，缺少2位，要在高位补0。</p>
-<p><strong>好处</strong>：base64取后6位，前2位会去掉，可以把base64控制到0-63之间（0：000000，1：111111）</p>
-<p><strong>坏处</strong>：内存占用变大</p>
-<p>目的：可读性，否则得到乱码</p>
-<p>由64个字符组成：A-Z,a-z,0-9,+,/</p>
-<p>base58是用在比特币里面的编码方式，</p>
-<pre><code>·没有数字0和字母o,
-
-·没有大写字母I和小写i,
-
-·没有+和/。
-</code></pre><h3 id="加密模式"><a href="#加密模式" class="headerlink" title="加密模式"></a>加密模式</h3><h4 id="·ECB-电子密码本"><a href="#·ECB-电子密码本" class="headerlink" title="·ECB:电子密码本"></a>·ECB:电子密码本</h4><p>把加密消息分割后独立加密再组合</p>
-<p><strong>优点</strong>：<br>并行处理，速度快</p>
-<p><strong>缺点</strong>：<br>使用同一个key，安全性弱</p>
-<h4 id="·CBC-密码块链接"><a href="#·CBC-密码块链接" class="headerlink" title="·CBC:密码块链接"></a>·CBC:密码块链接</h4><p>每个明文块先与前一个密文块异或后在加密，每个密文块都依赖于它前面所有明文块。</p>
-<p><strong>优点</strong>：<br>加密强度高</p>
-<p><strong>缺点</strong>：<br>并行处理，慢</p>
-<h3 id="非对称加密"><a href="#非对称加密" class="headerlink" title="非对称加密"></a>非对称加密</h3><p>“现代加密算法”</p>
-<p>必须2个密钥，公钥和私钥（一公一母）</p>
-<p>常见：RSA,ECC</p>
-<p>或取公钥和私钥：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import com.sun.org.apache.xml.internal.security.utils.Base64;</span><br><span class="line"></span><br><span class="line">import java.security.KeyPair;</span><br><span class="line">import java.security.KeyPairGenerator ;</span><br><span class="line">import java.security.PrivateKey;</span><br><span class="line">import java.security.PublicKey;</span><br><span class="line"></span><br><span class="line">public class Rsa &#123;</span><br><span class="line">    public static void main(String[] args)throws Exception &#123;</span><br><span class="line">        //创建密钥对</span><br><span class="line">//生成器对象</span><br><span class="line">String algorithm = &quot;RSA&quot; ;</span><br><span class="line">KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(algorithm) ;</span><br><span class="line">//生成密钥对</span><br><span class="line">KeyPair keyPair =  keyPairGenerator.generateKeyPair() ;</span><br><span class="line">PrivateKey aPrivate = keyPair.getPrivate();</span><br><span class="line">PublicKey aPublic = keyPair.getPublic();</span><br><span class="line">//获取私钥字节数组</span><br><span class="line">byte[] privateEncoded = aPrivate.getEncoded() ;</span><br><span class="line">        byte[] publicEncodeed = aPublic.getEncoded() ;</span><br><span class="line">//base64转码</span><br><span class="line">String privateEncodeString = Base64.encode(privateEncoded) ;</span><br><span class="line">String publicEncodeString = Base64.encode(publicEncodeed) ;</span><br><span class="line">//打印</span><br><span class="line">System.out.println(privateEncodeString);</span><br><span class="line">System.out.println(publicEncodeString);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="数字签名"><a href="#数字签名" class="headerlink" title="数字签名"></a>数字签名</h3><p>公钥数字签名，只有信息的发送者才能产生别人无法伪造的一段数字串覆盖在文件上。</p>
-<h4 id="数字证书"><a href="#数字证书" class="headerlink" title="数字证书"></a>数字证书</h4><p>认证机构把公钥A、通过自己的私钥对认证机构加密、再和数字签名A打包生成证书返回给服务器。</p>
-<p>点开一个网址就能看到。</p>
-<p><strong>CA认证中心</strong></p>
-<p>专门颁发、签发数字证书</p>
-<h4 id="网页加密"><a href="#网页加密" class="headerlink" title="网页加密"></a>网页加密</h4><p>step1：客户端向服务器发送加密请求；(request)</p>
-<p>step2：服务器用自己的私钥加密网页后，连同本身的数字证书一起发送给客户端；(response)</p>
-<p>step3：证书管理器里有证书颁发列表，客户会根据这张表查看解开数字证书的公钥是否在列表内；</p>
-<pre><code>如果数字证书的网址与正在浏览的网址不一样，那就是证书可能被冒用，浏览器发出警告；
-
-如果可靠，客户端使用证书中服务器公钥，对信息加密，然后与服务器交换加密信息。(exchange encrypted data)
-</code></pre>]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>科研</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>科研入坑指南</title>
-    <url>/2022/04/20/%E4%BB%80%E4%B9%88%E6%98%AF%E7%A7%91%E7%A0%94/</url>
-    <content><![CDATA[<p>写一些总结，希望对大家有帮助~</p>
-<span id="more"></span>
-<h1 id="什么是科研"><a href="#什么是科研" class="headerlink" title="什么是科研"></a>什么是科研</h1><p>1.发现新方法，并将其运用在一个已知问题上（老问题新方法）</p>
-<p>2.发现新问题，并将一个已知的研究拓展到这个问题上（新问题老方法）</p>
-<p>3.发现新问题，并提出新方法对其进行研究分析（新问题新方法）</p>
-<h1 id="科研收获（what-you-can-except）"><a href="#科研收获（what-you-can-except）" class="headerlink" title="科研收获（what you can except）"></a>科研收获（what you can except）</h1><p>1.阅读——开卷有益，理解更深</p>
-<p>2.做实验——孰能生巧</p>
-<p>3.气质、表达能力——谈吐不凡（但愿）</p>
-<h1 id="科研过程（the-research-process）"><a href="#科研过程（the-research-process）" class="headerlink" title="科研过程（the research process）"></a>科研过程（the research process）</h1><p>马克思主义原理讲过：事物的发展都是螺旋式上升，波浪式前进，科研也不例外。</p>
-<p>建立问题——&gt;了解问题——&gt;提出方法——&gt;验证方法——&gt;得出结论——&gt;建立问题…</p>
-<p>如此往复以至无穷。</p>
-<h1 id="如何选定一个领域（choice）"><a href="#如何选定一个领域（choice）" class="headerlink" title="如何选定一个领域（choice）"></a>如何选定一个领域（choice）</h1><p>·关注前沿动态</p>
-<p>eg：Google Brain，Microsoft Reasearch，IEEE等</p>
-<p>·了解科研趋势</p>
-<p>·结合个人情况</p>
-<h1 id="开始熟悉一个领域"><a href="#开始熟悉一个领域" class="headerlink" title="开始熟悉一个领域"></a>开始熟悉一个领域</h1><p>·善用信息，学会借助他人力量，比如阅读一些综述性文章</p>
-<p>安利一个搜索综述性文章的网站：arxiv.org</p>
-<p>eg:smart trafic —— 在Abstract中；survey —— 在Title中</p>
-<p>·掌握通用技能</p>
-<p>一定量扎实的数理知识</p>
-<p>熟练代码实现功能</p>
-<p>具备项目管理经验</p>
-<p>·发现最新科研进展</p>
-<p>看顶会论文+跟随大牛</p>
-<p>顶会论文推荐：CVPR、ICML、ACM/IEEE、CCF、SCI等（注意：最好先看会议，后看期刊，具体看个人领域）</p>
-<p>大牛：基于对领域的了解去发现那些顶级的组或团队，跟踪他们的博客主页或者网站</p>
-<h1 id="深度阅读了解技术"><a href="#深度阅读了解技术" class="headerlink" title="深度阅读了解技术"></a>深度阅读了解技术</h1><p>请移步《文献阅读综述》这篇博客</p>
-<h1 id="代码复现（Talk-is-cheap-show-me-the-code）"><a href="#代码复现（Talk-is-cheap-show-me-the-code）" class="headerlink" title="代码复现（Talk is cheap , show me the code）"></a>代码复现（Talk is cheap , show me the code）</h1><p>很重要，只有复现后才能掌握细节</p>
-<p>安利网站：paper with code，很有趣，建议科学上网访问</p>
-<h1 id="泛读打开视野"><a href="#泛读打开视野" class="headerlink" title="泛读打开视野"></a>泛读打开视野</h1><p>善用文献信息，从一篇好文章拓展到一系列文章。</p>
-<p>eg：被引次数：Cite by … ; 引用栏；比较新的好作品引用了哪些好文章、好idea等</p>
-<h1 id="着手研究"><a href="#着手研究" class="headerlink" title="着手研究"></a>着手研究</h1><h2 id="如何提出问题？（对入门者偏玄学）"><a href="#如何提出问题？（对入门者偏玄学）" class="headerlink" title="如何提出问题？（对入门者偏玄学）"></a>如何提出问题？（对入门者偏玄学）</h2><p><strong>时间机器理论：</strong></p>
-<p>·基于已有工作</p>
-<p>·有共鸣</p>
-<h2 id="开展工作"><a href="#开展工作" class="headerlink" title="开展工作"></a>开展工作</h2><p>根据个人情况选择：</p>
-<h3 id="理论派"><a href="#理论派" class="headerlink" title="理论派"></a>理论派</h3><pre><code>1.问题抽象到数理空间
-
-2.建模
-
-3.寻找合适理论方法
-
-4.根据3的反馈，优化建模，反复迭代
-
-5.进行实现，辅以实验验证
-</code></pre><h3 id="实践派"><a href="#实践派" class="headerlink" title="实践派"></a>实践派</h3><pre><code>1.问题与方法并存
-
-2.在实验中观察现存方法与解决问题上的优劣
-
-3.结合结果与经验，提出可行改进
-
-4.实现改进方法
-
-5.根据结果反复迭代
-</code></pre><h2 id="论文写作（讲好一个故事）"><a href="#论文写作（讲好一个故事）" class="headerlink" title="论文写作（讲好一个故事）"></a>论文写作（讲好一个故事）</h2><p><strong><em>·准确性、鲁棒性、效率、可解释性、可拓展性</em></strong></p>
-<p>论文要反复强调3件事（尤其是开篇）：</p>
-<p><strong>·</strong>通过文献、例证等告诉审稿人：<strong>“我关注的问题很重要”</strong></p>
-<p><strong>·</strong>通过分析，向审稿人表明：<strong>“现有方法不能有效解决问题”</strong></p>
-<p><strong>·</strong>通过适当介绍和引用数据，告诉审稿人：<strong>“我们的方法很有效”</strong></p>
-<p>写作时对于方法介绍：</p>
-<pre><code>1.基于A1原理启发，首先应用B1方法，得到实验结果R1；
-
-2.通过对R1分析，发现了Q1这样的问题；
-
-3.为了解决这个问题，结合了A2原理，将方法改进为B2，得到实验结果R2；
-</code></pre><p><strong>·</strong>”对比“是一种艺术</p>
-<h2 id="论文发表"><a href="#论文发表" class="headerlink" title="论文发表"></a>论文发表</h2><h3 id="1-找到合适的会议或期刊"><a href="#1-找到合适的会议或期刊" class="headerlink" title="1.找到合适的会议或期刊"></a>1.找到合适的会议或期刊</h3><p>eg：AI研习社（含顶会日程），sec-deadlines.github.io，</p>
-<h3 id="2-正确地与审稿人打交道（不要吵架！不要情绪化！）"><a href="#2-正确地与审稿人打交道（不要吵架！不要情绪化！）" class="headerlink" title="2.正确地与审稿人打交道（不要吵架！不要情绪化！）"></a>2.正确地与审稿人打交道（不要吵架！不要情绪化！）</h3><p><strong>·</strong>态度端正，有分歧时引导审稿人回到正确的道路上</p>
-<p><strong>·</strong>对于指出的真实性问题要承认，有条件要补全缺失的部分</p>
-<p><strong>·</strong>对于发散性建议，表示赞同，并且提出可以加入附件或在未来研究中得到解决</p>
-<h2 id="参加会议"><a href="#参加会议" class="headerlink" title="参加会议"></a>参加会议</h2><p>Keynote speak可能是和大牛唯一的交流机会</p>
-<p>认真准备</p>
-<p>感兴趣的私下交流</p>
+3.x86-64很有趣哈哈
+</code></pre><h4 id="模电"><a href="#模电" class="headerlink" title="模电"></a>模电</h4><p>魔电这个名称不是白来的，确实很难，不过在第一次听完杨老师的讲解和后续看上交郑老师的网课的推动下，对模电的理解就像发现了新大陆</p>
+<p>简单提炼下模电目前带给我的思维锻炼：</p>
+<p>eg：放大电路的设计：</p>
+<pre><code>已有的原件——&gt;达到的目的——&gt;不断尝试，每个原件都不可或缺
+</code></pre><p>（学好电路分析基础很重要，戴维南定理非常有趣）</p>
+<h4 id="信号与系统"><a href="#信号与系统" class="headerlink" title="信号与系统"></a>信号与系统</h4><p>之前和很多同学交流过：为什么CS的学生要学Signals and Systems，我个人的具体观点如下：</p>
+<p><strong>·日后从事AI或者很庞杂的大project时（比如之前软件所的计算机和天线阵列的project）会用到硬性知识</strong></p>
+<p><strong>·这门课的思想会在几乎所有的事物上体现</strong></p>
+<p><strong>·崔院长曾说过：这些课在大学里面系统学习的效果要比工作后学习好很多，绝对不一样</strong></p>
+<h4 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h4><p>摆的时候看了人工智能学院焦李成教授的关于FPGA和AI发展的论文，对AI的“前世今生”有了简单的了解。</p>
+<p>project相关部分因为复习期中考试压力较大，所以咕咕咕了哈哈（doge</p>
+<h3 id="课外"><a href="#课外" class="headerlink" title="课外"></a>课外</h3><h4 id="《心流——最优体验心理学》"><a href="#《心流——最优体验心理学》" class="headerlink" title="《心流——最优体验心理学》"></a>《心流——最优体验心理学》</h4><p>一个词：Flow</p>
+<p>剩下的自己去体会</p>
+<h2 id="关于保研、内卷的思考"><a href="#关于保研、内卷的思考" class="headerlink" title="关于保研、内卷的思考"></a>关于保研、内卷的思考</h2><h3 id="先上结论："><a href="#先上结论：" class="headerlink" title="先上结论："></a>先上结论：</h3><p>先做人，后做事</p>
+<p>引用：“硬刀硬枪硬头皮，复杂的社会你给我去学习——”（虎哥大道理）</p>
+<h3 id="论证依据："><a href="#论证依据：" class="headerlink" title="论证依据："></a>论证依据：</h3><p>上知乎搜“西电情侣”，我不多做评价</p>
+<h3 id="个人建议："><a href="#个人建议：" class="headerlink" title="个人建议："></a>个人建议：</h3><p>该干啥干啥去，好好学习，吃饭，睡觉就够了（可能我还不够强吧，毕竟有的同学能凭“本事”弄2位数个奖项挂名，牛</p>
+<h2 id="晚安"><a href="#晚安" class="headerlink" title="晚安"></a>晚安</h2><p><strong>天地不可一日无和气</strong></p>
+<p><strong>人心不可一日无喜神</strong></p>
+<p><strong>——《小窗幽记》</strong></p>
 ]]></content>
       <categories>
-        <category>科研</category>
+        <category>University</category>
       </categories>
       <tags>
-        <tag>CSer</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>清明</title>
-    <url>/2022/04/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="记录大二下学期第一次进城"><a href="#记录大二下学期第一次进城" class="headerlink" title="记录大二下学期第一次进城"></a>记录大二下学期第一次进城</h2><span id="more"></span>
-<p>玩一把大的，水完毛概直接润<br>小寨鹿港粤菜：叉烧肉 汤 牛柳 还有CoCo Cafe的柠檬百香果双响炮<br>晚上去了大唐不夜城，夜景音乐喷泉</p>
-<h2 id="青龙寺"><a href="#青龙寺" class="headerlink" title="青龙寺"></a>青龙寺</h2><p>樱花超级好看，每一朵都独具韵味</p>
-<p>寺庙里面的树上挂满了祈福的红带，不过我对这方面也不了解，没敢随意去弄。。。心意到了就可以了（x</p>
-<p>离开时看见一些老大爷和老大妈跳着新疆舞（貌似是），特别有精神，希望我老了也能很有精气神hh</p>
-<p>中午吃了韩式传统烤肉，百去不厌，下午从3点睡到6点（5555），不过充满了干劲，这才叫大学生活（牛马假日）</p>
-<p>该juan了（这就去C楼，溜了）</p>
-]]></content>
-      <categories>
-        <category>Holiday</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文献阅读综述</title>
-    <url>/2022/04/04/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%BB%BC%E8%BF%B0/</url>
-    <content><![CDATA[<h2 id="文章脉络解析"><a href="#文章脉络解析" class="headerlink" title="文章脉络解析"></a><strong>文章脉络解析</strong></h2><span id="more"></span>
-<h3 id="1-精读摘要"><a href="#1-精读摘要" class="headerlink" title="1  精读摘要"></a><strong>1</strong>  <strong>精读摘要</strong></h3><p>摘要部分一般分为2-3 段</p>
-<p>第一段，1、背景；2-3、综述现在存在的问题；4、总结句</p>
-<p>第二段，1、概述；2-4、分别简介各组件，及解决方案的逻辑思路；5，点明文中所提解决方案的亮点；6，宏观描述实验效果（6 可以作为第三段）</p>
-<h3 id="2-泛读-Introduction"><a href="#2-泛读-Introduction" class="headerlink" title="2  泛读 Introduction"></a><strong>2</strong>  <strong>泛读</strong> <strong>Introduction</strong></h3><p>Introduction 重在脉络和文章的研究思路：通过背景介绍，引出研究问题，论述研究现状，（这两句可以换顺序），引入our idea（解决问题的逻辑思路），challenges；Contributions.</p>
-<p>（这部分描述一般较为简略，是在逻辑层面论述）</p>
-<p>（自己写作的时候，强烈另开一个Section, Motivation and challenges / Limitations。通过图公式等形式，或与别人工作对比，详细阐述研究问题细节，可以区分开别人工作、能人所不能的亮点。）（这个Section 非常重要，做的好，能为说服审稿人起到大半的作用）</p>
-<h3 id="3-related-work"><a href="#3-related-work" class="headerlink" title="3   related work"></a><strong>3</strong>   <strong>related work</strong></h3><p>阅读时可暂时忽略，可放后面，conclusion 前</p>
-<h3 id="4-问题-模型的-formulation-（公式化）-formalization-形式化"><a href="#4-问题-模型的-formulation-（公式化）-formalization-形式化" class="headerlink" title="4  问题 / 模型的 formulation  （公式化） / formalization(  形式化 )"></a><strong>4</strong>  <strong>问题</strong> / <strong>模型的</strong> <strong>formulation</strong>  <strong>（公式化）</strong> <strong>/ formalization(</strong>  <strong>形式化</strong> <strong>)</strong></h3><p>细读，但一般较为简单。 该部分主要作用是把逻辑问题，形式化为公式或数学模型，为正式具体的解决方案做好准备。</p>
-<h3 id="5-系统模型及具体的-solution-，设计细节"><a href="#5-系统模型及具体的-solution-，设计细节" class="headerlink" title="5  系统模型及具体的 solution ，设计细节"></a><strong>5</strong>  <strong>系统模型及具体的</strong> <strong>solution</strong> <strong>，设计细节</strong></h3><p>系统模型，该部分展示的是整体的系统模型，或解决方案架构。 除系统介绍解决方案外，还应详细论述设计细节及原因。（可与Motivation 进行对比区分，一遍遍在不同层面，讲述自己的设计理念）</p>
-<p>具体的solution，没必要细说，大家怎么做的就可以怎么写。需要的提醒的是，在具体的设计前后，尽量添加必要的逻辑的解释。</p>
-<h3 id="6-实验部分"><a href="#6-实验部分" class="headerlink" title="6  实验部分"></a><strong>6</strong>  <strong>实验部分</strong></h3><p>一般包括数据集，实验设计和设置，及实验效果</p>
-<p>数据集，重点关注，进行数据集积累。一般业内只有很有限的数据集。</p>
-<p>实验设计和设置，可以让你更清晰地认识到，文中解决方案是怎么来应用的，及相关参数值是如何设置的。</p>
-<p>实验效果没必要细说。</p>
-<h1 id="文献阅读需要关注的几个问题"><a href="#文献阅读需要关注的几个问题" class="headerlink" title="文献阅读需要关注的几个问题"></a><strong>文献阅读需要关注的几个问题</strong></h1><h3 id="1-文章研究的问题是什么？"><a href="#1-文章研究的问题是什么？" class="headerlink" title="1.文章研究的问题是什么？"></a><strong>1.文章研究的问题是什么？</strong></h3><p>逻辑层面的研究问题，越准确越细越好。（一般出现在前三章）。观察别人的研究问题，积累并形成新的研究问题。</p>
-<h3 id="2-解决方案的逻辑思路？"><a href="#2-解决方案的逻辑思路？" class="headerlink" title="2. 解决方案的逻辑思路？"></a><strong>2.</strong> <strong>解决方案的逻辑思路？</strong></h3><p>以什么思路，怎么解决的。经得住推敲。（一般出现在前三章）。借鉴别人的研究思路，以创新性地提出自己的解决方案。</p>
-<h3 id="3-具体的解决方案。"><a href="#3-具体的解决方案。" class="headerlink" title="3. 具体的解决方案。"></a><strong>3.</strong> <strong>具体的解决方案。</strong></h3><p>（自己写作的时候，还要加入必要的性能分析，如时间复杂度，收敛性等）</p>
-<h3 id="4-实验部分"><a href="#4-实验部分" class="headerlink" title="4. 实验部分"></a><strong>4.</strong> <strong>实验部分</strong></h3><p>关注点有两个：a. 数据集；b. 文中solution 在实验中是怎么用的，以更清晰地认识solution。根据自己写作需要，可能还会关注实验指标。</p>
-<p>一般阅读时不太需要关注实验效果，因为文中solution 的优势会在设计中解释的很清楚，实验效果就是去验证它。</p>
-<h1 id="根据文献与个人研究相关性不同，对文献的阅读研究程度也不同"><a href="#根据文献与个人研究相关性不同，对文献的阅读研究程度也不同" class="headerlink" title="根据文献与个人研究相关性不同，对文献的阅读研究程度也不同"></a><strong>根据文献与个人研究相关性不同，对文献的阅读研究程度也不同</strong></h1><p><strong>1.</strong> <strong>非常相关</strong></p>
-<p>详细阅读文献，尽可能地搞清楚上述几个问题；</p>
-<p>并进行批判性地讨论，推敲文章的研究问题及解决方案；</p>
-<p>清晰地认清文章的优缺点：优势优在哪儿，劣势劣在哪儿。顺利的话对文章的批判可以产生新的</p>
-<p>idea。</p>
-<p><strong>2.</strong> <strong>一般相关</strong></p>
-<p>问题1 和2 是必须要搞清的；文章研究了什么问题，解决方案的逻辑思路是什么</p>
-<p>问题3 可以粗略掌握，大概知道是怎么解决的，对具体的解决方案有个模糊的认识即可。作用：扩展自己的研究领域，和知识面；借鉴别人的研究思路。</p>
-<p><strong>3.</strong> <strong>不太相关</strong></p>
-<p>把问题1 和2 搞清即可：知道文中研究的问题，及大致的解决方案（解决的逻辑思路）。 阅读目的，了解相关领域还有哪些研究问题，以扩展自身的知识面。</p>
-]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>科研</tag>
+        <tag>University</tag>
       </tags>
   </entry>
   <entry>
@@ -671,6 +402,331 @@ dst(x,y)=\left\{
       </categories>
       <tags>
         <tag>CSer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科研入坑指南</title>
+    <url>/2022/04/20/%E4%BB%80%E4%B9%88%E6%98%AF%E7%A7%91%E7%A0%94/</url>
+    <content><![CDATA[<p>写一些总结，希望对大家有帮助~</p>
+<span id="more"></span>
+<h1 id="什么是科研"><a href="#什么是科研" class="headerlink" title="什么是科研"></a>什么是科研</h1><p>1.发现新方法，并将其运用在一个已知问题上（老问题新方法）</p>
+<p>2.发现新问题，并将一个已知的研究拓展到这个问题上（新问题老方法）</p>
+<p>3.发现新问题，并提出新方法对其进行研究分析（新问题新方法）</p>
+<h1 id="科研收获（what-you-can-except）"><a href="#科研收获（what-you-can-except）" class="headerlink" title="科研收获（what you can except）"></a>科研收获（what you can except）</h1><p>1.阅读——开卷有益，理解更深</p>
+<p>2.做实验——孰能生巧</p>
+<p>3.气质、表达能力——谈吐不凡（但愿）</p>
+<h1 id="科研过程（the-research-process）"><a href="#科研过程（the-research-process）" class="headerlink" title="科研过程（the research process）"></a>科研过程（the research process）</h1><p>马克思主义原理讲过：事物的发展都是螺旋式上升，波浪式前进，科研也不例外。</p>
+<p>建立问题——&gt;了解问题——&gt;提出方法——&gt;验证方法——&gt;得出结论——&gt;建立问题…</p>
+<p>如此往复以至无穷。</p>
+<h1 id="如何选定一个领域（choice）"><a href="#如何选定一个领域（choice）" class="headerlink" title="如何选定一个领域（choice）"></a>如何选定一个领域（choice）</h1><p>·关注前沿动态</p>
+<p>eg：Google Brain，Microsoft Reasearch，IEEE等</p>
+<p>·了解科研趋势</p>
+<p>·结合个人情况</p>
+<h1 id="开始熟悉一个领域"><a href="#开始熟悉一个领域" class="headerlink" title="开始熟悉一个领域"></a>开始熟悉一个领域</h1><p>·善用信息，学会借助他人力量，比如阅读一些综述性文章</p>
+<p>安利一个搜索综述性文章的网站：arxiv.org</p>
+<p>eg:smart trafic —— 在Abstract中；survey —— 在Title中</p>
+<p>·掌握通用技能</p>
+<p>一定量扎实的数理知识</p>
+<p>熟练代码实现功能</p>
+<p>具备项目管理经验</p>
+<p>·发现最新科研进展</p>
+<p>看顶会论文+跟随大牛</p>
+<p>顶会论文推荐：CVPR、ICML、ACM/IEEE、CCF、SCI等（注意：最好先看会议，后看期刊，具体看个人领域）</p>
+<p>大牛：基于对领域的了解去发现那些顶级的组或团队，跟踪他们的博客主页或者网站</p>
+<h1 id="深度阅读了解技术"><a href="#深度阅读了解技术" class="headerlink" title="深度阅读了解技术"></a>深度阅读了解技术</h1><p>请移步《文献阅读综述》这篇博客</p>
+<h1 id="代码复现（Talk-is-cheap-show-me-the-code）"><a href="#代码复现（Talk-is-cheap-show-me-the-code）" class="headerlink" title="代码复现（Talk is cheap , show me the code）"></a>代码复现（Talk is cheap , show me the code）</h1><p>很重要，只有复现后才能掌握细节</p>
+<p>安利网站：paper with code，很有趣，建议科学上网访问</p>
+<h1 id="泛读打开视野"><a href="#泛读打开视野" class="headerlink" title="泛读打开视野"></a>泛读打开视野</h1><p>善用文献信息，从一篇好文章拓展到一系列文章。</p>
+<p>eg：被引次数：Cite by … ; 引用栏；比较新的好作品引用了哪些好文章、好idea等</p>
+<h1 id="着手研究"><a href="#着手研究" class="headerlink" title="着手研究"></a>着手研究</h1><h2 id="如何提出问题？（对入门者偏玄学）"><a href="#如何提出问题？（对入门者偏玄学）" class="headerlink" title="如何提出问题？（对入门者偏玄学）"></a>如何提出问题？（对入门者偏玄学）</h2><p><strong>时间机器理论：</strong></p>
+<p>·基于已有工作</p>
+<p>·有共鸣</p>
+<h2 id="开展工作"><a href="#开展工作" class="headerlink" title="开展工作"></a>开展工作</h2><p>根据个人情况选择：</p>
+<h3 id="理论派"><a href="#理论派" class="headerlink" title="理论派"></a>理论派</h3><pre><code>1.问题抽象到数理空间
+
+2.建模
+
+3.寻找合适理论方法
+
+4.根据3的反馈，优化建模，反复迭代
+
+5.进行实现，辅以实验验证
+</code></pre><h3 id="实践派"><a href="#实践派" class="headerlink" title="实践派"></a>实践派</h3><pre><code>1.问题与方法并存
+
+2.在实验中观察现存方法与解决问题上的优劣
+
+3.结合结果与经验，提出可行改进
+
+4.实现改进方法
+
+5.根据结果反复迭代
+</code></pre><h2 id="论文写作（讲好一个故事）"><a href="#论文写作（讲好一个故事）" class="headerlink" title="论文写作（讲好一个故事）"></a>论文写作（讲好一个故事）</h2><p><strong><em>·准确性、鲁棒性、效率、可解释性、可拓展性</em></strong></p>
+<p>论文要反复强调3件事（尤其是开篇）：</p>
+<p><strong>·</strong>通过文献、例证等告诉审稿人：<strong>“我关注的问题很重要”</strong></p>
+<p><strong>·</strong>通过分析，向审稿人表明：<strong>“现有方法不能有效解决问题”</strong></p>
+<p><strong>·</strong>通过适当介绍和引用数据，告诉审稿人：<strong>“我们的方法很有效”</strong></p>
+<p>写作时对于方法介绍：</p>
+<pre><code>1.基于A1原理启发，首先应用B1方法，得到实验结果R1；
+
+2.通过对R1分析，发现了Q1这样的问题；
+
+3.为了解决这个问题，结合了A2原理，将方法改进为B2，得到实验结果R2；
+</code></pre><p><strong>·</strong>”对比“是一种艺术</p>
+<h2 id="论文发表"><a href="#论文发表" class="headerlink" title="论文发表"></a>论文发表</h2><h3 id="1-找到合适的会议或期刊"><a href="#1-找到合适的会议或期刊" class="headerlink" title="1.找到合适的会议或期刊"></a>1.找到合适的会议或期刊</h3><p>eg：AI研习社（含顶会日程），sec-deadlines.github.io，</p>
+<h3 id="2-正确地与审稿人打交道（不要吵架！不要情绪化！）"><a href="#2-正确地与审稿人打交道（不要吵架！不要情绪化！）" class="headerlink" title="2.正确地与审稿人打交道（不要吵架！不要情绪化！）"></a>2.正确地与审稿人打交道（不要吵架！不要情绪化！）</h3><p><strong>·</strong>态度端正，有分歧时引导审稿人回到正确的道路上</p>
+<p><strong>·</strong>对于指出的真实性问题要承认，有条件要补全缺失的部分</p>
+<p><strong>·</strong>对于发散性建议，表示赞同，并且提出可以加入附件或在未来研究中得到解决</p>
+<h2 id="参加会议"><a href="#参加会议" class="headerlink" title="参加会议"></a>参加会议</h2><p>Keynote speak可能是和大牛唯一的交流机会</p>
+<p>认真准备</p>
+<p>感兴趣的私下交流</p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>CSer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>密码学概述</title>
+    <url>/2022/04/05/%E5%AF%86%E7%A0%81%E5%AD%A6%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<h1 id="密码学概述"><a href="#密码学概述" class="headerlink" title="密码学概述"></a>密码学概述</h1><span id="more"></span>
+<h2 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h2><h3 id="古典密码学"><a href="#古典密码学" class="headerlink" title="古典密码学"></a>古典密码学</h3><p>目的：保护信息</p>
+<p><strong>·替换法</strong>：使用固定信息将原文替换为密文</p>
+<p>加密方式：单表替换，多表替换</p>
+<pre><code>单表替换：原文和密文使用同一张表；
+
+多表替换：非常复杂，多张表原文、密文进行对比。
+</code></pre><p>多表替换举例：</p>
+<pre><code>表单1：abcde-swtrp 表单2：abcde-chfhk
+
+明文：bee    密钥：221
+
+密文：hkp
+</code></pre><p><strong>·移位法</strong>：按照字母移动</p>
+<p>凯撒加密</p>
+<p><strong>古典密码学破解</strong>：</p>
+<p>频率分析法：概率论——研究字母或字母组合在密文中出现的频率。E出现频率最高，X出现频率最低：“ETAOIN SHRDLU”</p>
+<h3 id="近代密码学"><a href="#近代密码学" class="headerlink" title="近代密码学"></a>近代密码学</h3><p>eg：恩尼格玛密码机 核心 ： 移位法、替换法</p>
+<p>后来被——图灵破解了（电影：《模仿游戏》</p>
+<h3 id="现代密码学"><a href="#现代密码学" class="headerlink" title="现代密码学"></a>现代密码学</h3><p>1.散列函数（Hash函数）</p>
+<p>eg：MD5,SHA-1,SHA-256</p>
+<p>2.对称加密</p>
+<p><strong>加密解密同一把密钥</strong></p>
+<p>流加密，块加密<br>3.非对称加密</p>
+<p><strong>两把密钥，公约加密，私钥解密  或 私钥加密，公钥解密</strong></p>
+<p><strong>?? 怎样设置密码才安全 ??</strong></p>
+<pre><code>·   密码不要常见；
+·   密码不要设置为同一个，“撞库”；
+·   设置特殊标记
+</code></pre><h3 id="ASCII编码"><a href="#ASCII编码" class="headerlink" title="ASCII编码"></a>ASCII编码</h3><p>American Standard Code for Information Interchange</p>
+<p><strong>代码实现凯撒加密解密</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class KaiSaEn &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String input = &quot;Hello World ! &quot; ;</span><br><span class="line">        //原文右移动3位</span><br><span class="line">        int key = 3 ;</span><br><span class="line">        String s = encryptKaisa(input);</span><br><span class="line">        System.out.println(&quot;加密==&quot;+s);</span><br><span class="line">        String ans = decryptKaisa(s,key);</span><br><span class="line">        System.out.println(&quot;解密==&quot;+ans);</span><br><span class="line">    &#125;</span><br><span class="line">    //解密</span><br><span class="line">    private  static  String decryptKaisa(String s , int key)&#123;</span><br><span class="line">        char[] chars =  s.toCharArray() ;</span><br><span class="line">        StringBuilder sb = new StringBuilder() ;</span><br><span class="line">        for (char aChar : chars) &#123;</span><br><span class="line">            int b = aChar ;</span><br><span class="line">            //偏移数据</span><br><span class="line">            b -= key ;</span><br><span class="line">            char newb =(char) b ;</span><br><span class="line">            sb.append(newb) ;</span><br><span class="line">        &#125;</span><br><span class="line">        return sb.toString() ;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private static String encryptKaisa(String input) &#123;</span><br><span class="line">        char[] chars = input.toCharArray() ;</span><br><span class="line">        StringBuilder sb = new StringBuilder() ;</span><br><span class="line">        for (char aChar : chars) &#123;</span><br><span class="line">            int b = aChar ;</span><br><span class="line">            b = b + 3 ;</span><br><span class="line">            char newb = (char) b ;</span><br><span class="line">            sb.append(newb) ;</span><br><span class="line">        &#125;</span><br><span class="line">        //System.out.println(sb.toString());</span><br><span class="line">        return sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="频率分析法-——-概率论"><a href="#频率分析法-——-概率论" class="headerlink" title="频率分析法 —— 概率论"></a>频率分析法 —— 概率论</h3><p>·密码棒</p>
+<p>·目的：不知道密钥情况下进行破解密文</p>
+<p>方法：拿到密文选出频率最高的字母，比如最高的是j，对应明文为e;以此类推</p>
+<h3 id="Byte和Bit的关系（总搞混）"><a href="#Byte和Bit的关系（总搞混）" class="headerlink" title="Byte和Bit的关系（总搞混）"></a>Byte和Bit的关系（总搞混）</h3><p><strong>Byte</strong>：字节，数据<strong>存储</strong>的基本单位，比如移动硬盘1T，单位是Byte</p>
+<p><strong>Bit</strong>：位，用0或1表示，是数据<strong>传输</strong>的单位</p>
+<p><strong>关系</strong>：1Byte = 8Bit</p>
+<p>举个栗子：</p>
+<p>a的Byte表示：97；bit表示为：1100001（二进制）</p>
+<p><strong>代码实现Byte和Bit互相转化</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class ByteBit &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String a = &quot;a&quot; ;</span><br><span class="line">        //得到字节数组</span><br><span class="line">        byte[] bytes = a.getBytes() ;</span><br><span class="line">        for (byte aByte : bytes) &#123;</span><br><span class="line">            int c = aByte ;</span><br><span class="line">            //byte字节对应bit</span><br><span class="line">            String s = Integer.toBinaryString(c);</span><br><span class="line">            System.out.println(s);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>而中文对应的utf-8是3个字节，高位编码自动补全</p>
+<p>如果是GBK，一个中文对应2个字节</p>
+<h3 id="DES"><a href="#DES" class="headerlink" title="DES"></a>DES</h3><p>具体见另一篇博客（x</p>
+<h3 id="base64浅谈"><a href="#base64浅谈" class="headerlink" title="base64浅谈"></a>base64浅谈</h3><p><strong>不是加密算法，是可读性算法</strong><br>原理：3字节为一组，1字节=8位，共24位，base64把3个字节转换成4组，每组6位，缺少2位，要在高位补0。</p>
+<p><strong>好处</strong>：base64取后6位，前2位会去掉，可以把base64控制到0-63之间（0：000000，1：111111）</p>
+<p><strong>坏处</strong>：内存占用变大</p>
+<p>目的：可读性，否则得到乱码</p>
+<p>由64个字符组成：A-Z,a-z,0-9,+,/</p>
+<p>base58是用在比特币里面的编码方式，</p>
+<pre><code>·没有数字0和字母o,
+
+·没有大写字母I和小写i,
+
+·没有+和/。
+</code></pre><h3 id="加密模式"><a href="#加密模式" class="headerlink" title="加密模式"></a>加密模式</h3><h4 id="·ECB-电子密码本"><a href="#·ECB-电子密码本" class="headerlink" title="·ECB:电子密码本"></a>·ECB:电子密码本</h4><p>把加密消息分割后独立加密再组合</p>
+<p><strong>优点</strong>：<br>并行处理，速度快</p>
+<p><strong>缺点</strong>：<br>使用同一个key，安全性弱</p>
+<h4 id="·CBC-密码块链接"><a href="#·CBC-密码块链接" class="headerlink" title="·CBC:密码块链接"></a>·CBC:密码块链接</h4><p>每个明文块先与前一个密文块异或后在加密，每个密文块都依赖于它前面所有明文块。</p>
+<p><strong>优点</strong>：<br>加密强度高</p>
+<p><strong>缺点</strong>：<br>并行处理，慢</p>
+<h3 id="非对称加密"><a href="#非对称加密" class="headerlink" title="非对称加密"></a>非对称加密</h3><p>“现代加密算法”</p>
+<p>必须2个密钥，公钥和私钥（一公一母）</p>
+<p>常见：RSA,ECC</p>
+<p>或取公钥和私钥：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import com.sun.org.apache.xml.internal.security.utils.Base64;</span><br><span class="line"></span><br><span class="line">import java.security.KeyPair;</span><br><span class="line">import java.security.KeyPairGenerator ;</span><br><span class="line">import java.security.PrivateKey;</span><br><span class="line">import java.security.PublicKey;</span><br><span class="line"></span><br><span class="line">public class Rsa &#123;</span><br><span class="line">    public static void main(String[] args)throws Exception &#123;</span><br><span class="line">        //创建密钥对</span><br><span class="line">//生成器对象</span><br><span class="line">String algorithm = &quot;RSA&quot; ;</span><br><span class="line">KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(algorithm) ;</span><br><span class="line">//生成密钥对</span><br><span class="line">KeyPair keyPair =  keyPairGenerator.generateKeyPair() ;</span><br><span class="line">PrivateKey aPrivate = keyPair.getPrivate();</span><br><span class="line">PublicKey aPublic = keyPair.getPublic();</span><br><span class="line">//获取私钥字节数组</span><br><span class="line">byte[] privateEncoded = aPrivate.getEncoded() ;</span><br><span class="line">        byte[] publicEncodeed = aPublic.getEncoded() ;</span><br><span class="line">//base64转码</span><br><span class="line">String privateEncodeString = Base64.encode(privateEncoded) ;</span><br><span class="line">String publicEncodeString = Base64.encode(publicEncodeed) ;</span><br><span class="line">//打印</span><br><span class="line">System.out.println(privateEncodeString);</span><br><span class="line">System.out.println(publicEncodeString);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="数字签名"><a href="#数字签名" class="headerlink" title="数字签名"></a>数字签名</h3><p>公钥数字签名，只有信息的发送者才能产生别人无法伪造的一段数字串覆盖在文件上。</p>
+<h4 id="数字证书"><a href="#数字证书" class="headerlink" title="数字证书"></a>数字证书</h4><p>认证机构把公钥A、通过自己的私钥对认证机构加密、再和数字签名A打包生成证书返回给服务器。</p>
+<p>点开一个网址就能看到。</p>
+<p><strong>CA认证中心</strong></p>
+<p>专门颁发、签发数字证书</p>
+<h4 id="网页加密"><a href="#网页加密" class="headerlink" title="网页加密"></a>网页加密</h4><p>step1：客户端向服务器发送加密请求；(request)</p>
+<p>step2：服务器用自己的私钥加密网页后，连同本身的数字证书一起发送给客户端；(response)</p>
+<p>step3：证书管理器里有证书颁发列表，客户会根据这张表查看解开数字证书的公钥是否在列表内；</p>
+<pre><code>如果数字证书的网址与正在浏览的网址不一样，那就是证书可能被冒用，浏览器发出警告；
+
+如果可靠，客户端使用证书中服务器公钥，对信息加密，然后与服务器交换加密信息。(exchange encrypted data)
+</code></pre>]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>图像编码处理基础</title>
+    <url>/2022/04/19/%E5%9B%BE%E5%83%8F%E7%BC%96%E7%A0%81%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h1 id="图像方向基础"><a href="#图像方向基础" class="headerlink" title="图像方向基础"></a>图像方向基础</h1><h2 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h2><p>结合本人目前科研项目的经历，图像处理是最关键的一环，它的方方面面知识也可能是idea的来源。</p>
+<p>比较知名的书有《数字图像处理》（冈萨雷斯编写）。不过我的工作并不是对现有图像进行各种变换，所以这本书暂时不适合我。</p>
+<p>在JWC发出推迟考试的通知后，我在校图书馆的海洋里淘到了<strong>《图像编码基础》</strong>这本书，年代较为久远（2006年）但是对我很有启发意义，于是借走拿回宿舍研究，也恰恰是在这本书内，我意识到了学好“信号与系统”这门课的意义（比如二维傅里叶变换等），可以说获益匪浅。</p>
+<p>下面开始讲图像相关的一些基础知识。</p>
+<span id="more"></span>
+<h2 id="一-图像编码"><a href="#一-图像编码" class="headerlink" title="一.图像编码"></a>一.图像编码</h2><h3 id="1-为什么编码"><a href="#1-为什么编码" class="headerlink" title="1.为什么编码"></a>1.为什么编码</h3><p>图像数据太大，通信传输过程中数据量太大，需要编码方式来减少数据大小。</p>
+<h3 id="2-编码分类"><a href="#2-编码分类" class="headerlink" title="2.编码分类"></a>2.编码分类</h3><p>软件编码（软编）：使用CPU进行编码。</p>
+<p>优点：实现直接、简单，参数调整、升级方便。</p>
+<p>缺点：性能较硬编码低，低码率下质量通常比硬编码要好。</p>
+<p>硬件编码（硬编）：不使用CPU进行编码，使用显卡GPU,专用的DSP、FPGA、ASIC芯片等硬件进行编码。</p>
+<p>优点：性能高，低码率下通常质量低于硬编码器。</p>
+<p>缺点：部分产品在GPU硬件平台移植了优秀的软编码算法（如X264）的，质量基本等同于软编码。</p>
+<h3 id="3-图像数字化"><a href="#3-图像数字化" class="headerlink" title="3.图像数字化"></a>3.图像数字化</h3><p>step（1）将二维图像 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="6.413ex" height="2.262ex" role="img" focusable="false" viewbox="0 -750 2834.7 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"/></g><g data-mml-node="mo" transform="translate(550,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/></g><g data-mml-node="mi" transform="translate(939,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/></g><g data-mml-node="mo" transform="translate(1511,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"/></g><g data-mml-node="mi" transform="translate(1955.7,0)"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/></g><g data-mml-node="mo" transform="translate(2445.7,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/></g></g></g></svg></mjx-container> 在二维空间域中采样，有采样定理：</p>
+<script type="math/tex; mode=display">
+N = 2^k \quad , \quad k = 2,3,4......</script><p>注意：<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewbox="0 -683 888 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g></g></g></svg></mjx-container>是图像<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="6.413ex" height="2.262ex" role="img" focusable="false" viewbox="0 -750 2834.7 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"/></g><g data-mml-node="mo" transform="translate(550,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/></g><g data-mml-node="mi" transform="translate(939,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/></g><g data-mml-node="mo" transform="translate(1511,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"/></g><g data-mml-node="mi" transform="translate(1955.7,0)"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/></g><g data-mml-node="mo" transform="translate(2445.7,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/></g></g></g></svg></mjx-container> 取样点<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="6.784ex" height="1.545ex" role="img" focusable="false" viewbox="0 -683 2998.4 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g><g data-mml-node="mo" transform="translate(1110.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"/></g><g data-mml-node="mi" transform="translate(2110.4,0)"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g></g></g></svg></mjx-container>中的<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewbox="0 -683 888 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g></g></g></svg></mjx-container>。</p>
+<script type="math/tex; mode=display">
+N/L_x \ge 2u_0 \quad,\quad N/L_y \ge 2v_0 \quad (*)</script><p>在符<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="2.891ex" height="2.262ex" role="img" focusable="false" viewbox="0 -750 1278 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/></g><g data-mml-node="mo" transform="translate(389,0)"><path data-c="2217" d="M229 286Q216 420 216 436Q216 454 240 464Q241 464 245 464T251 465Q263 464 273 456T283 436Q283 419 277 356T270 286L328 328Q384 369 389 372T399 375Q412 375 423 365T435 338Q435 325 425 315Q420 312 357 282T289 250L355 219L425 184Q434 175 434 161Q434 146 425 136T401 125Q393 125 383 131T328 171L270 213Q283 79 283 63Q283 53 276 44T250 35Q231 35 224 44T216 63Q216 80 222 143T229 213L171 171Q115 130 110 127Q106 124 100 124Q87 124 76 134T64 161Q64 166 64 169T67 175T72 181T81 188T94 195T113 204T138 215T170 230T210 250L74 315Q65 324 65 338Q65 353 74 363T98 374Q106 374 116 368T171 328L229 286Z"/></g><g data-mml-node="mo" transform="translate(889,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/></g></g></g></svg></mjx-container>式条件下不会出现图像相互混叠现象,以上是二维图像取样定理。</p>
+<p>step（2）量化</p>
+<p>由连续值经过数值量化过程为离散值。</p>
+<p>最常用：均匀量化（量化区间大小相等）如果区间大小不等，就叫非线性量化。</p>
+<p>通过量化得到量化图像矩阵<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.65ex" xmlns="http://www.w3.org/2000/svg" width="2.378ex" height="2.188ex" role="img" focusable="false" viewbox="0 -680 1051.3 967.2"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D439" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"/></g><g data-mml-node="mi" transform="translate(676,-150) scale(0.707)"><path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"/></g></g></g></g></svg></mjx-container>:</p>
+<script type="math/tex; mode=display">F_q = \begin{pmatrix}
+    f_q(0,0)\quad&f_q(0,1)\quad&......&f_q(0,N-1) \\
+    f_q(1,0)\quad&f_q(1,1)\quad&......&f_q(1,N-1) \\
+    f_q(2,0)\quad&f_q(2,1)\quad&......&f_q(2,N-1) \\
+    ...\quad&...\quad&......&... \\
+    f_q(N-1,0)\quad&f_q(N-1,1)\quad&......&f_q(N-1,N-1)
+\end{pmatrix}</script>]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>CSer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>清明</title>
+    <url>/2022/04/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="记录大二下学期第一次进城"><a href="#记录大二下学期第一次进城" class="headerlink" title="记录大二下学期第一次进城"></a>记录大二下学期第一次进城</h2><span id="more"></span>
+<p>玩一把大的，水完毛概直接润<br>小寨鹿港粤菜：叉烧肉 汤 牛柳 还有CoCo Cafe的柠檬百香果双响炮<br>晚上去了大唐不夜城，夜景音乐喷泉</p>
+<h2 id="青龙寺"><a href="#青龙寺" class="headerlink" title="青龙寺"></a>青龙寺</h2><p>樱花超级好看，每一朵都独具韵味</p>
+<p>寺庙里面的树上挂满了祈福的红带，不过我对这方面也不了解，没敢随意去弄。。。心意到了就可以了（x</p>
+<p>离开时看见一些老大爷和老大妈跳着新疆舞（貌似是），特别有精神，希望我老了也能很有精气神hh</p>
+<p>中午吃了韩式传统烤肉，百去不厌，下午从3点睡到6点（5555），不过充满了干劲，这才叫大学生活（牛马假日）</p>
+<p>该juan了（这就去C楼，溜了）</p>
+]]></content>
+      <categories>
+        <category>Holiday</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文献阅读综述</title>
+    <url>/2022/04/04/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%BB%BC%E8%BF%B0/</url>
+    <content><![CDATA[<h2 id="文章脉络解析"><a href="#文章脉络解析" class="headerlink" title="文章脉络解析"></a><strong>文章脉络解析</strong></h2><span id="more"></span>
+<h3 id="1-精读摘要"><a href="#1-精读摘要" class="headerlink" title="1  精读摘要"></a><strong>1</strong>  <strong>精读摘要</strong></h3><p>摘要部分一般分为2-3 段</p>
+<p>第一段，1、背景；2-3、综述现在存在的问题；4、总结句</p>
+<p>第二段，1、概述；2-4、分别简介各组件，及解决方案的逻辑思路；5，点明文中所提解决方案的亮点；6，宏观描述实验效果（6 可以作为第三段）</p>
+<h3 id="2-泛读-Introduction"><a href="#2-泛读-Introduction" class="headerlink" title="2  泛读 Introduction"></a><strong>2</strong>  <strong>泛读</strong> <strong>Introduction</strong></h3><p>Introduction 重在脉络和文章的研究思路：通过背景介绍，引出研究问题，论述研究现状，（这两句可以换顺序），引入our idea（解决问题的逻辑思路），challenges；Contributions.</p>
+<p>（这部分描述一般较为简略，是在逻辑层面论述）</p>
+<p>（自己写作的时候，强烈另开一个Section, Motivation and challenges / Limitations。通过图公式等形式，或与别人工作对比，详细阐述研究问题细节，可以区分开别人工作、能人所不能的亮点。）（这个Section 非常重要，做的好，能为说服审稿人起到大半的作用）</p>
+<h3 id="3-related-work"><a href="#3-related-work" class="headerlink" title="3   related work"></a><strong>3</strong>   <strong>related work</strong></h3><p>阅读时可暂时忽略，可放后面，conclusion 前</p>
+<h3 id="4-问题-模型的-formulation-（公式化）-formalization-形式化"><a href="#4-问题-模型的-formulation-（公式化）-formalization-形式化" class="headerlink" title="4  问题 / 模型的 formulation  （公式化） / formalization(  形式化 )"></a><strong>4</strong>  <strong>问题</strong> / <strong>模型的</strong> <strong>formulation</strong>  <strong>（公式化）</strong> <strong>/ formalization(</strong>  <strong>形式化</strong> <strong>)</strong></h3><p>细读，但一般较为简单。 该部分主要作用是把逻辑问题，形式化为公式或数学模型，为正式具体的解决方案做好准备。</p>
+<h3 id="5-系统模型及具体的-solution-，设计细节"><a href="#5-系统模型及具体的-solution-，设计细节" class="headerlink" title="5  系统模型及具体的 solution ，设计细节"></a><strong>5</strong>  <strong>系统模型及具体的</strong> <strong>solution</strong> <strong>，设计细节</strong></h3><p>系统模型，该部分展示的是整体的系统模型，或解决方案架构。 除系统介绍解决方案外，还应详细论述设计细节及原因。（可与Motivation 进行对比区分，一遍遍在不同层面，讲述自己的设计理念）</p>
+<p>具体的solution，没必要细说，大家怎么做的就可以怎么写。需要的提醒的是，在具体的设计前后，尽量添加必要的逻辑的解释。</p>
+<h3 id="6-实验部分"><a href="#6-实验部分" class="headerlink" title="6  实验部分"></a><strong>6</strong>  <strong>实验部分</strong></h3><p>一般包括数据集，实验设计和设置，及实验效果</p>
+<p>数据集，重点关注，进行数据集积累。一般业内只有很有限的数据集。</p>
+<p>实验设计和设置，可以让你更清晰地认识到，文中解决方案是怎么来应用的，及相关参数值是如何设置的。</p>
+<p>实验效果没必要细说。</p>
+<h1 id="文献阅读需要关注的几个问题"><a href="#文献阅读需要关注的几个问题" class="headerlink" title="文献阅读需要关注的几个问题"></a><strong>文献阅读需要关注的几个问题</strong></h1><h3 id="1-文章研究的问题是什么？"><a href="#1-文章研究的问题是什么？" class="headerlink" title="1.文章研究的问题是什么？"></a><strong>1.文章研究的问题是什么？</strong></h3><p>逻辑层面的研究问题，越准确越细越好。（一般出现在前三章）。观察别人的研究问题，积累并形成新的研究问题。</p>
+<h3 id="2-解决方案的逻辑思路？"><a href="#2-解决方案的逻辑思路？" class="headerlink" title="2. 解决方案的逻辑思路？"></a><strong>2.</strong> <strong>解决方案的逻辑思路？</strong></h3><p>以什么思路，怎么解决的。经得住推敲。（一般出现在前三章）。借鉴别人的研究思路，以创新性地提出自己的解决方案。</p>
+<h3 id="3-具体的解决方案。"><a href="#3-具体的解决方案。" class="headerlink" title="3. 具体的解决方案。"></a><strong>3.</strong> <strong>具体的解决方案。</strong></h3><p>（自己写作的时候，还要加入必要的性能分析，如时间复杂度，收敛性等）</p>
+<h3 id="4-实验部分"><a href="#4-实验部分" class="headerlink" title="4. 实验部分"></a><strong>4.</strong> <strong>实验部分</strong></h3><p>关注点有两个：a. 数据集；b. 文中solution 在实验中是怎么用的，以更清晰地认识solution。根据自己写作需要，可能还会关注实验指标。</p>
+<p>一般阅读时不太需要关注实验效果，因为文中solution 的优势会在设计中解释的很清楚，实验效果就是去验证它。</p>
+<h1 id="根据文献与个人研究相关性不同，对文献的阅读研究程度也不同"><a href="#根据文献与个人研究相关性不同，对文献的阅读研究程度也不同" class="headerlink" title="根据文献与个人研究相关性不同，对文献的阅读研究程度也不同"></a><strong>根据文献与个人研究相关性不同，对文献的阅读研究程度也不同</strong></h1><p><strong>1.</strong> <strong>非常相关</strong></p>
+<p>详细阅读文献，尽可能地搞清楚上述几个问题；</p>
+<p>并进行批判性地讨论，推敲文章的研究问题及解决方案；</p>
+<p>清晰地认清文章的优缺点：优势优在哪儿，劣势劣在哪儿。顺利的话对文章的批判可以产生新的</p>
+<p>idea。</p>
+<p><strong>2.</strong> <strong>一般相关</strong></p>
+<p>问题1 和2 是必须要搞清的；文章研究了什么问题，解决方案的逻辑思路是什么</p>
+<p>问题3 可以粗略掌握，大概知道是怎么解决的，对具体的解决方案有个模糊的认识即可。作用：扩展自己的研究领域，和知识面；借鉴别人的研究思路。</p>
+<p><strong>3.</strong> <strong>不太相关</strong></p>
+<p>把问题1 和2 搞清即可：知道文中研究的问题，及大致的解决方案（解决的逻辑思路）。 阅读目的，了解相关领域还有哪些研究问题，以扩展自身的知识面。</p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计科杂谈</title>
+    <url>/2022/06/05/%E8%AE%A1%E7%A7%91%E6%9D%82%E8%B0%88/</url>
+    <content><![CDATA[<h1 id="计科杂谈"><a href="#计科杂谈" class="headerlink" title="计科杂谈"></a>计科杂谈</h1><p>开这个专栏的目的是整理平时看到的一些零碎的知识，也算是总结形成自己的小技术栈了</p>
+<p>(考完期末再开始写，太忙了)</p>
+<span id="more"></span>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>CSer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>端午小结</title>
+    <url>/2022/06/05/%E7%AB%AF%E5%8D%88%E5%B0%8F%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="端午小结"><a href="#端午小结" class="headerlink" title="端午小结"></a>端午小结</h1><p>放假+复习+歌单更新</p>
+<p><strong><em>一杯敬明天，一杯敬过往</em></strong></p>
+<span id="more"></span>
+<h2 id="放假"><a href="#放假" class="headerlink" title="放假"></a>放假</h2><p>3号晚上去和mlx吃了阳光天地的粤菜，下面开始点评喽：</p>
+<p><strong>·</strong>乌鸡汤真的好暖身，好有营养，开胃神汤！</p>
+<p><strong>·</strong>菠萝牛肉是很爽的甜口，菠萝在口腔里爆开，再混合牛肉的质感，真的撅撅子（没打错哈哈）！！！！</p>
+<p><strong>·</strong>肠粉这次差评，皮弄得太厚了，虾仁还少，味道还可以</p>
+<p><strong>·</strong>烤鸭肉是全场最佳（我个人认为</p>
+<p>然后是KFC的蛋挞，从小吃到大，泪目T_T</p>
+<p>4号和同同学长在小四川共进晚餐：</p>
+<p>清蒸鱼、糖醋里脊、蒜蓉油麦菜、紫菜蛋花汤</p>
+<p>到这里跟放假相关的就没有了，剩下都干了啥请脑补</p>
+<h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><h3 id="计网"><a href="#计网" class="headerlink" title="计网"></a>计网</h3><p>我的评价是：正确的，客观的，中肯的，优异的，一阵见血的，一眼丁真的，万股颠扑不破的</p>
+<h3 id="计组"><a href="#计组" class="headerlink" title="计组"></a>计组</h3><p>车向泉老师就是神！！！</p>
+<h3 id="模电、OS"><a href="#模电、OS" class="headerlink" title="模电、OS"></a>模电、OS</h3><p>小摆，因为上面那俩最不好整，尤其是计组</p>
+<h3 id="信号"><a href="#信号" class="headerlink" title="信号"></a>信号</h3><p>看完例题直接上手</p>
+<h3 id="毛概"><a href="#毛概" class="headerlink" title="毛概"></a>毛概</h3><p>PWF就是大坑，避雷！！</p>
+<h2 id="歌单更新"><a href="#歌单更新" class="headerlink" title="歌单更新"></a>歌单更新</h2><p>伤心太平洋——任贤齐</p>
+<pre><code>“一波还未平息，一波又来侵袭”
+</code></pre><p>谁明浪子心——王杰</p>
+<pre><code>“我再置身寂寞路途，在那里会有幸福”（粤语）
+</code></pre><p>水手——郑智化</p>
+<pre><code>“他说风雨中这点痛算什么”
+</code></pre><p>练习——刘德华</p>
+<pre><code>“我已开始练习，开始慢慢着急，着急这世界没有你”
+</code></pre><p>英雄（奈克瑟斯OP）——DOA</p>
+<pre><code>“男子汉就应该变得更坚强，咬紧牙关，坚持到底”
+</code></pre><p>灰色轨迹——Beyond</p>
+<pre><code>“冲不破墙壁，前路没法看得清，再有那些挣扎与被迫”（粤语）
+</code></pre><p>消愁——毛不易</p>
+<pre><code>“人生苦短何必念念不忘”
+</code></pre>]]></content>
+      <categories>
+        <category>Holiday</category>
+      </categories>
+      <tags>
+        <tag>University</tag>
       </tags>
   </entry>
 </search>
