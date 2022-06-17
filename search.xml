@@ -1,37 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>4-10周总结</title>
-    <url>/2022/04/10/4-10%E5%91%A8%E6%80%9D%E8%80%83/</url>
-    <content><![CDATA[<h1 id="周总结"><a href="#周总结" class="headerlink" title="周总结"></a>周总结</h1><p>最近挺魔幻的</p>
+    <title>4-23周总结</title>
+    <url>/2022/04/23/4-23%E5%91%A8%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="4-23周总结"><a href="#4-23周总结" class="headerlink" title="4-23周总结"></a>4-23周总结</h1><p>4.23是世界读书日，快来交流喜欢读的书叭，我在这里也写了一点关于读书的感想~~竟然还有2天就期中考试了</p>
+<p>四平终于解封了，家人们都很开心~~</p>
 <span id="more"></span>
-<h2 id="读书"><a href="#读书" class="headerlink" title="读书"></a>读书</h2><h3 id="专业方面"><a href="#专业方面" class="headerlink" title="专业方面"></a>专业方面</h3><h4 id="计组（这就是内功！听张win-win说——请自行脑补）"><a href="#计组（这就是内功！听张win-win说——请自行脑补）" class="headerlink" title="计组（这就是内功！听张win-win说——请自行脑补）"></a>计组（这就是内功！听张win-win说——请自行脑补）</h4><p>复习了体系结构概况，各种码的作用、运算（问：牛码的作用是什么？（doge））</p>
-<p>其实XD的计组相比之前看过的CSAPP、Themes and Variations都相对更好理解，刘老师讲完之后再去看CSAPP会有这样的感悟：</p>
-<pre><code>1.CSAPP是基本模型的再提高
-
-2.基础模块的重要性
-
-3.x86-64很有趣哈哈
-</code></pre><h4 id="模电"><a href="#模电" class="headerlink" title="模电"></a>模电</h4><p>魔电这个名称不是白来的，确实很难，不过在第一次听完杨老师的讲解和后续看上交郑老师的网课的推动下，对模电的理解就像发现了新大陆</p>
-<p>简单提炼下模电目前带给我的思维锻炼：</p>
-<p>eg：放大电路的设计：</p>
-<pre><code>已有的原件——&gt;达到的目的——&gt;不断尝试，每个原件都不可或缺
-</code></pre><p>（学好电路分析基础很重要，戴维南定理非常有趣）</p>
-<h4 id="信号与系统"><a href="#信号与系统" class="headerlink" title="信号与系统"></a>信号与系统</h4><p>之前和很多同学交流过：为什么CS的学生要学Signals and Systems，我个人的具体观点如下：</p>
-<p><strong>·日后从事AI或者很庞杂的大project时（比如之前软件所的计算机和天线阵列的project）会用到硬性知识</strong></p>
-<p><strong>·这门课的思想会在几乎所有的事物上体现</strong></p>
-<p><strong>·崔院长曾说过：这些课在大学里面系统学习的效果要比工作后学习好很多，绝对不一样</strong></p>
-<h4 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h4><p>摆的时候看了人工智能学院焦李成教授的关于FPGA和AI发展的论文，对AI的“前世今生”有了简单的了解。</p>
-<p>project相关部分因为复习期中考试压力较大，所以咕咕咕了哈哈（doge</p>
-<h3 id="课外"><a href="#课外" class="headerlink" title="课外"></a>课外</h3><h4 id="《心流——最优体验心理学》"><a href="#《心流——最优体验心理学》" class="headerlink" title="《心流——最优体验心理学》"></a>《心流——最优体验心理学》</h4><p>一个词：Flow</p>
-<p>剩下的自己去体会</p>
-<h2 id="关于保研、内卷的思考"><a href="#关于保研、内卷的思考" class="headerlink" title="关于保研、内卷的思考"></a>关于保研、内卷的思考</h2><h3 id="先上结论："><a href="#先上结论：" class="headerlink" title="先上结论："></a>先上结论：</h3><p>先做人，后做事</p>
-<p>引用：“硬刀硬枪硬头皮，复杂的社会你给我去学习——”（虎哥大道理）</p>
-<h3 id="论证依据："><a href="#论证依据：" class="headerlink" title="论证依据："></a>论证依据：</h3><p>上知乎搜“西电情侣”，我不多做评价</p>
-<h3 id="个人建议："><a href="#个人建议：" class="headerlink" title="个人建议："></a>个人建议：</h3><p>该干啥干啥去，好好学习，吃饭，睡觉就够了（可能我还不够强吧，毕竟有的同学能凭“本事”弄2位数个奖项挂名，牛</p>
-<h2 id="晚安"><a href="#晚安" class="headerlink" title="晚安"></a>晚安</h2><p><strong>天地不可一日无和气</strong></p>
-<p><strong>人心不可一日无喜神</strong></p>
-<p><strong>——《小窗幽记》</strong></p>
+<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h3 id="课内"><a href="#课内" class="headerlink" title="课内"></a>课内</h3><p>先说说自己的感悟吧~</p>
+<p>计科（不愧是<strong>西部地区计算机唯一双一流学科</strong>！）优秀的同学太多太多了，ACM、CTF、互联网加（这个我不评价，dddd）……，不过每个同学竞争力拿出来都非常强，像极了高中的十九班（又开始想念高中了T_T）。所以要向身边的同学多多学习，尤其是一些程序员必须掌握的技能（比如学会阅读文档并马上使用</p>
+<h4 id="计组"><a href="#计组" class="headerlink" title="计组"></a>计组</h4><p>复习，要把原码、补码的乘除法，整数浮点数表示范围等好好总结并记下来，书后习题要再好好做做。</p>
+<h4 id="模电"><a href="#模电" class="headerlink" title="模电"></a>模电</h4><p>第二章习题，背基本概念。</p>
+<h4 id="信号"><a href="#信号" class="headerlink" title="信号"></a>信号</h4><p>性质+习题，期中只占10%，不慌</p>
+<h4 id="OS实验"><a href="#OS实验" class="headerlink" title="OS实验"></a>OS实验</h4><p>上手速度一般，文档不能马上转换为代码，这点要提升，向dc和kl学习~~</p>
+<p>学长说：遇见新东西不要慌，不能怂，直接上手干</p>
+<h4 id="G网实验"><a href="#G网实验" class="headerlink" title="G网实验"></a>G网实验</h4><p>在我们小组的努力下旗开得胜，被老师夸奖为：做的最好的一组，还是蛮开心的hh，大家都很用心，这种氛围我真的很喜欢</p>
+<h3 id="课外"><a href="#课外" class="headerlink" title="课外"></a>课外</h3><p>科研、创新真是很难的，不过这个过程很锻炼人，具体请移步《科研入坑指南》。</p>
+<p>如果要想有成就，那必须就要有创造。诺贝尔发明了硝酸甘油也就是炸药，这给我们人类带来便利的同时，也带来了数不清的灾难，但是我们不能否认：诺贝尔依然是一个伟大的人！——王志文《黑冰》台词</p>
+<h4 id="科研"><a href="#科研" class="headerlink" title="科研"></a>科研</h4><p>·有的方向如果做不出来可以先去尝试新的小方向，换下侧重点</p>
+<p>·企业的研发在一部分领域的的确确领先了高校，那么高校在社会中的作用又是什么呢？（思考ing）</p>
+<p>·粗略读了一些顶会论文，比如CVPR那篇和新闻信息流推荐相关的论文，很有意思</p>
+<p><img src="/2022/04/23/4-23%E5%91%A8%E6%80%BB%E7%BB%93/paper.jpg" alt="img"></p>
+<p>·虚拟机中opencv和py版本居然对应不上了，pip也出现了无法解决的错误，头疼，日后有时间换Ubuntu20.04为开发主力，时代变化太快了，如果不能持续学习，终究会被淘汰</p>
+<h2 id="锻炼"><a href="#锻炼" class="headerlink" title="锻炼"></a>锻炼</h2><p>2次3km，体力恢复，每次跑完步都会觉得大学本科的生活是人生中最难忘、最独一无二、最富有青春气息的时光了</p>
+<p>能遇到这么好的老师们、辅导员们、同学们，三生有幸</p>
+<p>（有的事简直是给我打了一管强心针，终于！）</p>
+<p>4.24更一波：<br>刘畊宏健美操太爽了，踢毽子配上手部动作，真的是脂肪燃烧的圣经！</p>
+<h2 id="读书"><a href="#读书" class="headerlink" title="读书"></a>读书</h2><p>今天要和大家分享的是：<strong>《围炉夜话》</strong></p>
+<p>作者：[清]王永彬</p>
+<p>中国处世绝学三大奇书：《围炉夜话》、《菜根谭》、《小窗幽记》。</p>
+<p>在阅读这类书时，我不断地感觉到自己的幼稚、天真，也为自己逐渐的突破感到欣喜。</p>
+<p>处世是一门学问，怎样与世界相处，怎样与自我相处，怎样有意义地度过一生，是人们一直探索的问题。</p>
+<p>《围炉夜话》是清朝王永彬所著的一部语录体通俗读物，他语言平实，却字字珠玑，所述皆为君子正己修身、立身处世的经验之谈，宛如一位老者的谆谆教诲，在人生路上给我们正确的指引方向，令人受益颇多。</p>
+<p>读此书就如在寒冷冬夜簇拥着火炉，与至交亲友畅谈的场景，娓娓道来，倍感亲切，个中滋味，值得我们用心去品味、感悟。</p>
+<p><strong>在世无过百年，总要做好人、存好心，留个后代榜样；</strong></p>
+<p><strong>谋生各有恒业，哪的管闲事，说闲话，荒我正经功夫。</strong></p>
+<p>最后放上奈克瑟斯青年形态（我的代号来源）</p>
+<p><img src="/2022/04/23/4-23%E5%91%A8%E6%80%BB%E7%BB%93/nexus.jpg" alt="img"></p>
+<p>明天又是满课的一天捏~</p>
 ]]></content>
       <categories>
         <category>University</category>
@@ -87,42 +92,37 @@
       </tags>
   </entry>
   <entry>
-    <title>4-23周总结</title>
-    <url>/2022/04/23/4-23%E5%91%A8%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="4-23周总结"><a href="#4-23周总结" class="headerlink" title="4-23周总结"></a>4-23周总结</h1><p>4.23是世界读书日，快来交流喜欢读的书叭，我在这里也写了一点关于读书的感想~~竟然还有2天就期中考试了</p>
-<p>四平终于解封了，家人们都很开心~~</p>
+    <title>4-10周总结</title>
+    <url>/2022/04/10/4-10%E5%91%A8%E6%80%9D%E8%80%83/</url>
+    <content><![CDATA[<h1 id="周总结"><a href="#周总结" class="headerlink" title="周总结"></a>周总结</h1><p>最近挺魔幻的</p>
 <span id="more"></span>
-<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h3 id="课内"><a href="#课内" class="headerlink" title="课内"></a>课内</h3><p>先说说自己的感悟吧~</p>
-<p>计科（不愧是<strong>西部地区计算机唯一双一流学科</strong>！）优秀的同学太多太多了，ACM、CTF、互联网加（这个我不评价，dddd）……，不过每个同学竞争力拿出来都非常强，像极了高中的十九班（又开始想念高中了T_T）。所以要向身边的同学多多学习，尤其是一些程序员必须掌握的技能（比如学会阅读文档并马上使用</p>
-<h4 id="计组"><a href="#计组" class="headerlink" title="计组"></a>计组</h4><p>复习，要把原码、补码的乘除法，整数浮点数表示范围等好好总结并记下来，书后习题要再好好做做。</p>
-<h4 id="模电"><a href="#模电" class="headerlink" title="模电"></a>模电</h4><p>第二章习题，背基本概念。</p>
-<h4 id="信号"><a href="#信号" class="headerlink" title="信号"></a>信号</h4><p>性质+习题，期中只占10%，不慌</p>
-<h4 id="OS实验"><a href="#OS实验" class="headerlink" title="OS实验"></a>OS实验</h4><p>上手速度一般，文档不能马上转换为代码，这点要提升，向dc和kl学习~~</p>
-<p>学长说：遇见新东西不要慌，不能怂，直接上手干</p>
-<h4 id="G网实验"><a href="#G网实验" class="headerlink" title="G网实验"></a>G网实验</h4><p>在我们小组的努力下旗开得胜，被老师夸奖为：做的最好的一组，还是蛮开心的hh，大家都很用心，这种氛围我真的很喜欢</p>
-<h3 id="课外"><a href="#课外" class="headerlink" title="课外"></a>课外</h3><p>科研、创新真是很难的，不过这个过程很锻炼人，具体请移步《科研入坑指南》。</p>
-<p>如果要想有成就，那必须就要有创造。诺贝尔发明了硝酸甘油也就是炸药，这给我们人类带来便利的同时，也带来了数不清的灾难，但是我们不能否认：诺贝尔依然是一个伟大的人！——王志文《黑冰》台词</p>
-<h4 id="科研"><a href="#科研" class="headerlink" title="科研"></a>科研</h4><p>·有的方向如果做不出来可以先去尝试新的小方向，换下侧重点</p>
-<p>·企业的研发在一部分领域的的确确领先了高校，那么高校在社会中的作用又是什么呢？（思考ing）</p>
-<p>·粗略读了一些顶会论文，比如CVPR那篇和新闻信息流推荐相关的论文，很有意思</p>
-<p><img src="/2022/04/23/4-23%E5%91%A8%E6%80%BB%E7%BB%93/paper.jpg" alt="img"></p>
-<p>·虚拟机中opencv和py版本居然对应不上了，pip也出现了无法解决的错误，头疼，日后有时间换Ubuntu20.04为开发主力，时代变化太快了，如果不能持续学习，终究会被淘汰</p>
-<h2 id="锻炼"><a href="#锻炼" class="headerlink" title="锻炼"></a>锻炼</h2><p>2次3km，体力恢复，每次跑完步都会觉得大学本科的生活是人生中最难忘、最独一无二、最富有青春气息的时光了</p>
-<p>能遇到这么好的老师们、辅导员们、同学们，三生有幸</p>
-<p>（有的事简直是给我打了一管强心针，终于！）</p>
-<p>4.24更一波：<br>刘畊宏健美操太爽了，踢毽子配上手部动作，真的是脂肪燃烧的圣经！</p>
-<h2 id="读书"><a href="#读书" class="headerlink" title="读书"></a>读书</h2><p>今天要和大家分享的是：<strong>《围炉夜话》</strong></p>
-<p>作者：[清]王永彬</p>
-<p>中国处世绝学三大奇书：《围炉夜话》、《菜根谭》、《小窗幽记》。</p>
-<p>在阅读这类书时，我不断地感觉到自己的幼稚、天真，也为自己逐渐的突破感到欣喜。</p>
-<p>处世是一门学问，怎样与世界相处，怎样与自我相处，怎样有意义地度过一生，是人们一直探索的问题。</p>
-<p>《围炉夜话》是清朝王永彬所著的一部语录体通俗读物，他语言平实，却字字珠玑，所述皆为君子正己修身、立身处世的经验之谈，宛如一位老者的谆谆教诲，在人生路上给我们正确的指引方向，令人受益颇多。</p>
-<p>读此书就如在寒冷冬夜簇拥着火炉，与至交亲友畅谈的场景，娓娓道来，倍感亲切，个中滋味，值得我们用心去品味、感悟。</p>
-<p><strong>在世无过百年，总要做好人、存好心，留个后代榜样；</strong></p>
-<p><strong>谋生各有恒业，哪的管闲事，说闲话，荒我正经功夫。</strong></p>
-<p>最后放上奈克瑟斯青年形态（我的代号来源）</p>
-<p><img src="/2022/04/23/4-23%E5%91%A8%E6%80%BB%E7%BB%93/nexus.jpg" alt="img"></p>
-<p>明天又是满课的一天捏~</p>
+<h2 id="读书"><a href="#读书" class="headerlink" title="读书"></a>读书</h2><h3 id="专业方面"><a href="#专业方面" class="headerlink" title="专业方面"></a>专业方面</h3><h4 id="计组（这就是内功！听张win-win说——请自行脑补）"><a href="#计组（这就是内功！听张win-win说——请自行脑补）" class="headerlink" title="计组（这就是内功！听张win-win说——请自行脑补）"></a>计组（这就是内功！听张win-win说——请自行脑补）</h4><p>复习了体系结构概况，各种码的作用、运算（问：牛码的作用是什么？（doge））</p>
+<p>其实XD的计组相比之前看过的CSAPP、Themes and Variations都相对更好理解，刘老师讲完之后再去看CSAPP会有这样的感悟：</p>
+<pre><code>1.CSAPP是基本模型的再提高
+
+2.基础模块的重要性
+
+3.x86-64很有趣哈哈
+</code></pre><h4 id="模电"><a href="#模电" class="headerlink" title="模电"></a>模电</h4><p>魔电这个名称不是白来的，确实很难，不过在第一次听完杨老师的讲解和后续看上交郑老师的网课的推动下，对模电的理解就像发现了新大陆</p>
+<p>简单提炼下模电目前带给我的思维锻炼：</p>
+<p>eg：放大电路的设计：</p>
+<pre><code>已有的原件——&gt;达到的目的——&gt;不断尝试，每个原件都不可或缺
+</code></pre><p>（学好电路分析基础很重要，戴维南定理非常有趣）</p>
+<h4 id="信号与系统"><a href="#信号与系统" class="headerlink" title="信号与系统"></a>信号与系统</h4><p>之前和很多同学交流过：为什么CS的学生要学Signals and Systems，我个人的具体观点如下：</p>
+<p><strong>·日后从事AI或者很庞杂的大project时（比如之前软件所的计算机和天线阵列的project）会用到硬性知识</strong></p>
+<p><strong>·这门课的思想会在几乎所有的事物上体现</strong></p>
+<p><strong>·崔院长曾说过：这些课在大学里面系统学习的效果要比工作后学习好很多，绝对不一样</strong></p>
+<h4 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h4><p>摆的时候看了人工智能学院焦李成教授的关于FPGA和AI发展的论文，对AI的“前世今生”有了简单的了解。</p>
+<p>project相关部分因为复习期中考试压力较大，所以咕咕咕了哈哈（doge</p>
+<h3 id="课外"><a href="#课外" class="headerlink" title="课外"></a>课外</h3><h4 id="《心流——最优体验心理学》"><a href="#《心流——最优体验心理学》" class="headerlink" title="《心流——最优体验心理学》"></a>《心流——最优体验心理学》</h4><p>一个词：Flow</p>
+<p>剩下的自己去体会</p>
+<h2 id="关于保研、内卷的思考"><a href="#关于保研、内卷的思考" class="headerlink" title="关于保研、内卷的思考"></a>关于保研、内卷的思考</h2><h3 id="先上结论："><a href="#先上结论：" class="headerlink" title="先上结论："></a>先上结论：</h3><p>先做人，后做事</p>
+<p>引用：“硬刀硬枪硬头皮，复杂的社会你给我去学习——”（虎哥大道理）</p>
+<h3 id="论证依据："><a href="#论证依据：" class="headerlink" title="论证依据："></a>论证依据：</h3><p>上知乎搜“西电情侣”，我不多做评价</p>
+<h3 id="个人建议："><a href="#个人建议：" class="headerlink" title="个人建议："></a>个人建议：</h3><p>该干啥干啥去，好好学习，吃饭，睡觉就够了（可能我还不够强吧，毕竟有的同学能凭“本事”弄2位数个奖项挂名，牛</p>
+<h2 id="晚安"><a href="#晚安" class="headerlink" title="晚安"></a>晚安</h2><p><strong>天地不可一日无和气</strong></p>
+<p><strong>人心不可一日无喜神</strong></p>
+<p><strong>——《小窗幽记》</strong></p>
 ]]></content>
       <categories>
         <category>University</category>
@@ -255,6 +255,24 @@
       </categories>
       <tags>
         <tag>CSer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>清明</title>
+    <url>/2022/04/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="记录大二下学期第一次进城"><a href="#记录大二下学期第一次进城" class="headerlink" title="记录大二下学期第一次进城"></a>记录大二下学期第一次进城</h2><span id="more"></span>
+<p>玩一把大的，水完毛概直接润<br>小寨鹿港粤菜：叉烧肉 汤 牛柳 还有CoCo Cafe的柠檬百香果双响炮<br>晚上去了大唐不夜城，夜景音乐喷泉</p>
+<h2 id="青龙寺"><a href="#青龙寺" class="headerlink" title="青龙寺"></a>青龙寺</h2><p>樱花超级好看，每一朵都独具韵味</p>
+<p>寺庙里面的树上挂满了祈福的红带，不过我对这方面也不了解，没敢随意去弄。。。心意到了就可以了（x</p>
+<p>离开时看见一些老大爷和老大妈跳着新疆舞（貌似是），特别有精神，希望我老了也能很有精气神hh</p>
+<p>中午吃了韩式传统烤肉，百去不厌，下午从3点睡到6点（5555），不过充满了干劲，这才叫大学生活（牛马假日）</p>
+<p>该juan了（这就去C楼，溜了）</p>
+]]></content>
+      <categories>
+        <category>Holiday</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -615,65 +633,6 @@ dst(x,y)=\left\{
       </tags>
   </entry>
   <entry>
-    <title>文献阅读综述</title>
-    <url>/2022/04/04/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%BB%BC%E8%BF%B0/</url>
-    <content><![CDATA[<h2 id="文章脉络解析"><a href="#文章脉络解析" class="headerlink" title="文章脉络解析"></a><strong>文章脉络解析</strong></h2><span id="more"></span>
-<h3 id="1-精读摘要"><a href="#1-精读摘要" class="headerlink" title="1  精读摘要"></a><strong>1</strong>  <strong>精读摘要</strong></h3><p>摘要部分一般分为2-3 段</p>
-<p>第一段，1、背景；2-3、综述现在存在的问题；4、总结句</p>
-<p>第二段，1、概述；2-4、分别简介各组件，及解决方案的逻辑思路；5，点明文中所提解决方案的亮点；6，宏观描述实验效果（6 可以作为第三段）</p>
-<h3 id="2-泛读-Introduction"><a href="#2-泛读-Introduction" class="headerlink" title="2  泛读 Introduction"></a><strong>2</strong>  <strong>泛读</strong> <strong>Introduction</strong></h3><p>Introduction 重在脉络和文章的研究思路：通过背景介绍，引出研究问题，论述研究现状，（这两句可以换顺序），引入our idea（解决问题的逻辑思路），challenges；Contributions.</p>
-<p>（这部分描述一般较为简略，是在逻辑层面论述）</p>
-<p>（自己写作的时候，强烈另开一个Section, Motivation and challenges / Limitations。通过图公式等形式，或与别人工作对比，详细阐述研究问题细节，可以区分开别人工作、能人所不能的亮点。）（这个Section 非常重要，做的好，能为说服审稿人起到大半的作用）</p>
-<h3 id="3-related-work"><a href="#3-related-work" class="headerlink" title="3   related work"></a><strong>3</strong>   <strong>related work</strong></h3><p>阅读时可暂时忽略，可放后面，conclusion 前</p>
-<h3 id="4-问题-模型的-formulation-（公式化）-formalization-形式化"><a href="#4-问题-模型的-formulation-（公式化）-formalization-形式化" class="headerlink" title="4  问题 / 模型的 formulation  （公式化） / formalization(  形式化 )"></a><strong>4</strong>  <strong>问题</strong> / <strong>模型的</strong> <strong>formulation</strong>  <strong>（公式化）</strong> <strong>/ formalization(</strong>  <strong>形式化</strong> <strong>)</strong></h3><p>细读，但一般较为简单。 该部分主要作用是把逻辑问题，形式化为公式或数学模型，为正式具体的解决方案做好准备。</p>
-<h3 id="5-系统模型及具体的-solution-，设计细节"><a href="#5-系统模型及具体的-solution-，设计细节" class="headerlink" title="5  系统模型及具体的 solution ，设计细节"></a><strong>5</strong>  <strong>系统模型及具体的</strong> <strong>solution</strong> <strong>，设计细节</strong></h3><p>系统模型，该部分展示的是整体的系统模型，或解决方案架构。 除系统介绍解决方案外，还应详细论述设计细节及原因。（可与Motivation 进行对比区分，一遍遍在不同层面，讲述自己的设计理念）</p>
-<p>具体的solution，没必要细说，大家怎么做的就可以怎么写。需要的提醒的是，在具体的设计前后，尽量添加必要的逻辑的解释。</p>
-<h3 id="6-实验部分"><a href="#6-实验部分" class="headerlink" title="6  实验部分"></a><strong>6</strong>  <strong>实验部分</strong></h3><p>一般包括数据集，实验设计和设置，及实验效果</p>
-<p>数据集，重点关注，进行数据集积累。一般业内只有很有限的数据集。</p>
-<p>实验设计和设置，可以让你更清晰地认识到，文中解决方案是怎么来应用的，及相关参数值是如何设置的。</p>
-<p>实验效果没必要细说。</p>
-<h1 id="文献阅读需要关注的几个问题"><a href="#文献阅读需要关注的几个问题" class="headerlink" title="文献阅读需要关注的几个问题"></a><strong>文献阅读需要关注的几个问题</strong></h1><h3 id="1-文章研究的问题是什么？"><a href="#1-文章研究的问题是什么？" class="headerlink" title="1.文章研究的问题是什么？"></a><strong>1.文章研究的问题是什么？</strong></h3><p>逻辑层面的研究问题，越准确越细越好。（一般出现在前三章）。观察别人的研究问题，积累并形成新的研究问题。</p>
-<h3 id="2-解决方案的逻辑思路？"><a href="#2-解决方案的逻辑思路？" class="headerlink" title="2. 解决方案的逻辑思路？"></a><strong>2.</strong> <strong>解决方案的逻辑思路？</strong></h3><p>以什么思路，怎么解决的。经得住推敲。（一般出现在前三章）。借鉴别人的研究思路，以创新性地提出自己的解决方案。</p>
-<h3 id="3-具体的解决方案。"><a href="#3-具体的解决方案。" class="headerlink" title="3. 具体的解决方案。"></a><strong>3.</strong> <strong>具体的解决方案。</strong></h3><p>（自己写作的时候，还要加入必要的性能分析，如时间复杂度，收敛性等）</p>
-<h3 id="4-实验部分"><a href="#4-实验部分" class="headerlink" title="4. 实验部分"></a><strong>4.</strong> <strong>实验部分</strong></h3><p>关注点有两个：a. 数据集；b. 文中solution 在实验中是怎么用的，以更清晰地认识solution。根据自己写作需要，可能还会关注实验指标。</p>
-<p>一般阅读时不太需要关注实验效果，因为文中solution 的优势会在设计中解释的很清楚，实验效果就是去验证它。</p>
-<h1 id="根据文献与个人研究相关性不同，对文献的阅读研究程度也不同"><a href="#根据文献与个人研究相关性不同，对文献的阅读研究程度也不同" class="headerlink" title="根据文献与个人研究相关性不同，对文献的阅读研究程度也不同"></a><strong>根据文献与个人研究相关性不同，对文献的阅读研究程度也不同</strong></h1><p><strong>1.</strong> <strong>非常相关</strong></p>
-<p>详细阅读文献，尽可能地搞清楚上述几个问题；</p>
-<p>并进行批判性地讨论，推敲文章的研究问题及解决方案；</p>
-<p>清晰地认清文章的优缺点：优势优在哪儿，劣势劣在哪儿。顺利的话对文章的批判可以产生新的</p>
-<p>idea。</p>
-<p><strong>2.</strong> <strong>一般相关</strong></p>
-<p>问题1 和2 是必须要搞清的；文章研究了什么问题，解决方案的逻辑思路是什么</p>
-<p>问题3 可以粗略掌握，大概知道是怎么解决的，对具体的解决方案有个模糊的认识即可。作用：扩展自己的研究领域，和知识面；借鉴别人的研究思路。</p>
-<p><strong>3.</strong> <strong>不太相关</strong></p>
-<p>把问题1 和2 搞清即可：知道文中研究的问题，及大致的解决方案（解决的逻辑思路）。 阅读目的，了解相关领域还有哪些研究问题，以扩展自身的知识面。</p>
-]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>科研</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>清明</title>
-    <url>/2022/04/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="记录大二下学期第一次进城"><a href="#记录大二下学期第一次进城" class="headerlink" title="记录大二下学期第一次进城"></a>记录大二下学期第一次进城</h2><span id="more"></span>
-<p>玩一把大的，水完毛概直接润<br>小寨鹿港粤菜：叉烧肉 汤 牛柳 还有CoCo Cafe的柠檬百香果双响炮<br>晚上去了大唐不夜城，夜景音乐喷泉</p>
-<h2 id="青龙寺"><a href="#青龙寺" class="headerlink" title="青龙寺"></a>青龙寺</h2><p>樱花超级好看，每一朵都独具韵味</p>
-<p>寺庙里面的树上挂满了祈福的红带，不过我对这方面也不了解，没敢随意去弄。。。心意到了就可以了（x</p>
-<p>离开时看见一些老大爷和老大妈跳着新疆舞（貌似是），特别有精神，希望我老了也能很有精气神hh</p>
-<p>中午吃了韩式传统烤肉，百去不厌，下午从3点睡到6点（5555），不过充满了干劲，这才叫大学生活（牛马假日）</p>
-<p>该juan了（这就去C楼，溜了）</p>
-]]></content>
-      <categories>
-        <category>Holiday</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>端午小结</title>
     <url>/2022/06/05/%E7%AB%AF%E5%8D%88%E5%B0%8F%E7%BB%93/</url>
     <content><![CDATA[<h1 id="端午小结"><a href="#端午小结" class="headerlink" title="端午小结"></a>端午小结</h1><p>放假+复习+歌单更新</p>
@@ -713,6 +672,47 @@ dst(x,y)=\left\{
       </categories>
       <tags>
         <tag>University</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文献阅读综述</title>
+    <url>/2022/04/04/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%BB%BC%E8%BF%B0/</url>
+    <content><![CDATA[<h2 id="文章脉络解析"><a href="#文章脉络解析" class="headerlink" title="文章脉络解析"></a><strong>文章脉络解析</strong></h2><span id="more"></span>
+<h3 id="1-精读摘要"><a href="#1-精读摘要" class="headerlink" title="1  精读摘要"></a><strong>1</strong>  <strong>精读摘要</strong></h3><p>摘要部分一般分为2-3 段</p>
+<p>第一段，1、背景；2-3、综述现在存在的问题；4、总结句</p>
+<p>第二段，1、概述；2-4、分别简介各组件，及解决方案的逻辑思路；5，点明文中所提解决方案的亮点；6，宏观描述实验效果（6 可以作为第三段）</p>
+<h3 id="2-泛读-Introduction"><a href="#2-泛读-Introduction" class="headerlink" title="2  泛读 Introduction"></a><strong>2</strong>  <strong>泛读</strong> <strong>Introduction</strong></h3><p>Introduction 重在脉络和文章的研究思路：通过背景介绍，引出研究问题，论述研究现状，（这两句可以换顺序），引入our idea（解决问题的逻辑思路），challenges；Contributions.</p>
+<p>（这部分描述一般较为简略，是在逻辑层面论述）</p>
+<p>（自己写作的时候，强烈另开一个Section, Motivation and challenges / Limitations。通过图公式等形式，或与别人工作对比，详细阐述研究问题细节，可以区分开别人工作、能人所不能的亮点。）（这个Section 非常重要，做的好，能为说服审稿人起到大半的作用）</p>
+<h3 id="3-related-work"><a href="#3-related-work" class="headerlink" title="3   related work"></a><strong>3</strong>   <strong>related work</strong></h3><p>阅读时可暂时忽略，可放后面，conclusion 前</p>
+<h3 id="4-问题-模型的-formulation-（公式化）-formalization-形式化"><a href="#4-问题-模型的-formulation-（公式化）-formalization-形式化" class="headerlink" title="4  问题 / 模型的 formulation  （公式化） / formalization(  形式化 )"></a><strong>4</strong>  <strong>问题</strong> / <strong>模型的</strong> <strong>formulation</strong>  <strong>（公式化）</strong> <strong>/ formalization(</strong>  <strong>形式化</strong> <strong>)</strong></h3><p>细读，但一般较为简单。 该部分主要作用是把逻辑问题，形式化为公式或数学模型，为正式具体的解决方案做好准备。</p>
+<h3 id="5-系统模型及具体的-solution-，设计细节"><a href="#5-系统模型及具体的-solution-，设计细节" class="headerlink" title="5  系统模型及具体的 solution ，设计细节"></a><strong>5</strong>  <strong>系统模型及具体的</strong> <strong>solution</strong> <strong>，设计细节</strong></h3><p>系统模型，该部分展示的是整体的系统模型，或解决方案架构。 除系统介绍解决方案外，还应详细论述设计细节及原因。（可与Motivation 进行对比区分，一遍遍在不同层面，讲述自己的设计理念）</p>
+<p>具体的solution，没必要细说，大家怎么做的就可以怎么写。需要的提醒的是，在具体的设计前后，尽量添加必要的逻辑的解释。</p>
+<h3 id="6-实验部分"><a href="#6-实验部分" class="headerlink" title="6  实验部分"></a><strong>6</strong>  <strong>实验部分</strong></h3><p>一般包括数据集，实验设计和设置，及实验效果</p>
+<p>数据集，重点关注，进行数据集积累。一般业内只有很有限的数据集。</p>
+<p>实验设计和设置，可以让你更清晰地认识到，文中解决方案是怎么来应用的，及相关参数值是如何设置的。</p>
+<p>实验效果没必要细说。</p>
+<h1 id="文献阅读需要关注的几个问题"><a href="#文献阅读需要关注的几个问题" class="headerlink" title="文献阅读需要关注的几个问题"></a><strong>文献阅读需要关注的几个问题</strong></h1><h3 id="1-文章研究的问题是什么？"><a href="#1-文章研究的问题是什么？" class="headerlink" title="1.文章研究的问题是什么？"></a><strong>1.文章研究的问题是什么？</strong></h3><p>逻辑层面的研究问题，越准确越细越好。（一般出现在前三章）。观察别人的研究问题，积累并形成新的研究问题。</p>
+<h3 id="2-解决方案的逻辑思路？"><a href="#2-解决方案的逻辑思路？" class="headerlink" title="2. 解决方案的逻辑思路？"></a><strong>2.</strong> <strong>解决方案的逻辑思路？</strong></h3><p>以什么思路，怎么解决的。经得住推敲。（一般出现在前三章）。借鉴别人的研究思路，以创新性地提出自己的解决方案。</p>
+<h3 id="3-具体的解决方案。"><a href="#3-具体的解决方案。" class="headerlink" title="3. 具体的解决方案。"></a><strong>3.</strong> <strong>具体的解决方案。</strong></h3><p>（自己写作的时候，还要加入必要的性能分析，如时间复杂度，收敛性等）</p>
+<h3 id="4-实验部分"><a href="#4-实验部分" class="headerlink" title="4. 实验部分"></a><strong>4.</strong> <strong>实验部分</strong></h3><p>关注点有两个：a. 数据集；b. 文中solution 在实验中是怎么用的，以更清晰地认识solution。根据自己写作需要，可能还会关注实验指标。</p>
+<p>一般阅读时不太需要关注实验效果，因为文中solution 的优势会在设计中解释的很清楚，实验效果就是去验证它。</p>
+<h1 id="根据文献与个人研究相关性不同，对文献的阅读研究程度也不同"><a href="#根据文献与个人研究相关性不同，对文献的阅读研究程度也不同" class="headerlink" title="根据文献与个人研究相关性不同，对文献的阅读研究程度也不同"></a><strong>根据文献与个人研究相关性不同，对文献的阅读研究程度也不同</strong></h1><p><strong>1.</strong> <strong>非常相关</strong></p>
+<p>详细阅读文献，尽可能地搞清楚上述几个问题；</p>
+<p>并进行批判性地讨论，推敲文章的研究问题及解决方案；</p>
+<p>清晰地认清文章的优缺点：优势优在哪儿，劣势劣在哪儿。顺利的话对文章的批判可以产生新的</p>
+<p>idea。</p>
+<p><strong>2.</strong> <strong>一般相关</strong></p>
+<p>问题1 和2 是必须要搞清的；文章研究了什么问题，解决方案的逻辑思路是什么</p>
+<p>问题3 可以粗略掌握，大概知道是怎么解决的，对具体的解决方案有个模糊的认识即可。作用：扩展自己的研究领域，和知识面；借鉴别人的研究思路。</p>
+<p><strong>3.</strong> <strong>不太相关</strong></p>
+<p>把问题1 和2 搞清即可：知道文中研究的问题，及大致的解决方案（解决的逻辑思路）。 阅读目的，了解相关领域还有哪些研究问题，以扩展自身的知识面。</p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>科研</tag>
       </tags>
   </entry>
   <entry>
