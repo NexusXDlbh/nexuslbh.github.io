@@ -87,6 +87,94 @@
       </tags>
   </entry>
   <entry>
+    <title>DES算法实现——Lab</title>
+    <url>/2022/04/03/DES%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0%E2%80%94%E2%80%94Lab/</url>
+    <content><![CDATA[<h1 id="重温DES（Data-Encryption-Standard）"><a href="#重温DES（Data-Encryption-Standard）" class="headerlink" title="重温DES（Data Encryption Standard）"></a>重温DES（<strong>Data Encryption Standard</strong>）</h1><span id="more"></span>
+<p>对称加密：使用同一把密钥，分为 流加密 、 块加密</p>
+<p>eg:</p>
+<p>流加密12345，分别加密1，2，3，4，5</p>
+<p>分组加密12345</p>
+<p>特点：</p>
+<pre><code>·加密速度快
+
+·密文可逆，一旦密钥文件泄露，数据就会暴露
+
+·加密后ASCII编码表找不到码会乱码
+
+·结合base64一起使用
+</code></pre><h2 id="DES结构"><a href="#DES结构" class="headerlink" title="DES结构"></a>DES结构</h2><p>DES也被称为Feistel网络，加密的各个步骤被称为 <strong>轮（round）</strong> ,DES是对称加密密码的代表。</p>
+<p><strong>关键思想：</strong> 将待加密信息分为两部分，如64位信息平均分为32位。</p>
+<p><strong>子密钥（subkey）：</strong> 是本轮加密使用的密钥（本轮的意思就是每一轮都需要使用一个不同的子密钥），故是局部密钥。</p>
+<p><strong>轮函数：</strong> 根据“右侧”和子密钥生成，对“左侧”进行加密的比特序列，<strong>轮函数是密码系统的核心</strong>。轮函数与左侧进行XOR运算，结果就是<strong>加密后的左侧。</strong></p>
+<h2 id="每一轮具体步骤"><a href="#每一轮具体步骤" class="headerlink" title="每一轮具体步骤"></a>每一轮具体步骤</h2><p>（1）将输入数据等分为左右两部分；</p>
+<p>（2）输入右侧直接发送到输出右侧；</p>
+<p>（3）输入右侧发送到轮函数；</p>
+<p>（4）轮函数根据右侧数据和子密钥计算出一串bit序列；</p>
+<p>（5）将（4）中的bit序列与左侧数据XOR运算，得到加密后的左侧结果。</p>
+<p><strong>但是这样一来，右侧没有被加密，因此需要用不同的子密钥对一轮处理重复若干次并在每两轮处理之间将左侧和右侧数据对调</strong>。</p>
+<p>eg：3轮加密需要进行2次左右对调，<strong>对调只在两轮之间进行，最后一轮不用对调</strong>。</p>
+<h2 id="解密操作"><a href="#解密操作" class="headerlink" title="解密操作"></a>解密操作</h2><p>将一轮加密的输出结果用相同的子密钥重新运行一次。<br>DES的解密算法与加密算法完全相同,<br>只需要将密钥的应用次序与加密时相反应用即可。</p>
+<p>即解密过程是初始置换函数IP接受长度为64比特的密文输入,将16个子密钥按照K16到K1的顺序应用与函数F的16 轮迭代运算中,然后将迭代的结果经由末置换函数I-P1得到64位的明文输出。</p>
+<h2 id="Feistel网络性质"><a href="#Feistel网络性质" class="headerlink" title="Feistel网络性质"></a>Feistel网络性质</h2><p>1.轮数可以任意增加</p>
+<p>2.加密时无论使用任何函数都可以正确解密</p>
+<p>3.加密解密可以用完全相同结构来实现</p>
+<h2 id="三重DES"><a href="#三重DES" class="headerlink" title="三重DES"></a>三重DES</h2><p>值得注意的一点是：三重DES是 <strong>加密——&gt;解密——&gt;加密</strong>的过程，而不是三次加密，这是为了让三重DES兼容普通的DES。</p>
+<p>DES最后被AES（<strong>Advanced Encryption Standard</strong>）代替了。</p>
+<h1 id="下面讲讲具体算法每一步的实现"><a href="#下面讲讲具体算法每一步的实现" class="headerlink" title="下面讲讲具体算法每一步的实现"></a>下面讲讲具体算法每一步的实现</h1><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import com.sun.org.apache.xml.internal.security.utils.Base64;</span><br><span class="line">import javax.crypto.Cipher ;</span><br><span class="line">import javax.crypto.spec.SecretKeySpec;</span><br><span class="line"></span><br><span class="line">public class DesDemo &#123;</span><br><span class="line">    public static void main(String[] args) throws Exception &#123;</span><br><span class="line">        //原文</span><br><span class="line">        String input = &quot;实验室&quot; ;</span><br><span class="line">        //定义DES密钥key，必须是8字节</span><br><span class="line">        String key = &quot;12345678&quot; ;</span><br><span class="line">        //表示算法</span><br><span class="line">        String transformation = &quot;DES&quot; ;</span><br><span class="line">        //表示加密类型</span><br><span class="line">        String  type = &quot;DES&quot; ;</span><br><span class="line">        //创建加密对象，引入Cipher类</span><br><span class="line">        Cipher cipher = Cipher.getInstance(&quot;DES&quot;) ;</span><br><span class="line">        //创建加密规则,即生成密钥</span><br><span class="line">        //参数1表示key的字节，2表示加密类型，和算法比较像</span><br><span class="line">        SecretKeySpec secretKeySpec = new SecretKeySpec(key.getBytes(),type) ;</span><br><span class="line">        //加密初始化</span><br><span class="line">        cipher.init(Cipher.ENCRYPT_MODE,secretKeySpec);</span><br><span class="line">        //参数1表示模式，分为加密和解密模式,参数2表示加密规则</span><br><span class="line"></span><br><span class="line">        //调用加密方法,参数表示原文字节数组，传进去原文</span><br><span class="line">        byte[] bytes = cipher.doFinal(input.getBytes());</span><br><span class="line">        //直接打印密文，会直接出现乱码,编码表找不到对应字符</span><br><span class="line">        //System.out.println(new String(bytes));</span><br><span class="line">        //解决方式1：迭代</span><br><span class="line">        //for (byte aByte : bytes) &#123;</span><br><span class="line">        //  System.out.println(aByte);</span><br><span class="line">        //&#125;</span><br><span class="line">        //解决方式2：对数据进行base64编码</span><br><span class="line">        String encode = Base64.encode(bytes);</span><br><span class="line">        System.out.println(encode);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>科研</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4-23周总结</title>
+    <url>/2022/04/23/4-23%E5%91%A8%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="4-23周总结"><a href="#4-23周总结" class="headerlink" title="4-23周总结"></a>4-23周总结</h1><p>4.23是世界读书日，快来交流喜欢读的书叭，我在这里也写了一点关于读书的感想~~竟然还有2天就期中考试了</p>
+<p>四平终于解封了，家人们都很开心~~</p>
+<span id="more"></span>
+<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h3 id="课内"><a href="#课内" class="headerlink" title="课内"></a>课内</h3><p>先说说自己的感悟吧~</p>
+<p>计科（不愧是<strong>西部地区计算机唯一双一流学科</strong>！）优秀的同学太多太多了，ACM、CTF、互联网加（这个我不评价，dddd）……，不过每个同学竞争力拿出来都非常强，像极了高中的十九班（又开始想念高中了T_T）。所以要向身边的同学多多学习，尤其是一些程序员必须掌握的技能（比如学会阅读文档并马上使用</p>
+<h4 id="计组"><a href="#计组" class="headerlink" title="计组"></a>计组</h4><p>复习，要把原码、补码的乘除法，整数浮点数表示范围等好好总结并记下来，书后习题要再好好做做。</p>
+<h4 id="模电"><a href="#模电" class="headerlink" title="模电"></a>模电</h4><p>第二章习题，背基本概念。</p>
+<h4 id="信号"><a href="#信号" class="headerlink" title="信号"></a>信号</h4><p>性质+习题，期中只占10%，不慌</p>
+<h4 id="OS实验"><a href="#OS实验" class="headerlink" title="OS实验"></a>OS实验</h4><p>上手速度一般，文档不能马上转换为代码，这点要提升，向dc和kl学习~~</p>
+<p>学长说：遇见新东西不要慌，不能怂，直接上手干</p>
+<h4 id="G网实验"><a href="#G网实验" class="headerlink" title="G网实验"></a>G网实验</h4><p>在我们小组的努力下旗开得胜，被老师夸奖为：做的最好的一组，还是蛮开心的hh，大家都很用心，这种氛围我真的很喜欢</p>
+<h3 id="课外"><a href="#课外" class="headerlink" title="课外"></a>课外</h3><p>科研、创新真是很难的，不过这个过程很锻炼人，具体请移步《科研入坑指南》。</p>
+<p>如果要想有成就，那必须就要有创造。诺贝尔发明了硝酸甘油也就是炸药，这给我们人类带来便利的同时，也带来了数不清的灾难，但是我们不能否认：诺贝尔依然是一个伟大的人！——王志文《黑冰》台词</p>
+<h4 id="科研"><a href="#科研" class="headerlink" title="科研"></a>科研</h4><p>·有的方向如果做不出来可以先去尝试新的小方向，换下侧重点</p>
+<p>·企业的研发在一部分领域的的确确领先了高校，那么高校在社会中的作用又是什么呢？（思考ing）</p>
+<p>·粗略读了一些顶会论文，比如CVPR那篇和新闻信息流推荐相关的论文，很有意思</p>
+<p><img src="/2022/04/23/4-23%E5%91%A8%E6%80%BB%E7%BB%93/paper.jpg" alt="img"></p>
+<p>·虚拟机中opencv和py版本居然对应不上了，pip也出现了无法解决的错误，头疼，日后有时间换Ubuntu20.04为开发主力，时代变化太快了，如果不能持续学习，终究会被淘汰</p>
+<h2 id="锻炼"><a href="#锻炼" class="headerlink" title="锻炼"></a>锻炼</h2><p>2次3km，体力恢复，每次跑完步都会觉得大学本科的生活是人生中最难忘、最独一无二、最富有青春气息的时光了</p>
+<p>能遇到这么好的老师们、辅导员们、同学们，三生有幸</p>
+<p>（有的事简直是给我打了一管强心针，终于！）</p>
+<p>4.24更一波：<br>刘畊宏健美操太爽了，踢毽子配上手部动作，真的是脂肪燃烧的圣经！</p>
+<h2 id="读书"><a href="#读书" class="headerlink" title="读书"></a>读书</h2><p>今天要和大家分享的是：<strong>《围炉夜话》</strong></p>
+<p>作者：[清]王永彬</p>
+<p>中国处世绝学三大奇书：《围炉夜话》、《菜根谭》、《小窗幽记》。</p>
+<p>在阅读这类书时，我不断地感觉到自己的幼稚、天真，也为自己逐渐的突破感到欣喜。</p>
+<p>处世是一门学问，怎样与世界相处，怎样与自我相处，怎样有意义地度过一生，是人们一直探索的问题。</p>
+<p>《围炉夜话》是清朝王永彬所著的一部语录体通俗读物，他语言平实，却字字珠玑，所述皆为君子正己修身、立身处世的经验之谈，宛如一位老者的谆谆教诲，在人生路上给我们正确的指引方向，令人受益颇多。</p>
+<p>读此书就如在寒冷冬夜簇拥着火炉，与至交亲友畅谈的场景，娓娓道来，倍感亲切，个中滋味，值得我们用心去品味、感悟。</p>
+<p><strong>在世无过百年，总要做好人、存好心，留个后代榜样；</strong></p>
+<p><strong>谋生各有恒业，哪的管闲事，说闲话，荒我正经功夫。</strong></p>
+<p>最后放上奈克瑟斯青年形态（我的代号来源）</p>
+<p><img src="/2022/04/23/4-23%E5%91%A8%E6%80%BB%E7%BB%93/nexus.jpg" alt="img"></p>
+<p>明天又是满课的一天捏~</p>
+]]></content>
+      <categories>
+        <category>University</category>
+      </categories>
+      <tags>
+        <tag>University</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>科研入坑指南</title>
     <url>/2022/04/20/%E4%BB%80%E4%B9%88%E6%98%AF%E7%A7%91%E7%A0%94/</url>
     <content><![CDATA[<p>写一些总结，希望对大家有帮助~</p>
@@ -170,91 +258,41 @@
       </tags>
   </entry>
   <entry>
-    <title>4-23周总结</title>
-    <url>/2022/04/23/4-23%E5%91%A8%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="4-23周总结"><a href="#4-23周总结" class="headerlink" title="4-23周总结"></a>4-23周总结</h1><p>4.23是世界读书日，快来交流喜欢读的书叭，我在这里也写了一点关于读书的感想~~竟然还有2天就期中考试了</p>
-<p>四平终于解封了，家人们都很开心~~</p>
+    <title>图像编码处理基础</title>
+    <url>/2022/04/19/%E5%9B%BE%E5%83%8F%E7%BC%96%E7%A0%81%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h1 id="图像方向基础"><a href="#图像方向基础" class="headerlink" title="图像方向基础"></a>图像方向基础</h1><h2 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h2><p>结合本人目前科研项目的经历，图像处理是最关键的一环，它的方方面面知识也可能是idea的来源。</p>
+<p>比较知名的书有《数字图像处理》（冈萨雷斯编写）。不过我的工作并不是对现有图像进行各种变换，所以这本书暂时不适合我。</p>
+<p>在JWC发出推迟考试的通知后，我在校图书馆的海洋里淘到了<strong>《图像编码基础》</strong>这本书，年代较为久远（2006年）但是对我很有启发意义，于是借走拿回宿舍研究，也恰恰是在这本书内，我意识到了学好“信号与系统”这门课的意义（比如二维傅里叶变换等），可以说获益匪浅。</p>
+<p>下面开始讲图像相关的一些基础知识。</p>
 <span id="more"></span>
-<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h3 id="课内"><a href="#课内" class="headerlink" title="课内"></a>课内</h3><p>先说说自己的感悟吧~</p>
-<p>计科（不愧是<strong>西部地区计算机唯一双一流学科</strong>！）优秀的同学太多太多了，ACM、CTF、互联网加（这个我不评价，dddd）……，不过每个同学竞争力拿出来都非常强，像极了高中的十九班（又开始想念高中了T_T）。所以要向身边的同学多多学习，尤其是一些程序员必须掌握的技能（比如学会阅读文档并马上使用</p>
-<h4 id="计组"><a href="#计组" class="headerlink" title="计组"></a>计组</h4><p>复习，要把原码、补码的乘除法，整数浮点数表示范围等好好总结并记下来，书后习题要再好好做做。</p>
-<h4 id="模电"><a href="#模电" class="headerlink" title="模电"></a>模电</h4><p>第二章习题，背基本概念。</p>
-<h4 id="信号"><a href="#信号" class="headerlink" title="信号"></a>信号</h4><p>性质+习题，期中只占10%，不慌</p>
-<h4 id="OS实验"><a href="#OS实验" class="headerlink" title="OS实验"></a>OS实验</h4><p>上手速度一般，文档不能马上转换为代码，这点要提升，向dc和kl学习~~</p>
-<p>学长说：遇见新东西不要慌，不能怂，直接上手干</p>
-<h4 id="G网实验"><a href="#G网实验" class="headerlink" title="G网实验"></a>G网实验</h4><p>在我们小组的努力下旗开得胜，被老师夸奖为：做的最好的一组，还是蛮开心的hh，大家都很用心，这种氛围我真的很喜欢</p>
-<h3 id="课外"><a href="#课外" class="headerlink" title="课外"></a>课外</h3><p>科研、创新真是很难的，不过这个过程很锻炼人，具体请移步《科研入坑指南》。</p>
-<p>如果要想有成就，那必须就要有创造。诺贝尔发明了硝酸甘油也就是炸药，这给我们人类带来便利的同时，也带来了数不清的灾难，但是我们不能否认：诺贝尔依然是一个伟大的人！——王志文《黑冰》台词</p>
-<h4 id="科研"><a href="#科研" class="headerlink" title="科研"></a>科研</h4><p>·有的方向如果做不出来可以先去尝试新的小方向，换下侧重点</p>
-<p>·企业的研发在一部分领域的的确确领先了高校，那么高校在社会中的作用又是什么呢？（思考ing）</p>
-<p>·粗略读了一些顶会论文，比如CVPR那篇和新闻信息流推荐相关的论文，很有意思</p>
-<p><img src="/2022/04/23/4-23%E5%91%A8%E6%80%BB%E7%BB%93/paper.jpg" alt="img"></p>
-<p>·虚拟机中opencv和py版本居然对应不上了，pip也出现了无法解决的错误，头疼，日后有时间换Ubuntu20.04为开发主力，时代变化太快了，如果不能持续学习，终究会被淘汰</p>
-<h2 id="锻炼"><a href="#锻炼" class="headerlink" title="锻炼"></a>锻炼</h2><p>2次3km，体力恢复，每次跑完步都会觉得大学本科的生活是人生中最难忘、最独一无二、最富有青春气息的时光了</p>
-<p>能遇到这么好的老师们、辅导员们、同学们，三生有幸</p>
-<p>（有的事简直是给我打了一管强心针，终于！）</p>
-<p>4.24更一波：<br>刘畊宏健美操太爽了，踢毽子配上手部动作，真的是脂肪燃烧的圣经！</p>
-<h2 id="读书"><a href="#读书" class="headerlink" title="读书"></a>读书</h2><p>今天要和大家分享的是：<strong>《围炉夜话》</strong></p>
-<p>作者：[清]王永彬</p>
-<p>中国处世绝学三大奇书：《围炉夜话》、《菜根谭》、《小窗幽记》。</p>
-<p>在阅读这类书时，我不断地感觉到自己的幼稚、天真，也为自己逐渐的突破感到欣喜。</p>
-<p>处世是一门学问，怎样与世界相处，怎样与自我相处，怎样有意义地度过一生，是人们一直探索的问题。</p>
-<p>《围炉夜话》是清朝王永彬所著的一部语录体通俗读物，他语言平实，却字字珠玑，所述皆为君子正己修身、立身处世的经验之谈，宛如一位老者的谆谆教诲，在人生路上给我们正确的指引方向，令人受益颇多。</p>
-<p>读此书就如在寒冷冬夜簇拥着火炉，与至交亲友畅谈的场景，娓娓道来，倍感亲切，个中滋味，值得我们用心去品味、感悟。</p>
-<p><strong>在世无过百年，总要做好人、存好心，留个后代榜样；</strong></p>
-<p><strong>谋生各有恒业，哪的管闲事，说闲话，荒我正经功夫。</strong></p>
-<p>最后放上奈克瑟斯青年形态（我的代号来源）</p>
-<p><img src="/2022/04/23/4-23%E5%91%A8%E6%80%BB%E7%BB%93/nexus.jpg" alt="img"></p>
-<p>明天又是满课的一天捏~</p>
-]]></content>
-      <categories>
-        <category>University</category>
-      </categories>
-      <tags>
-        <tag>University</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DES算法实现——Lab</title>
-    <url>/2022/04/03/DES%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0%E2%80%94%E2%80%94Lab/</url>
-    <content><![CDATA[<h1 id="重温DES（Data-Encryption-Standard）"><a href="#重温DES（Data-Encryption-Standard）" class="headerlink" title="重温DES（Data Encryption Standard）"></a>重温DES（<strong>Data Encryption Standard</strong>）</h1><span id="more"></span>
-<p>对称加密：使用同一把密钥，分为 流加密 、 块加密</p>
-<p>eg:</p>
-<p>流加密12345，分别加密1，2，3，4，5</p>
-<p>分组加密12345</p>
-<p>特点：</p>
-<pre><code>·加密速度快
-
-·密文可逆，一旦密钥文件泄露，数据就会暴露
-
-·加密后ASCII编码表找不到码会乱码
-
-·结合base64一起使用
-</code></pre><h2 id="DES结构"><a href="#DES结构" class="headerlink" title="DES结构"></a>DES结构</h2><p>DES也被称为Feistel网络，加密的各个步骤被称为 <strong>轮（round）</strong> ,DES是对称加密密码的代表。</p>
-<p><strong>关键思想：</strong> 将待加密信息分为两部分，如64位信息平均分为32位。</p>
-<p><strong>子密钥（subkey）：</strong> 是本轮加密使用的密钥（本轮的意思就是每一轮都需要使用一个不同的子密钥），故是局部密钥。</p>
-<p><strong>轮函数：</strong> 根据“右侧”和子密钥生成，对“左侧”进行加密的比特序列，<strong>轮函数是密码系统的核心</strong>。轮函数与左侧进行XOR运算，结果就是<strong>加密后的左侧。</strong></p>
-<h2 id="每一轮具体步骤"><a href="#每一轮具体步骤" class="headerlink" title="每一轮具体步骤"></a>每一轮具体步骤</h2><p>（1）将输入数据等分为左右两部分；</p>
-<p>（2）输入右侧直接发送到输出右侧；</p>
-<p>（3）输入右侧发送到轮函数；</p>
-<p>（4）轮函数根据右侧数据和子密钥计算出一串bit序列；</p>
-<p>（5）将（4）中的bit序列与左侧数据XOR运算，得到加密后的左侧结果。</p>
-<p><strong>但是这样一来，右侧没有被加密，因此需要用不同的子密钥对一轮处理重复若干次并在每两轮处理之间将左侧和右侧数据对调</strong>。</p>
-<p>eg：3轮加密需要进行2次左右对调，<strong>对调只在两轮之间进行，最后一轮不用对调</strong>。</p>
-<h2 id="解密操作"><a href="#解密操作" class="headerlink" title="解密操作"></a>解密操作</h2><p>将一轮加密的输出结果用相同的子密钥重新运行一次。<br>DES的解密算法与加密算法完全相同,<br>只需要将密钥的应用次序与加密时相反应用即可。</p>
-<p>即解密过程是初始置换函数IP接受长度为64比特的密文输入,将16个子密钥按照K16到K1的顺序应用与函数F的16 轮迭代运算中,然后将迭代的结果经由末置换函数I-P1得到64位的明文输出。</p>
-<h2 id="Feistel网络性质"><a href="#Feistel网络性质" class="headerlink" title="Feistel网络性质"></a>Feistel网络性质</h2><p>1.轮数可以任意增加</p>
-<p>2.加密时无论使用任何函数都可以正确解密</p>
-<p>3.加密解密可以用完全相同结构来实现</p>
-<h2 id="三重DES"><a href="#三重DES" class="headerlink" title="三重DES"></a>三重DES</h2><p>值得注意的一点是：三重DES是 <strong>加密——&gt;解密——&gt;加密</strong>的过程，而不是三次加密，这是为了让三重DES兼容普通的DES。</p>
-<p>DES最后被AES（<strong>Advanced Encryption Standard</strong>）代替了。</p>
-<h1 id="下面讲讲具体算法每一步的实现"><a href="#下面讲讲具体算法每一步的实现" class="headerlink" title="下面讲讲具体算法每一步的实现"></a>下面讲讲具体算法每一步的实现</h1><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import com.sun.org.apache.xml.internal.security.utils.Base64;</span><br><span class="line">import javax.crypto.Cipher ;</span><br><span class="line">import javax.crypto.spec.SecretKeySpec;</span><br><span class="line"></span><br><span class="line">public class DesDemo &#123;</span><br><span class="line">    public static void main(String[] args) throws Exception &#123;</span><br><span class="line">        //原文</span><br><span class="line">        String input = &quot;实验室&quot; ;</span><br><span class="line">        //定义DES密钥key，必须是8字节</span><br><span class="line">        String key = &quot;12345678&quot; ;</span><br><span class="line">        //表示算法</span><br><span class="line">        String transformation = &quot;DES&quot; ;</span><br><span class="line">        //表示加密类型</span><br><span class="line">        String  type = &quot;DES&quot; ;</span><br><span class="line">        //创建加密对象，引入Cipher类</span><br><span class="line">        Cipher cipher = Cipher.getInstance(&quot;DES&quot;) ;</span><br><span class="line">        //创建加密规则,即生成密钥</span><br><span class="line">        //参数1表示key的字节，2表示加密类型，和算法比较像</span><br><span class="line">        SecretKeySpec secretKeySpec = new SecretKeySpec(key.getBytes(),type) ;</span><br><span class="line">        //加密初始化</span><br><span class="line">        cipher.init(Cipher.ENCRYPT_MODE,secretKeySpec);</span><br><span class="line">        //参数1表示模式，分为加密和解密模式,参数2表示加密规则</span><br><span class="line"></span><br><span class="line">        //调用加密方法,参数表示原文字节数组，传进去原文</span><br><span class="line">        byte[] bytes = cipher.doFinal(input.getBytes());</span><br><span class="line">        //直接打印密文，会直接出现乱码,编码表找不到对应字符</span><br><span class="line">        //System.out.println(new String(bytes));</span><br><span class="line">        //解决方式1：迭代</span><br><span class="line">        //for (byte aByte : bytes) &#123;</span><br><span class="line">        //  System.out.println(aByte);</span><br><span class="line">        //&#125;</span><br><span class="line">        //解决方式2：对数据进行base64编码</span><br><span class="line">        String encode = Base64.encode(bytes);</span><br><span class="line">        System.out.println(encode);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
+<h2 id="一-图像编码"><a href="#一-图像编码" class="headerlink" title="一.图像编码"></a>一.图像编码</h2><h3 id="1-为什么编码"><a href="#1-为什么编码" class="headerlink" title="1.为什么编码"></a>1.为什么编码</h3><p>图像数据太大，通信传输过程中数据量太大，需要编码方式来减少数据大小。</p>
+<h3 id="2-编码分类"><a href="#2-编码分类" class="headerlink" title="2.编码分类"></a>2.编码分类</h3><p>软件编码（软编）：使用CPU进行编码。</p>
+<p>优点：实现直接、简单，参数调整、升级方便。</p>
+<p>缺点：性能较硬编码低，低码率下质量通常比硬编码要好。</p>
+<p>硬件编码（硬编）：不使用CPU进行编码，使用显卡GPU,专用的DSP、FPGA、ASIC芯片等硬件进行编码。</p>
+<p>优点：性能高，低码率下通常质量低于硬编码器。</p>
+<p>缺点：部分产品在GPU硬件平台移植了优秀的软编码算法（如X264）的，质量基本等同于软编码。</p>
+<h3 id="3-图像数字化"><a href="#3-图像数字化" class="headerlink" title="3.图像数字化"></a>3.图像数字化</h3><p>step（1）将二维图像 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="6.413ex" height="2.262ex" role="img" focusable="false" viewbox="0 -750 2834.7 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"/></g><g data-mml-node="mo" transform="translate(550,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/></g><g data-mml-node="mi" transform="translate(939,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/></g><g data-mml-node="mo" transform="translate(1511,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"/></g><g data-mml-node="mi" transform="translate(1955.7,0)"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/></g><g data-mml-node="mo" transform="translate(2445.7,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/></g></g></g></svg></mjx-container> 在二维空间域中采样，有采样定理：</p>
+<script type="math/tex; mode=display">
+N = 2^k \quad , \quad k = 2,3,4......</script><p>注意：<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewbox="0 -683 888 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g></g></g></svg></mjx-container>是图像<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="6.413ex" height="2.262ex" role="img" focusable="false" viewbox="0 -750 2834.7 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"/></g><g data-mml-node="mo" transform="translate(550,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/></g><g data-mml-node="mi" transform="translate(939,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/></g><g data-mml-node="mo" transform="translate(1511,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"/></g><g data-mml-node="mi" transform="translate(1955.7,0)"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/></g><g data-mml-node="mo" transform="translate(2445.7,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/></g></g></g></svg></mjx-container> 取样点<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="6.784ex" height="1.545ex" role="img" focusable="false" viewbox="0 -683 2998.4 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g><g data-mml-node="mo" transform="translate(1110.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"/></g><g data-mml-node="mi" transform="translate(2110.4,0)"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g></g></g></svg></mjx-container>中的<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewbox="0 -683 888 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g></g></g></svg></mjx-container>。</p>
+<script type="math/tex; mode=display">
+N/L_x \ge 2u_0 \quad,\quad N/L_y \ge 2v_0 \quad (*)</script><p>在符<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="2.891ex" height="2.262ex" role="img" focusable="false" viewbox="0 -750 1278 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/></g><g data-mml-node="mo" transform="translate(389,0)"><path data-c="2217" d="M229 286Q216 420 216 436Q216 454 240 464Q241 464 245 464T251 465Q263 464 273 456T283 436Q283 419 277 356T270 286L328 328Q384 369 389 372T399 375Q412 375 423 365T435 338Q435 325 425 315Q420 312 357 282T289 250L355 219L425 184Q434 175 434 161Q434 146 425 136T401 125Q393 125 383 131T328 171L270 213Q283 79 283 63Q283 53 276 44T250 35Q231 35 224 44T216 63Q216 80 222 143T229 213L171 171Q115 130 110 127Q106 124 100 124Q87 124 76 134T64 161Q64 166 64 169T67 175T72 181T81 188T94 195T113 204T138 215T170 230T210 250L74 315Q65 324 65 338Q65 353 74 363T98 374Q106 374 116 368T171 328L229 286Z"/></g><g data-mml-node="mo" transform="translate(889,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/></g></g></g></svg></mjx-container>式条件下不会出现图像相互混叠现象,以上是二维图像取样定理。</p>
+<p>step（2）量化</p>
+<p>由连续值经过数值量化过程为离散值。</p>
+<p>最常用：均匀量化（量化区间大小相等）如果区间大小不等，就叫非线性量化。</p>
+<p>通过量化得到量化图像矩阵<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.65ex" xmlns="http://www.w3.org/2000/svg" width="2.378ex" height="2.188ex" role="img" focusable="false" viewbox="0 -680 1051.3 967.2"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D439" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"/></g><g data-mml-node="mi" transform="translate(676,-150) scale(0.707)"><path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"/></g></g></g></g></svg></mjx-container>:</p>
+<script type="math/tex; mode=display">F_q = \begin{pmatrix}
+    f_q(0,0)\quad&f_q(0,1)\quad&......&f_q(0,N-1) \\
+    f_q(1,0)\quad&f_q(1,1)\quad&......&f_q(1,N-1) \\
+    f_q(2,0)\quad&f_q(2,1)\quad&......&f_q(2,N-1) \\
+    ...\quad&...\quad&......&... \\
+    f_q(N-1,0)\quad&f_q(N-1,1)\quad&......&f_q(N-1,N-1)
+\end{pmatrix}</script>]]></content>
       <categories>
         <category>科研</category>
       </categories>
       <tags>
-        <tag>科研</tag>
+        <tag>CSer</tag>
       </tags>
   </entry>
   <entry>
@@ -488,44 +526,6 @@ dst(x,y)=\left\{
       </tags>
   </entry>
   <entry>
-    <title>图像编码处理基础</title>
-    <url>/2022/04/19/%E5%9B%BE%E5%83%8F%E7%BC%96%E7%A0%81%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[<h1 id="图像方向基础"><a href="#图像方向基础" class="headerlink" title="图像方向基础"></a>图像方向基础</h1><h2 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h2><p>结合本人目前科研项目的经历，图像处理是最关键的一环，它的方方面面知识也可能是idea的来源。</p>
-<p>比较知名的书有《数字图像处理》（冈萨雷斯编写）。不过我的工作并不是对现有图像进行各种变换，所以这本书暂时不适合我。</p>
-<p>在JWC发出推迟考试的通知后，我在校图书馆的海洋里淘到了<strong>《图像编码基础》</strong>这本书，年代较为久远（2006年）但是对我很有启发意义，于是借走拿回宿舍研究，也恰恰是在这本书内，我意识到了学好“信号与系统”这门课的意义（比如二维傅里叶变换等），可以说获益匪浅。</p>
-<p>下面开始讲图像相关的一些基础知识。</p>
-<span id="more"></span>
-<h2 id="一-图像编码"><a href="#一-图像编码" class="headerlink" title="一.图像编码"></a>一.图像编码</h2><h3 id="1-为什么编码"><a href="#1-为什么编码" class="headerlink" title="1.为什么编码"></a>1.为什么编码</h3><p>图像数据太大，通信传输过程中数据量太大，需要编码方式来减少数据大小。</p>
-<h3 id="2-编码分类"><a href="#2-编码分类" class="headerlink" title="2.编码分类"></a>2.编码分类</h3><p>软件编码（软编）：使用CPU进行编码。</p>
-<p>优点：实现直接、简单，参数调整、升级方便。</p>
-<p>缺点：性能较硬编码低，低码率下质量通常比硬编码要好。</p>
-<p>硬件编码（硬编）：不使用CPU进行编码，使用显卡GPU,专用的DSP、FPGA、ASIC芯片等硬件进行编码。</p>
-<p>优点：性能高，低码率下通常质量低于硬编码器。</p>
-<p>缺点：部分产品在GPU硬件平台移植了优秀的软编码算法（如X264）的，质量基本等同于软编码。</p>
-<h3 id="3-图像数字化"><a href="#3-图像数字化" class="headerlink" title="3.图像数字化"></a>3.图像数字化</h3><p>step（1）将二维图像 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="6.413ex" height="2.262ex" role="img" focusable="false" viewbox="0 -750 2834.7 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"/></g><g data-mml-node="mo" transform="translate(550,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/></g><g data-mml-node="mi" transform="translate(939,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/></g><g data-mml-node="mo" transform="translate(1511,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"/></g><g data-mml-node="mi" transform="translate(1955.7,0)"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/></g><g data-mml-node="mo" transform="translate(2445.7,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/></g></g></g></svg></mjx-container> 在二维空间域中采样，有采样定理：</p>
-<script type="math/tex; mode=display">
-N = 2^k \quad , \quad k = 2,3,4......</script><p>注意：<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewbox="0 -683 888 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g></g></g></svg></mjx-container>是图像<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="6.413ex" height="2.262ex" role="img" focusable="false" viewbox="0 -750 2834.7 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"/></g><g data-mml-node="mo" transform="translate(550,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/></g><g data-mml-node="mi" transform="translate(939,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"/></g><g data-mml-node="mo" transform="translate(1511,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"/></g><g data-mml-node="mi" transform="translate(1955.7,0)"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"/></g><g data-mml-node="mo" transform="translate(2445.7,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/></g></g></g></svg></mjx-container> 取样点<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="6.784ex" height="1.545ex" role="img" focusable="false" viewbox="0 -683 2998.4 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g><g data-mml-node="mo" transform="translate(1110.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"/></g><g data-mml-node="mi" transform="translate(2110.4,0)"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g></g></g></svg></mjx-container>中的<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="2.009ex" height="1.545ex" role="img" focusable="false" viewbox="0 -683 888 683"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D441" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"/></g></g></g></svg></mjx-container>。</p>
-<script type="math/tex; mode=display">
-N/L_x \ge 2u_0 \quad,\quad N/L_y \ge 2v_0 \quad (*)</script><p>在符<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="2.891ex" height="2.262ex" role="img" focusable="false" viewbox="0 -750 1278 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"/></g><g data-mml-node="mo" transform="translate(389,0)"><path data-c="2217" d="M229 286Q216 420 216 436Q216 454 240 464Q241 464 245 464T251 465Q263 464 273 456T283 436Q283 419 277 356T270 286L328 328Q384 369 389 372T399 375Q412 375 423 365T435 338Q435 325 425 315Q420 312 357 282T289 250L355 219L425 184Q434 175 434 161Q434 146 425 136T401 125Q393 125 383 131T328 171L270 213Q283 79 283 63Q283 53 276 44T250 35Q231 35 224 44T216 63Q216 80 222 143T229 213L171 171Q115 130 110 127Q106 124 100 124Q87 124 76 134T64 161Q64 166 64 169T67 175T72 181T81 188T94 195T113 204T138 215T170 230T210 250L74 315Q65 324 65 338Q65 353 74 363T98 374Q106 374 116 368T171 328L229 286Z"/></g><g data-mml-node="mo" transform="translate(889,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"/></g></g></g></svg></mjx-container>式条件下不会出现图像相互混叠现象,以上是二维图像取样定理。</p>
-<p>step（2）量化</p>
-<p>由连续值经过数值量化过程为离散值。</p>
-<p>最常用：均匀量化（量化区间大小相等）如果区间大小不等，就叫非线性量化。</p>
-<p>通过量化得到量化图像矩阵<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.65ex" xmlns="http://www.w3.org/2000/svg" width="2.378ex" height="2.188ex" role="img" focusable="false" viewbox="0 -680 1051.3 967.2"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D439" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"/></g><g data-mml-node="mi" transform="translate(676,-150) scale(0.707)"><path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"/></g></g></g></g></svg></mjx-container>:</p>
-<script type="math/tex; mode=display">F_q = \begin{pmatrix}
-    f_q(0,0)\quad&f_q(0,1)\quad&......&f_q(0,N-1) \\
-    f_q(1,0)\quad&f_q(1,1)\quad&......&f_q(1,N-1) \\
-    f_q(2,0)\quad&f_q(2,1)\quad&......&f_q(2,N-1) \\
-    ...\quad&...\quad&......&... \\
-    f_q(N-1,0)\quad&f_q(N-1,1)\quad&......&f_q(N-1,N-1)
-\end{pmatrix}</script>]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>CSer</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>图论-Python</title>
     <url>/2022/07/10/%E5%9B%BE%E8%AE%BA/</url>
     <content><![CDATA[<p>数模集训</p>
@@ -539,6 +539,78 @@ N/L_x \ge 2u_0 \quad,\quad N/L_y \ge 2v_0 \quad (*)</script><p>在符<mjx-contai
       </categories>
       <tags>
         <tag>CSer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大二春季学期感想</title>
+    <url>/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/</url>
+    <content><![CDATA[<p>两年悄然走过，变成了大三的老油条，附一张18级毕业典礼照片，祝各位学长学姐毕业快乐，前程似锦，心中有火，眼里有光！</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/pg.jpg" alt="img"></p>
+<span id="more"></span>
+<h1 id="学业"><a href="#学业" class="headerlink" title="学业"></a>学业</h1><p><strong><em>非常感谢</em></strong>信号小黄老师、G网卢老师、模电杨老师、计组刘老师、OS李老师、体育课李老师、英语课王老师！本人学艺不精，拜托各位老师了！（惭愧</p>
+<p>可惜只有信号老师和模电老师的照片</p>
+<p>信号老师人美心善，太温柔了，平时分直接拉满，本人信号是大学以来除思政课外唯一突击过的科目，突击三天75飘过~（保研、奖学金都不看，就是赚学分，血赚3.5学分</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/signal.jpg" alt="img"></p>
+<p>模电杨老师，你是我的神！！讲课质量高，和学生们关系好，还有很多分享，是我目前上大学以来印象最深的课程，能上杨老师的模电是我们班的幸运！</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/modian.jpg" alt="img"></p>
+<p>这学期巨累，不必说每周六至七天早八，更不必说每天满课晚上实验，单是这几门课就够计科的伙计们好好学上一阵子，倘若能完成一周的任务，便美美地叫上几个同学，去小四川好好吃一顿。</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/fish.jpg" alt="img"></p>
+<p>做完数电实验的晚上，人已经傻了，脑袋发木，宛然一具没有灵魂的躯壳在实验室的走廊里游荡，什么也不记得，不过最后的成绩还不错（乐</p>
+<h2 id="考试周（差点没顶住"><a href="#考试周（差点没顶住" class="headerlink" title="考试周（差点没顶住"></a>考试周（差点没顶住</h2><p>先在脑袋里过了N遍北理圣经——《考试周破防》，去年我是乐的前仰后合，今年我不仅乐不出来，还想哭，但是哭都哭不出来，太顶了</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/pf.jpg" alt="img"></p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/dz.jpg" alt="img"></p>
+<p>复习G网要看500+页的书，计组年年至少挂一半学生，OSemm，魔电一度让我以为遇到了魔法，安排不合理的事情很多很多，但，这是黎明前的黑暗</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/hg.jpg" alt="img"></p>
+<p>最后一天考计组，很多同学都在C楼通宵了，大家都很难，都不容易，考完就好了，没有压力了，不过考试周的天空和晚霞都很好看</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/sky.jpg" alt="img"></p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/wanx.jpg" alt="img"></p>
+<h1 id="休闲"><a href="#休闲" class="headerlink" title="休闲"></a>休闲</h1><h2 id="逛-amp-吃（吃为主"><a href="#逛-amp-吃（吃为主" class="headerlink" title="逛&amp;吃（吃为主"></a>逛&amp;吃（吃为主</h2><p>青龙寺，小寨，高新区魏客，阳光天地</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/ql.jpg" alt="img"></p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/xz1.jpg" alt="img"></p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/xz2.jpg" alt="img"></p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/gx.jpg" alt="img"></p>
+<h2 id="N刷奈克瑟斯的感想"><a href="#N刷奈克瑟斯的感想" class="headerlink" title="N刷奈克瑟斯的感想"></a>N刷奈克瑟斯的感想</h2><p>很多人说奥特曼很幼稚，我认为不是，那仅仅是没有深入了解造成的主观判断。</p>
+<p>奈克瑟斯奥特曼，是我最喜欢的奥特曼，没有之一，这也就是为什么我的代号是Nexus，它的含义，是纽带。这部剧从初二到现在大二，看了N多遍，每次都有新的感想，这是一部“被腰斩的神作”，是奥特曼历史上最大的遗憾。可能正如断臂的维纳斯，这种遗憾反而成就了这部成人向特摄剧，充满着黑暗的同时也指引着希望和人的成长。</p>
+<p>饰演松永管理官的(堀内正美)那时问我”这个会不会对孩子来说太难接受了“，我说，现在可能是无法理解，但是当他们大一些了，重看的时候，他们会认识到这部作品是<strong>多么深沉</strong>，而且我认为给孩子们留下这样的印象是一部电视作品的使命之一。<br>                                          ——制片人涉谷浩康</p>
+<p>剧中的主人公孤门一辉，日语读起来很像英文的“common”的发音，整部剧以消灭异生兽作为主线，孤门的成长作为暗线贯穿始终。</p>
+<h3 id="姬矢准篇"><a href="#姬矢准篇" class="headerlink" title="姬矢准篇"></a>姬矢准篇</h3><p>第二任适能者：姬矢准，作为战地记者，在异国他乡的村庄居住时认识了小女孩塞拉并结下了深厚的友谊，后来战争爆发，准却意外拍下了塞拉为救他而死的瞬间，也就是在这一瞬间，光引领准到达了遗迹，获得了Nexus的力量。</p>
+<p>在设定中，奥特曼收到的伤会反馈到适能者身上，准的身体伤痕累累，在不断与异生兽的战斗中达到极限，终焉之地一战耗尽了光芒；而且在与夜袭队接触初期，副队长风出于对异生兽的憎恨，甚至把准也认为是异生兽。准太孤独了，太孤立无援了，他把塞拉的死的责任拉到自己的身上，并不断自责，但同时也为不断拯救他人而战斗：救下偶遇浮士德的孤门、打破沟吕木的幻境、救下因女友liko最后化作光芒消失而被即将被黑暗吞噬的孤门……</p>
+<p>“我不能倒下，我的身后是万家灯火” 即使不被理解，也在不断战斗</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/wjdh.jpg" alt="img"></p>
+<p>24集《英雄》中，光把塞拉的灵魂带到了准哥的意识中，解开了准的心结，当准没有遗憾时，塞拉的灵魂也在准的意识中逐渐消失 。</p>
+<p>“赋予你的这道光，是跨越了很长时间，被很多人传承的。得到这个光的人，虽然都失去了一些重要的东西，但却拼命地战斗着。准，你是被这个光选中的，作为这个光的继承者”</p>
+<p>“但是，我有，这个资格吗，是我，害你……”</p>
+<p>“准，我很喜欢你拍的照片，是准你为我记录了，<strong><em>我活在这个世界上的证明，我很高兴，你让我看见了这个世界的光辉，能遇到准我真的很开心，谢谢你，用这个力量，去保护你最重要的人吧</em></strong>”</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/n.jpg" alt="img"></p>
+<p>此刻站起来的不是奈克瑟斯，是仅凭意识支撑起耗尽光芒的身体的准哥！</p>
+<p>“光是纽带，当传到下一个继承者时，它会再次发光！”说完这句话，准就消失了。（大结局最后才透露准还活着）</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/zhun.jpg" alt="img"></p>
+<h3 id="千树怜篇"><a href="#千树怜篇" class="headerlink" title="千树怜篇"></a>千树怜篇</h3><p>怜是“普罗米修斯”计划的产物，是由人类最优秀的基因培育出来的，但是命运是弄人的，恰恰是因为人类最优秀的基因导致的基因缺陷，怜的寿命只有18岁，如果没有相应的治疗药物“拉斐尔”，那怜只有死路一条。他也只是和我年龄相仿的少年，却要面对生命的消亡。</p>
+<p>“永远等待，不会成为天使，不如让自己剩下不多的时间有意义地度过”</p>
+<p>所以，怜在光降临的时刻，主动选择接受了光的力量，他的每一次战斗都是赌上了自己的性命。</p>
+<p>“我无法忍受，只是让别人为我担心，让别人为我伤心，等着不知是否能完成的拉斐尔，就这样而结束我的生命，我实在无法忍受。天使，拉斐尔不会来了。所以我想，反正只剩这么点时间了，不如去一个谁都不知道我会死的地方。不过，我无法理解，光选择了我这个失败的作品，我竟然也没有犹豫，想到自己还能做点事情，就觉得十分开心，在游乐园里，我一直看着小孩、父母和许多人，想到我能保护他们，真的很开心。孤门，我还可以战斗的。<strong><em>只要我在战斗，我就能忘记死亡。</em></strong>”</p>
+<p>风也对怜说过：“你一直以来，都是抱着死也无所谓的态度在战斗，所以完全没有顾及自己受到的伤害，抱着必死的决心战斗和抱着死也无所谓的态度战斗是完全不同的，请为了活下去而战斗吧，即使没有明天！”</p>
+<p>于是就有了奥特曼历史上最悲壮的变身</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/qsl.jpg" alt="img"></p>
+<h3 id="西条风篇-amp-孤门一辉篇"><a href="#西条风篇-amp-孤门一辉篇" class="headerlink" title="西条风篇&amp;孤门一辉篇"></a>西条风篇&amp;孤门一辉篇</h3><p>由于经费和收视率的原因，只有姬矢准的部分是完整的，后面的部分遭到了腰斩，很多剧情和伏笔没办法展开，被迫提前结束，这是奥特曼历史上最大的遗憾。</p>
+<p><strong><del>副队长由于仇恨直接白给</del></strong></p>
+<p>孤门一辉跳入忘川拯救副队长的同时，也和他自救的情景相互照应，忘川的强大力量改写了时空，孤门不仅抓住了西条，也抓住了年幼的自己。光从西条传递到了孤门，也传递到了年幼的自己，孤门在不断地成长，这也符合光在一直进化的设定。</p>
+<p>这一部的人类，虽然没有像之前一样一开始就和奥特曼建立深厚的羁绊，但是，这不代表他们就没有羁绊了。是他们给了孤门力量，最终战胜了黑暗。</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/g1.jpg" alt="img"></p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/g2.jpg" alt="img"></p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/g3.jpg" alt="img"></p>
+<p>(请原谅这个糟糕的画质，B站只有720P的)</p>
+<p>“即使摔倒了也无所谓，只要再站起来，那就是英雄了”。这首op的歌词既是送给准哥的，也是送给奈克瑟斯的，更是送给观众的。（OP《英雄》是唯一在歌词里不提奥特曼的，后面附上《英雄》的部分歌词）</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/gcc.jpg" alt="img"></p>
+<h1 id="毕业季"><a href="#毕业季" class="headerlink" title="毕业季"></a>毕业季</h1><p>真切希望会有<strong><em>更好</em></strong>的结局</p>
+<p>贴上口语部大家的合照：</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/by1.jpg" alt="img"></p>
+]]></content>
+      <categories>
+        <category>University</category>
+      </categories>
+      <tags>
+        <tag>University</tag>
       </tags>
   </entry>
   <entry>
@@ -631,75 +703,21 @@ N/L_x \ge 2u_0 \quad,\quad N/L_y \ge 2v_0 \quad (*)</script><p>在符<mjx-contai
       </tags>
   </entry>
   <entry>
-    <title>大二春季学期感想</title>
-    <url>/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/</url>
-    <content><![CDATA[<p>两年悄然走过，变成了大三的老油条，附一张18级毕业典礼照片，祝各位学长学姐毕业快乐，前程似锦，心中有火，眼里有光！</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/pg.jpg" alt="img"></p>
-<span id="more"></span>
-<h1 id="学业"><a href="#学业" class="headerlink" title="学业"></a>学业</h1><p><strong><em>非常感谢</em></strong>信号小黄老师、G网卢老师、模电杨老师、计组刘老师、OS李老师、体育课李老师、英语课王老师！本人学艺不精，拜托各位老师了！（惭愧</p>
-<p>可惜只有信号老师和模电老师的照片</p>
-<p>信号老师人美心善，太温柔了，平时分直接拉满，本人信号是大学以来除思政课外唯一突击过的科目，突击三天75飘过~（保研、奖学金都不看，就是赚学分，血赚3.5学分</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/signal.jpg" alt="img"></p>
-<p>模电杨老师，你是我的神！！讲课质量高，和学生们关系好，还有很多分享，是我目前上大学以来印象最深的课程，能上杨老师的模电是我们班的幸运！</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/modian.jpg" alt="img"></p>
-<p>这学期巨累，不必说每周六至七天早八，更不必说每天满课晚上实验，单是这几门课就够计科的伙计们好好学上一阵子，倘若能完成一周的任务，便美美地叫上几个同学，去小四川好好吃一顿。</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/fish.jpg" alt="img"></p>
-<p>做完数电实验的晚上，人已经傻了，脑袋发木，宛然一具没有灵魂的躯壳在实验室的走廊里游荡，什么也不记得，不过最后的成绩还不错（乐</p>
-<h2 id="考试周（差点没顶住"><a href="#考试周（差点没顶住" class="headerlink" title="考试周（差点没顶住"></a>考试周（差点没顶住</h2><p>先在脑袋里过了N遍北理圣经——《考试周破防》，去年我是乐的前仰后合，今年我不仅乐不出来，还想哭，但是哭都哭不出来，太顶了</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/pf.jpg" alt="img"></p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/dz.jpg" alt="img"></p>
-<p>复习G网要看500+页的书，计组年年至少挂一半学生，OSemm，魔电一度让我以为遇到了魔法，安排不合理的事情很多很多，但，这是黎明前的黑暗</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/hg.jpg" alt="img"></p>
-<p>最后一天考计组，很多同学都在C楼通宵了，大家都很难，都不容易，考完就好了，没有压力了，不过考试周的天空和晚霞都很好看</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/sky.jpg" alt="img"></p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/wanx.jpg" alt="img"></p>
-<h1 id="休闲"><a href="#休闲" class="headerlink" title="休闲"></a>休闲</h1><h2 id="逛-amp-吃（吃为主"><a href="#逛-amp-吃（吃为主" class="headerlink" title="逛&amp;吃（吃为主"></a>逛&amp;吃（吃为主</h2><p>青龙寺，小寨，高新区魏客，阳光天地</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/ql.jpg" alt="img"></p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/xz1.jpg" alt="img"></p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/xz2.jpg" alt="img"></p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/gx.jpg" alt="img"></p>
-<h2 id="N刷奈克瑟斯的感想"><a href="#N刷奈克瑟斯的感想" class="headerlink" title="N刷奈克瑟斯的感想"></a>N刷奈克瑟斯的感想</h2><p>很多人说奥特曼很幼稚，我认为不是，那仅仅是没有深入了解造成的主观判断。</p>
-<p>奈克瑟斯奥特曼，是我最喜欢的奥特曼，没有之一，这也就是为什么我的代号是Nexus，它的含义，是纽带。这部剧从初二到现在大二，看了N多遍，每次都有新的感想，这是一部“被腰斩的神作”，是奥特曼历史上最大的遗憾。可能正如断臂的维纳斯，这种遗憾反而成就了这部成人向特摄剧，充满着黑暗的同时也指引着希望和人的成长。</p>
-<p>饰演松永管理官的(堀内正美)那时问我”这个会不会对孩子来说太难接受了“，我说，现在可能是无法理解，但是当他们大一些了，重看的时候，他们会认识到这部作品是<strong>多么深沉</strong>，而且我认为给孩子们留下这样的印象是一部电视作品的使命之一。<br>                                          ——制片人涉谷浩康</p>
-<p>剧中的主人公孤门一辉，日语读起来很像英文的“common”的发音，整部剧以消灭异生兽作为主线，孤门的成长作为暗线贯穿始终。</p>
-<h3 id="姬矢准篇"><a href="#姬矢准篇" class="headerlink" title="姬矢准篇"></a>姬矢准篇</h3><p>第二任适能者：姬矢准，作为战地记者，在异国他乡的村庄居住时认识了小女孩塞拉并结下了深厚的友谊，后来战争爆发，准却意外拍下了塞拉为救他而死的瞬间，也就是在这一瞬间，光引领准到达了遗迹，获得了Nexus的力量。</p>
-<p>在设定中，奥特曼收到的伤会反馈到适能者身上，准的身体伤痕累累，在不断与异生兽的战斗中达到极限，终焉之地一战耗尽了光芒；而且在与夜袭队接触初期，副队长风出于对异生兽的憎恨，甚至把准也认为是异生兽。准太孤独了，太孤立无援了，他把塞拉的死的责任拉到自己的身上，并不断自责，但同时也为不断拯救他人而战斗：救下偶遇浮士德的孤门、打破沟吕木的幻境、救下因女友liko最后化作光芒消失而被即将被黑暗吞噬的孤门……</p>
-<p>“我不能倒下，我的身后是万家灯火” 即使不被理解，也在不断战斗</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/wjdh.jpg" alt="img"></p>
-<p>24集《英雄》中，光把塞拉的灵魂带到了准哥的意识中，解开了准的心结，当准没有遗憾时，塞拉的灵魂也在准的意识中逐渐消失 。</p>
-<p>“赋予你的这道光，是跨越了很长时间，被很多人传承的。得到这个光的人，虽然都失去了一些重要的东西，但却拼命地战斗着。准，你是被这个光选中的，作为这个光的继承者”</p>
-<p>“但是，我有，这个资格吗，是我，害你……”</p>
-<p>“准，我很喜欢你拍的照片，是准你为我记录了，<strong><em>我活在这个世界上的证明，我很高兴，你让我看见了这个世界的光辉，能遇到准我真的很开心，谢谢你，用这个力量，去保护你最重要的人吧</em></strong>”</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/n.jpg" alt="img"></p>
-<p>此刻站起来的不是奈克瑟斯，是仅凭意识支撑起耗尽光芒的身体的准哥！</p>
-<p>“光是纽带，当传到下一个继承者时，它会再次发光！”说完这句话，准就消失了。（大结局最后才透露准还活着）</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/zhun.jpg" alt="img"></p>
-<h3 id="千树怜篇"><a href="#千树怜篇" class="headerlink" title="千树怜篇"></a>千树怜篇</h3><p>怜是“普罗米修斯”计划的产物，是由人类最优秀的基因培育出来的，但是命运是弄人的，恰恰是因为人类最优秀的基因导致的基因缺陷，怜的寿命只有18岁，如果没有相应的治疗药物“拉斐尔”，那怜只有死路一条。他也只是和我年龄相仿的少年，却要面对生命的消亡。</p>
-<p>“永远等待，不会成为天使，不如让自己剩下不多的时间有意义地度过”</p>
-<p>所以，怜在光降临的时刻，主动选择接受了光的力量，他的每一次战斗都是赌上了自己的性命。</p>
-<p>“我无法忍受，只是让别人为我担心，让别人为我伤心，等着不知是否能完成的拉斐尔，就这样而结束我的生命，我实在无法忍受。天使，拉斐尔不会来了。所以我想，反正只剩这么点时间了，不如去一个谁都不知道我会死的地方。不过，我无法理解，光选择了我这个失败的作品，我竟然也没有犹豫，想到自己还能做点事情，就觉得十分开心，在游乐园里，我一直看着小孩、父母和许多人，想到我能保护他们，真的很开心。孤门，我还可以战斗的。<strong><em>只要我在战斗，我就能忘记死亡。</em></strong>”</p>
-<p>风也对怜说过：“你一直以来，都是抱着死也无所谓的态度在战斗，所以完全没有顾及自己受到的伤害，抱着必死的决心战斗和抱着死也无所谓的态度战斗是完全不同的，请为了活下去而战斗吧，即使没有明天！”</p>
-<p>于是就有了奥特曼历史上最悲壮的变身</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/qsl.jpg" alt="img"></p>
-<h3 id="西条风篇-amp-孤门一辉篇"><a href="#西条风篇-amp-孤门一辉篇" class="headerlink" title="西条风篇&amp;孤门一辉篇"></a>西条风篇&amp;孤门一辉篇</h3><p>由于经费和收视率的原因，只有姬矢准的部分是完整的，后面的部分遭到了腰斩，很多剧情和伏笔没办法展开，被迫提前结束，这是奥特曼历史上最大的遗憾。</p>
-<p><strong><del>副队长由于仇恨直接白给</del></strong></p>
-<p>孤门一辉跳入忘川拯救副队长的同时，也和他自救的情景相互照应，忘川的强大力量改写了时空，孤门不仅抓住了西条，也抓住了年幼的自己。光从西条传递到了孤门，也传递到了年幼的自己，孤门在不断地成长，这也符合光在一直进化的设定。</p>
-<p>这一部的人类，虽然没有像之前一样一开始就和奥特曼建立深厚的羁绊，但是，这不代表他们就没有羁绊了。是他们给了孤门力量，最终战胜了黑暗。</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/g1.jpg" alt="img"></p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/g2.jpg" alt="img"></p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/g3.jpg" alt="img"></p>
-<p>(请原谅这个糟糕的画质，B站只有720P的)</p>
-<p>“即使摔倒了也无所谓，只要再站起来，那就是英雄了”。这首op的歌词既是送给准哥的，也是送给奈克瑟斯的，更是送给观众的。（OP《英雄》是唯一在歌词里不提奥特曼的，后面附上《英雄》的部分歌词）</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/gcc.jpg" alt="img"></p>
-<h1 id="毕业季"><a href="#毕业季" class="headerlink" title="毕业季"></a>毕业季</h1><p>真切希望会有<strong><em>更好</em></strong>的结局</p>
-<p>贴上口语部大家的合照：</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/by1.jpg" alt="img"></p>
+    <title>清明</title>
+    <url>/2022/04/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="记录大二下学期第一次进城"><a href="#记录大二下学期第一次进城" class="headerlink" title="记录大二下学期第一次进城"></a>记录大二下学期第一次进城</h2><span id="more"></span>
+<p>玩一把大的，水完毛概直接润<br>小寨鹿港粤菜：叉烧肉 汤 牛柳 还有CoCo Cafe的柠檬百香果双响炮<br>晚上去了大唐不夜城，夜景音乐喷泉</p>
+<h2 id="青龙寺"><a href="#青龙寺" class="headerlink" title="青龙寺"></a>青龙寺</h2><p>樱花超级好看，每一朵都独具韵味</p>
+<p>寺庙里面的树上挂满了祈福的红带，不过我对这方面也不了解，没敢随意去弄。。。心意到了就可以了（x</p>
+<p>离开时看见一些老大爷和老大妈跳着新疆舞（貌似是），特别有精神，希望我老了也能很有精气神hh</p>
+<p>中午吃了韩式传统烤肉，百去不厌，下午从3点睡到6点（5555），不过充满了干劲，这才叫大学生活（牛马假日）</p>
+<p>该juan了（这就去C楼，溜了）</p>
 ]]></content>
       <categories>
-        <category>University</category>
+        <category>Holiday</category>
       </categories>
       <tags>
-        <tag>University</tag>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -741,24 +759,6 @@ N/L_x \ge 2u_0 \quad,\quad N/L_y \ge 2v_0 \quad (*)</script><p>在符<mjx-contai
       </categories>
       <tags>
         <tag>科研</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>清明</title>
-    <url>/2022/04/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="记录大二下学期第一次进城"><a href="#记录大二下学期第一次进城" class="headerlink" title="记录大二下学期第一次进城"></a>记录大二下学期第一次进城</h2><span id="more"></span>
-<p>玩一把大的，水完毛概直接润<br>小寨鹿港粤菜：叉烧肉 汤 牛柳 还有CoCo Cafe的柠檬百香果双响炮<br>晚上去了大唐不夜城，夜景音乐喷泉</p>
-<h2 id="青龙寺"><a href="#青龙寺" class="headerlink" title="青龙寺"></a>青龙寺</h2><p>樱花超级好看，每一朵都独具韵味</p>
-<p>寺庙里面的树上挂满了祈福的红带，不过我对这方面也不了解，没敢随意去弄。。。心意到了就可以了（x</p>
-<p>离开时看见一些老大爷和老大妈跳着新疆舞（貌似是），特别有精神，希望我老了也能很有精气神hh</p>
-<p>中午吃了韩式传统烤肉，百去不厌，下午从3点睡到6点（5555），不过充满了干劲，这才叫大学生活（牛马假日）</p>
-<p>该juan了（这就去C楼，溜了）</p>
-]]></content>
-      <categories>
-        <category>Holiday</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
