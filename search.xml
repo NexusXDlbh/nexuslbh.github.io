@@ -47,6 +47,46 @@
       </tags>
   </entry>
   <entry>
+    <title>4-10周总结</title>
+    <url>/2022/04/10/4-10%E5%91%A8%E6%80%9D%E8%80%83/</url>
+    <content><![CDATA[<h1 id="周总结"><a href="#周总结" class="headerlink" title="周总结"></a>周总结</h1><p>最近挺魔幻的</p>
+<span id="more"></span>
+<h2 id="读书"><a href="#读书" class="headerlink" title="读书"></a>读书</h2><h3 id="专业方面"><a href="#专业方面" class="headerlink" title="专业方面"></a>专业方面</h3><h4 id="计组（这就是内功！听张win-win说——请自行脑补）"><a href="#计组（这就是内功！听张win-win说——请自行脑补）" class="headerlink" title="计组（这就是内功！听张win-win说——请自行脑补）"></a>计组（这就是内功！听张win-win说——请自行脑补）</h4><p>复习了体系结构概况，各种码的作用、运算（问：牛码的作用是什么？（doge））</p>
+<p>其实XD的计组相比之前看过的CSAPP、Themes and Variations都相对更好理解，刘老师讲完之后再去看CSAPP会有这样的感悟：</p>
+<pre><code>1.CSAPP是基本模型的再提高
+
+2.基础模块的重要性
+
+3.x86-64很有趣哈哈
+</code></pre><h4 id="模电"><a href="#模电" class="headerlink" title="模电"></a>模电</h4><p>魔电这个名称不是白来的，确实很难，不过在第一次听完杨老师的讲解和后续看上交郑老师的网课的推动下，对模电的理解就像发现了新大陆</p>
+<p>简单提炼下模电目前带给我的思维锻炼：</p>
+<p>eg：放大电路的设计：</p>
+<pre><code>已有的原件——&gt;达到的目的——&gt;不断尝试，每个原件都不可或缺
+</code></pre><p>（学好电路分析基础很重要，戴维南定理非常有趣）</p>
+<h4 id="信号与系统"><a href="#信号与系统" class="headerlink" title="信号与系统"></a>信号与系统</h4><p>之前和很多同学交流过：为什么CS的学生要学Signals and Systems，我个人的具体观点如下：</p>
+<p><strong>·日后从事AI或者很庞杂的大project时（比如之前软件所的计算机和天线阵列的project）会用到硬性知识</strong></p>
+<p><strong>·这门课的思想会在几乎所有的事物上体现</strong></p>
+<p><strong>·崔院长曾说过：这些课在大学里面系统学习的效果要比工作后学习好很多，绝对不一样</strong></p>
+<h4 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h4><p>摆的时候看了人工智能学院焦李成教授的关于FPGA和AI发展的论文，对AI的“前世今生”有了简单的了解。</p>
+<p>project相关部分因为复习期中考试压力较大，所以咕咕咕了哈哈（doge</p>
+<h3 id="课外"><a href="#课外" class="headerlink" title="课外"></a>课外</h3><h4 id="《心流——最优体验心理学》"><a href="#《心流——最优体验心理学》" class="headerlink" title="《心流——最优体验心理学》"></a>《心流——最优体验心理学》</h4><p>一个词：Flow</p>
+<p>剩下的自己去体会</p>
+<h2 id="关于保研、内卷的思考"><a href="#关于保研、内卷的思考" class="headerlink" title="关于保研、内卷的思考"></a>关于保研、内卷的思考</h2><h3 id="先上结论："><a href="#先上结论：" class="headerlink" title="先上结论："></a>先上结论：</h3><p>先做人，后做事</p>
+<p>引用：“硬刀硬枪硬头皮，复杂的社会你给我去学习——”（虎哥大道理）</p>
+<h3 id="论证依据："><a href="#论证依据：" class="headerlink" title="论证依据："></a>论证依据：</h3><p>上知乎搜“西电情侣”，我不多做评价</p>
+<h3 id="个人建议："><a href="#个人建议：" class="headerlink" title="个人建议："></a>个人建议：</h3><p>该干啥干啥去，好好学习，吃饭，睡觉就够了（可能我还不够强吧，毕竟有的同学能凭“本事”弄2位数个奖项挂名，牛</p>
+<h2 id="晚安"><a href="#晚安" class="headerlink" title="晚安"></a>晚安</h2><p><strong>天地不可一日无和气</strong></p>
+<p><strong>人心不可一日无喜神</strong></p>
+<p><strong>——《小窗幽记》</strong></p>
+]]></content>
+      <categories>
+        <category>University</category>
+      </categories>
+      <tags>
+        <tag>University</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>4-23周总结</title>
     <url>/2022/04/23/4-23%E5%91%A8%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<h1 id="4-23周总结"><a href="#4-23周总结" class="headerlink" title="4-23周总结"></a>4-23周总结</h1><p>4.23是世界读书日，快来交流喜欢读的书叭，我在这里也写了一点关于读书的感想~~竟然还有2天就期中考试了</p>
@@ -135,129 +175,6 @@
       </tags>
   </entry>
   <entry>
-    <title>4-10周总结</title>
-    <url>/2022/04/10/4-10%E5%91%A8%E6%80%9D%E8%80%83/</url>
-    <content><![CDATA[<h1 id="周总结"><a href="#周总结" class="headerlink" title="周总结"></a>周总结</h1><p>最近挺魔幻的</p>
-<span id="more"></span>
-<h2 id="读书"><a href="#读书" class="headerlink" title="读书"></a>读书</h2><h3 id="专业方面"><a href="#专业方面" class="headerlink" title="专业方面"></a>专业方面</h3><h4 id="计组（这就是内功！听张win-win说——请自行脑补）"><a href="#计组（这就是内功！听张win-win说——请自行脑补）" class="headerlink" title="计组（这就是内功！听张win-win说——请自行脑补）"></a>计组（这就是内功！听张win-win说——请自行脑补）</h4><p>复习了体系结构概况，各种码的作用、运算（问：牛码的作用是什么？（doge））</p>
-<p>其实XD的计组相比之前看过的CSAPP、Themes and Variations都相对更好理解，刘老师讲完之后再去看CSAPP会有这样的感悟：</p>
-<pre><code>1.CSAPP是基本模型的再提高
-
-2.基础模块的重要性
-
-3.x86-64很有趣哈哈
-</code></pre><h4 id="模电"><a href="#模电" class="headerlink" title="模电"></a>模电</h4><p>魔电这个名称不是白来的，确实很难，不过在第一次听完杨老师的讲解和后续看上交郑老师的网课的推动下，对模电的理解就像发现了新大陆</p>
-<p>简单提炼下模电目前带给我的思维锻炼：</p>
-<p>eg：放大电路的设计：</p>
-<pre><code>已有的原件——&gt;达到的目的——&gt;不断尝试，每个原件都不可或缺
-</code></pre><p>（学好电路分析基础很重要，戴维南定理非常有趣）</p>
-<h4 id="信号与系统"><a href="#信号与系统" class="headerlink" title="信号与系统"></a>信号与系统</h4><p>之前和很多同学交流过：为什么CS的学生要学Signals and Systems，我个人的具体观点如下：</p>
-<p><strong>·日后从事AI或者很庞杂的大project时（比如之前软件所的计算机和天线阵列的project）会用到硬性知识</strong></p>
-<p><strong>·这门课的思想会在几乎所有的事物上体现</strong></p>
-<p><strong>·崔院长曾说过：这些课在大学里面系统学习的效果要比工作后学习好很多，绝对不一样</strong></p>
-<h4 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h4><p>摆的时候看了人工智能学院焦李成教授的关于FPGA和AI发展的论文，对AI的“前世今生”有了简单的了解。</p>
-<p>project相关部分因为复习期中考试压力较大，所以咕咕咕了哈哈（doge</p>
-<h3 id="课外"><a href="#课外" class="headerlink" title="课外"></a>课外</h3><h4 id="《心流——最优体验心理学》"><a href="#《心流——最优体验心理学》" class="headerlink" title="《心流——最优体验心理学》"></a>《心流——最优体验心理学》</h4><p>一个词：Flow</p>
-<p>剩下的自己去体会</p>
-<h2 id="关于保研、内卷的思考"><a href="#关于保研、内卷的思考" class="headerlink" title="关于保研、内卷的思考"></a>关于保研、内卷的思考</h2><h3 id="先上结论："><a href="#先上结论：" class="headerlink" title="先上结论："></a>先上结论：</h3><p>先做人，后做事</p>
-<p>引用：“硬刀硬枪硬头皮，复杂的社会你给我去学习——”（虎哥大道理）</p>
-<h3 id="论证依据："><a href="#论证依据：" class="headerlink" title="论证依据："></a>论证依据：</h3><p>上知乎搜“西电情侣”，我不多做评价</p>
-<h3 id="个人建议："><a href="#个人建议：" class="headerlink" title="个人建议："></a>个人建议：</h3><p>该干啥干啥去，好好学习，吃饭，睡觉就够了（可能我还不够强吧，毕竟有的同学能凭“本事”弄2位数个奖项挂名，牛</p>
-<h2 id="晚安"><a href="#晚安" class="headerlink" title="晚安"></a>晚安</h2><p><strong>天地不可一日无和气</strong></p>
-<p><strong>人心不可一日无喜神</strong></p>
-<p><strong>——《小窗幽记》</strong></p>
-]]></content>
-      <categories>
-        <category>University</category>
-      </categories>
-      <tags>
-        <tag>University</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>科研入坑指南</title>
-    <url>/2022/04/20/%E4%BB%80%E4%B9%88%E6%98%AF%E7%A7%91%E7%A0%94/</url>
-    <content><![CDATA[<p>写一些总结，希望对大家有帮助~</p>
-<span id="more"></span>
-<h1 id="什么是科研"><a href="#什么是科研" class="headerlink" title="什么是科研"></a>什么是科研</h1><p>1.发现新方法，并将其运用在一个已知问题上（老问题新方法）</p>
-<p>2.发现新问题，并将一个已知的研究拓展到这个问题上（新问题老方法）</p>
-<p>3.发现新问题，并提出新方法对其进行研究分析（新问题新方法）</p>
-<h1 id="科研收获（what-you-can-except）"><a href="#科研收获（what-you-can-except）" class="headerlink" title="科研收获（what you can except）"></a>科研收获（what you can except）</h1><p>1.阅读——开卷有益，理解更深</p>
-<p>2.做实验——孰能生巧</p>
-<p>3.气质、表达能力——谈吐不凡（但愿）</p>
-<h1 id="科研过程（the-research-process）"><a href="#科研过程（the-research-process）" class="headerlink" title="科研过程（the research process）"></a>科研过程（the research process）</h1><p>马克思主义原理讲过：事物的发展都是螺旋式上升，波浪式前进，科研也不例外。</p>
-<p>建立问题——&gt;了解问题——&gt;提出方法——&gt;验证方法——&gt;得出结论——&gt;建立问题…</p>
-<p>如此往复以至无穷。</p>
-<h1 id="如何选定一个领域（choice）"><a href="#如何选定一个领域（choice）" class="headerlink" title="如何选定一个领域（choice）"></a>如何选定一个领域（choice）</h1><p>·关注前沿动态</p>
-<p>eg：Google Brain，Microsoft Reasearch，IEEE等</p>
-<p>·了解科研趋势</p>
-<p>·结合个人情况</p>
-<h1 id="开始熟悉一个领域"><a href="#开始熟悉一个领域" class="headerlink" title="开始熟悉一个领域"></a>开始熟悉一个领域</h1><p>·善用信息，学会借助他人力量，比如阅读一些综述性文章</p>
-<p>安利一个搜索综述性文章的网站：arxiv.org</p>
-<p>eg:smart trafic —— 在Abstract中；survey —— 在Title中</p>
-<p>·掌握通用技能</p>
-<p>一定量扎实的数理知识</p>
-<p>熟练代码实现功能</p>
-<p>具备项目管理经验</p>
-<p>·发现最新科研进展</p>
-<p>看顶会论文+跟随大牛</p>
-<p>顶会论文推荐：CVPR、ICML、ACM/IEEE、CCF、SCI等（注意：最好先看会议，后看期刊，具体看个人领域）</p>
-<p>大牛：基于对领域的了解去发现那些顶级的组或团队，跟踪他们的博客主页或者网站</p>
-<h1 id="深度阅读了解技术"><a href="#深度阅读了解技术" class="headerlink" title="深度阅读了解技术"></a>深度阅读了解技术</h1><p>请移步《文献阅读综述》这篇博客</p>
-<h1 id="代码复现（Talk-is-cheap-show-me-the-code）"><a href="#代码复现（Talk-is-cheap-show-me-the-code）" class="headerlink" title="代码复现（Talk is cheap , show me the code）"></a>代码复现（Talk is cheap , show me the code）</h1><p>很重要，只有复现后才能掌握细节</p>
-<p>安利网站：paper with code，很有趣，建议科学上网访问</p>
-<h1 id="泛读打开视野"><a href="#泛读打开视野" class="headerlink" title="泛读打开视野"></a>泛读打开视野</h1><p>善用文献信息，从一篇好文章拓展到一系列文章。</p>
-<p>eg：被引次数：Cite by … ; 引用栏；比较新的好作品引用了哪些好文章、好idea等</p>
-<h1 id="着手研究"><a href="#着手研究" class="headerlink" title="着手研究"></a>着手研究</h1><h2 id="如何提出问题？（对入门者偏玄学）"><a href="#如何提出问题？（对入门者偏玄学）" class="headerlink" title="如何提出问题？（对入门者偏玄学）"></a>如何提出问题？（对入门者偏玄学）</h2><p><strong>时间机器理论：</strong></p>
-<p>·基于已有工作</p>
-<p>·有共鸣</p>
-<h2 id="开展工作"><a href="#开展工作" class="headerlink" title="开展工作"></a>开展工作</h2><p>根据个人情况选择：</p>
-<h3 id="理论派"><a href="#理论派" class="headerlink" title="理论派"></a>理论派</h3><pre><code>1.问题抽象到数理空间
-
-2.建模
-
-3.寻找合适理论方法
-
-4.根据3的反馈，优化建模，反复迭代
-
-5.进行实现，辅以实验验证
-</code></pre><h3 id="实践派"><a href="#实践派" class="headerlink" title="实践派"></a>实践派</h3><pre><code>1.问题与方法并存
-
-2.在实验中观察现存方法与解决问题上的优劣
-
-3.结合结果与经验，提出可行改进
-
-4.实现改进方法
-
-5.根据结果反复迭代
-</code></pre><h2 id="论文写作（讲好一个故事）"><a href="#论文写作（讲好一个故事）" class="headerlink" title="论文写作（讲好一个故事）"></a>论文写作（讲好一个故事）</h2><p><strong><em>·准确性、鲁棒性、效率、可解释性、可拓展性</em></strong></p>
-<p>论文要反复强调3件事（尤其是开篇）：</p>
-<p><strong>·</strong>通过文献、例证等告诉审稿人：<strong>“我关注的问题很重要”</strong></p>
-<p><strong>·</strong>通过分析，向审稿人表明：<strong>“现有方法不能有效解决问题”</strong></p>
-<p><strong>·</strong>通过适当介绍和引用数据，告诉审稿人：<strong>“我们的方法很有效”</strong></p>
-<p>写作时对于方法介绍：</p>
-<pre><code>1.基于A1原理启发，首先应用B1方法，得到实验结果R1；
-
-2.通过对R1分析，发现了Q1这样的问题；
-
-3.为了解决这个问题，结合了A2原理，将方法改进为B2，得到实验结果R2；
-</code></pre><p><strong>·</strong>”对比“是一种艺术</p>
-<h2 id="论文发表"><a href="#论文发表" class="headerlink" title="论文发表"></a>论文发表</h2><h3 id="1-找到合适的会议或期刊"><a href="#1-找到合适的会议或期刊" class="headerlink" title="1.找到合适的会议或期刊"></a>1.找到合适的会议或期刊</h3><p>eg：AI研习社（含顶会日程），sec-deadlines.github.io，</p>
-<h3 id="2-正确地与审稿人打交道（不要吵架！不要情绪化！）"><a href="#2-正确地与审稿人打交道（不要吵架！不要情绪化！）" class="headerlink" title="2.正确地与审稿人打交道（不要吵架！不要情绪化！）"></a>2.正确地与审稿人打交道（不要吵架！不要情绪化！）</h3><p><strong>·</strong>态度端正，有分歧时引导审稿人回到正确的道路上</p>
-<p><strong>·</strong>对于指出的真实性问题要承认，有条件要补全缺失的部分</p>
-<p><strong>·</strong>对于发散性建议，表示赞同，并且提出可以加入附件或在未来研究中得到解决</p>
-<h2 id="参加会议"><a href="#参加会议" class="headerlink" title="参加会议"></a>参加会议</h2><p>Keynote speak可能是和大牛唯一的交流机会</p>
-<p>认真准备</p>
-<p>感兴趣的私下交流</p>
-]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>CSer</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MIT-CS6.858-计算机系统安全</title>
     <url>/2022/07/22/MIT-CS6-858-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8/</url>
     <content><![CDATA[<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex" xmlns="http://www.w3.org/2000/svg" width="8.333ex" height="1.645ex" role="img" focusable="false" viewbox="0 -705 3683 727"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D436" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"/></g><g data-mml-node="mi" transform="translate(760,0)"><path data-c="1D446" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"/></g><g data-mml-node="mn" transform="translate(1405,0)"><path data-c="36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"/><path data-c="2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z" transform="translate(500,0)"/><path data-c="38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z" transform="translate(778,0)"/><path data-c="35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z" transform="translate(1278,0)"/><path data-c="38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z" transform="translate(1778,0)"/></g></g></g></svg></mjx-container></p>
@@ -343,6 +260,89 @@ As a result, if the canary matches one of these terminators, then further writes
 <p>· It can be expensive to check all pointer dereferences. The C community hates things that are expensive, because C is all about <strong>SPEED SPEED SPEED.</strong></p>
 <p>· Fat pointers are <strong>incompatible with a lot of existing software.</strong></p>
 <h2 id="Lecture3-Buffer-Overflow-Exploits-and-Defenses"><a href="#Lecture3-Buffer-Overflow-Exploits-and-Defenses" class="headerlink" title="Lecture3 Buffer Overflow Exploits and Defenses"></a>Lecture3 Buffer Overflow Exploits and Defenses</h2><p>对lec2的补充和延申</p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>CSer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>科研入坑指南</title>
+    <url>/2022/04/20/%E4%BB%80%E4%B9%88%E6%98%AF%E7%A7%91%E7%A0%94/</url>
+    <content><![CDATA[<p>写一些总结，希望对大家有帮助~</p>
+<span id="more"></span>
+<h1 id="什么是科研"><a href="#什么是科研" class="headerlink" title="什么是科研"></a>什么是科研</h1><p>1.发现新方法，并将其运用在一个已知问题上（老问题新方法）</p>
+<p>2.发现新问题，并将一个已知的研究拓展到这个问题上（新问题老方法）</p>
+<p>3.发现新问题，并提出新方法对其进行研究分析（新问题新方法）</p>
+<h1 id="科研收获（what-you-can-except）"><a href="#科研收获（what-you-can-except）" class="headerlink" title="科研收获（what you can except）"></a>科研收获（what you can except）</h1><p>1.阅读——开卷有益，理解更深</p>
+<p>2.做实验——孰能生巧</p>
+<p>3.气质、表达能力——谈吐不凡（但愿）</p>
+<h1 id="科研过程（the-research-process）"><a href="#科研过程（the-research-process）" class="headerlink" title="科研过程（the research process）"></a>科研过程（the research process）</h1><p>马克思主义原理讲过：事物的发展都是螺旋式上升，波浪式前进，科研也不例外。</p>
+<p>建立问题——&gt;了解问题——&gt;提出方法——&gt;验证方法——&gt;得出结论——&gt;建立问题…</p>
+<p>如此往复以至无穷。</p>
+<h1 id="如何选定一个领域（choice）"><a href="#如何选定一个领域（choice）" class="headerlink" title="如何选定一个领域（choice）"></a>如何选定一个领域（choice）</h1><p>·关注前沿动态</p>
+<p>eg：Google Brain，Microsoft Reasearch，IEEE等</p>
+<p>·了解科研趋势</p>
+<p>·结合个人情况</p>
+<h1 id="开始熟悉一个领域"><a href="#开始熟悉一个领域" class="headerlink" title="开始熟悉一个领域"></a>开始熟悉一个领域</h1><p>·善用信息，学会借助他人力量，比如阅读一些综述性文章</p>
+<p>安利一个搜索综述性文章的网站：arxiv.org</p>
+<p>eg:smart trafic —— 在Abstract中；survey —— 在Title中</p>
+<p>·掌握通用技能</p>
+<p>一定量扎实的数理知识</p>
+<p>熟练代码实现功能</p>
+<p>具备项目管理经验</p>
+<p>·发现最新科研进展</p>
+<p>看顶会论文+跟随大牛</p>
+<p>顶会论文推荐：CVPR、ICML、ACM/IEEE、CCF、SCI等（注意：最好先看会议，后看期刊，具体看个人领域）</p>
+<p>大牛：基于对领域的了解去发现那些顶级的组或团队，跟踪他们的博客主页或者网站</p>
+<h1 id="深度阅读了解技术"><a href="#深度阅读了解技术" class="headerlink" title="深度阅读了解技术"></a>深度阅读了解技术</h1><p>请移步《文献阅读综述》这篇博客</p>
+<h1 id="代码复现（Talk-is-cheap-show-me-the-code）"><a href="#代码复现（Talk-is-cheap-show-me-the-code）" class="headerlink" title="代码复现（Talk is cheap , show me the code）"></a>代码复现（Talk is cheap , show me the code）</h1><p>很重要，只有复现后才能掌握细节</p>
+<p>安利网站：paper with code，很有趣，建议科学上网访问</p>
+<h1 id="泛读打开视野"><a href="#泛读打开视野" class="headerlink" title="泛读打开视野"></a>泛读打开视野</h1><p>善用文献信息，从一篇好文章拓展到一系列文章。</p>
+<p>eg：被引次数：Cite by … ; 引用栏；比较新的好作品引用了哪些好文章、好idea等</p>
+<h1 id="着手研究"><a href="#着手研究" class="headerlink" title="着手研究"></a>着手研究</h1><h2 id="如何提出问题？（对入门者偏玄学）"><a href="#如何提出问题？（对入门者偏玄学）" class="headerlink" title="如何提出问题？（对入门者偏玄学）"></a>如何提出问题？（对入门者偏玄学）</h2><p><strong>时间机器理论：</strong></p>
+<p>·基于已有工作</p>
+<p>·有共鸣</p>
+<h2 id="开展工作"><a href="#开展工作" class="headerlink" title="开展工作"></a>开展工作</h2><p>根据个人情况选择：</p>
+<h3 id="理论派"><a href="#理论派" class="headerlink" title="理论派"></a>理论派</h3><pre><code>1.问题抽象到数理空间
+
+2.建模
+
+3.寻找合适理论方法
+
+4.根据3的反馈，优化建模，反复迭代
+
+5.进行实现，辅以实验验证
+</code></pre><h3 id="实践派"><a href="#实践派" class="headerlink" title="实践派"></a>实践派</h3><pre><code>1.问题与方法并存
+
+2.在实验中观察现存方法与解决问题上的优劣
+
+3.结合结果与经验，提出可行改进
+
+4.实现改进方法
+
+5.根据结果反复迭代
+</code></pre><h2 id="论文写作（讲好一个故事）"><a href="#论文写作（讲好一个故事）" class="headerlink" title="论文写作（讲好一个故事）"></a>论文写作（讲好一个故事）</h2><p><strong><em>·准确性、鲁棒性、效率、可解释性、可拓展性</em></strong></p>
+<p>论文要反复强调3件事（尤其是开篇）：</p>
+<p><strong>·</strong>通过文献、例证等告诉审稿人：<strong>“我关注的问题很重要”</strong></p>
+<p><strong>·</strong>通过分析，向审稿人表明：<strong>“现有方法不能有效解决问题”</strong></p>
+<p><strong>·</strong>通过适当介绍和引用数据，告诉审稿人：<strong>“我们的方法很有效”</strong></p>
+<p>写作时对于方法介绍：</p>
+<pre><code>1.基于A1原理启发，首先应用B1方法，得到实验结果R1；
+
+2.通过对R1分析，发现了Q1这样的问题；
+
+3.为了解决这个问题，结合了A2原理，将方法改进为B2，得到实验结果R2；
+</code></pre><p><strong>·</strong>”对比“是一种艺术</p>
+<h2 id="论文发表"><a href="#论文发表" class="headerlink" title="论文发表"></a>论文发表</h2><h3 id="1-找到合适的会议或期刊"><a href="#1-找到合适的会议或期刊" class="headerlink" title="1.找到合适的会议或期刊"></a>1.找到合适的会议或期刊</h3><p>eg：AI研习社（含顶会日程），sec-deadlines.github.io，</p>
+<h3 id="2-正确地与审稿人打交道（不要吵架！不要情绪化！）"><a href="#2-正确地与审稿人打交道（不要吵架！不要情绪化！）" class="headerlink" title="2.正确地与审稿人打交道（不要吵架！不要情绪化！）"></a>2.正确地与审稿人打交道（不要吵架！不要情绪化！）</h3><p><strong>·</strong>态度端正，有分歧时引导审稿人回到正确的道路上</p>
+<p><strong>·</strong>对于指出的真实性问题要承认，有条件要补全缺失的部分</p>
+<p><strong>·</strong>对于发散性建议，表示赞同，并且提出可以加入附件或在未来研究中得到解决</p>
+<h2 id="参加会议"><a href="#参加会议" class="headerlink" title="参加会议"></a>参加会议</h2><p>Keynote speak可能是和大牛唯一的交流机会</p>
+<p>认真准备</p>
+<p>感兴趣的私下交流</p>
 ]]></content>
       <categories>
         <category>科研</category>
@@ -582,78 +582,6 @@ dst(x,y)=\left\{
       </tags>
   </entry>
   <entry>
-    <title>大二春季学期感想</title>
-    <url>/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/</url>
-    <content><![CDATA[<p>两年悄然走过，变成了大三的老油条，附一张18级毕业典礼照片，祝各位学长学姐毕业快乐，前程似锦，心中有火，眼里有光！</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/pg.jpg" alt="img"></p>
-<span id="more"></span>
-<h1 id="学业"><a href="#学业" class="headerlink" title="学业"></a>学业</h1><p><strong><em>非常感谢</em></strong>信号小黄老师、G网卢老师、模电杨老师、计组刘老师、OS李老师、体育课李老师、英语课王老师！本人学艺不精，拜托各位老师了！（惭愧</p>
-<p>可惜只有信号老师和模电老师的照片</p>
-<p>信号老师人美心善，太温柔了，平时分直接拉满，本人信号是大学以来除思政课外唯一突击过的科目，突击三天75飘过~（保研、奖学金都不看，就是赚学分，血赚3.5学分</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/signal.jpg" alt="img"></p>
-<p>模电杨老师，你是我的神！！讲课质量高，和学生们关系好，还有很多分享，是我目前上大学以来印象最深的课程，能上杨老师的模电是我们班的幸运！</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/modian.jpg" alt="img"></p>
-<p>这学期巨累，不必说每周六至七天早八，更不必说每天满课晚上实验，单是这几门课就够计科的伙计们好好学上一阵子，倘若能完成一周的任务，便美美地叫上几个同学，去小四川好好吃一顿。</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/fish.jpg" alt="img"></p>
-<p>做完数电实验的晚上，人已经傻了，脑袋发木，宛然一具没有灵魂的躯壳在实验室的走廊里游荡，什么也不记得，不过最后的成绩还不错（乐</p>
-<h2 id="考试周（差点没顶住"><a href="#考试周（差点没顶住" class="headerlink" title="考试周（差点没顶住"></a>考试周（差点没顶住</h2><p>先在脑袋里过了N遍北理圣经——《考试周破防》，去年我是乐的前仰后合，今年我不仅乐不出来，还想哭，但是哭都哭不出来，太顶了</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/pf.jpg" alt="img"></p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/dz.jpg" alt="img"></p>
-<p>复习G网要看500+页的书，计组年年至少挂一半学生，OSemm，魔电一度让我以为遇到了魔法，安排不合理的事情很多很多，但，这是黎明前的黑暗</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/hg.jpg" alt="img"></p>
-<p>最后一天考计组，很多同学都在C楼通宵了，大家都很难，都不容易，考完就好了，没有压力了，不过考试周的天空和晚霞都很好看</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/sky.jpg" alt="img"></p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/wanx.jpg" alt="img"></p>
-<h1 id="休闲"><a href="#休闲" class="headerlink" title="休闲"></a>休闲</h1><h2 id="逛-amp-吃（吃为主"><a href="#逛-amp-吃（吃为主" class="headerlink" title="逛&amp;吃（吃为主"></a>逛&amp;吃（吃为主</h2><p>青龙寺，小寨，高新区魏客，阳光天地</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/ql.jpg" alt="img"></p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/xz1.jpg" alt="img"></p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/xz2.jpg" alt="img"></p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/gx.jpg" alt="img"></p>
-<h2 id="N刷奈克瑟斯的感想"><a href="#N刷奈克瑟斯的感想" class="headerlink" title="N刷奈克瑟斯的感想"></a>N刷奈克瑟斯的感想</h2><p>很多人说奥特曼很幼稚，我认为不是，那仅仅是没有深入了解造成的主观判断。</p>
-<p>奈克瑟斯奥特曼，是我最喜欢的奥特曼，没有之一，这也就是为什么我的代号是Nexus，它的含义，是纽带。这部剧从初二到现在大二，看了N多遍，每次都有新的感想，这是一部“被腰斩的神作”，是奥特曼历史上最大的遗憾。可能正如断臂的维纳斯，这种遗憾反而成就了这部成人向特摄剧，充满着黑暗的同时也指引着希望和人的成长。</p>
-<p>饰演松永管理官的(堀内正美)那时问我”这个会不会对孩子来说太难接受了“，我说，现在可能是无法理解，但是当他们大一些了，重看的时候，他们会认识到这部作品是<strong>多么深沉</strong>，而且我认为给孩子们留下这样的印象是一部电视作品的使命之一。<br>                                          ——制片人涉谷浩康</p>
-<p>剧中的主人公孤门一辉，日语读起来很像英文的“common”的发音，整部剧以消灭异生兽作为主线，孤门的成长作为暗线贯穿始终。</p>
-<h3 id="姬矢准篇"><a href="#姬矢准篇" class="headerlink" title="姬矢准篇"></a>姬矢准篇</h3><p>第二任适能者：姬矢准，作为战地记者，在异国他乡的村庄居住时认识了小女孩塞拉并结下了深厚的友谊，后来战争爆发，准却意外拍下了塞拉为救他而死的瞬间，也就是在这一瞬间，光引领准到达了遗迹，获得了Nexus的力量。</p>
-<p>在设定中，奥特曼收到的伤会反馈到适能者身上，准的身体伤痕累累，在不断与异生兽的战斗中达到极限，终焉之地一战耗尽了光芒；而且在与夜袭队接触初期，副队长风出于对异生兽的憎恨，甚至把准也认为是异生兽。准太孤独了，太孤立无援了，他把塞拉的死的责任拉到自己的身上，并不断自责，但同时也为不断拯救他人而战斗：救下偶遇浮士德的孤门、打破沟吕木的幻境、救下因女友liko最后化作光芒消失而被即将被黑暗吞噬的孤门……</p>
-<p>“我不能倒下，我的身后是万家灯火” 即使不被理解，也在不断战斗</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/wjdh.jpg" alt="img"></p>
-<p>24集《英雄》中，光把塞拉的灵魂带到了准哥的意识中，解开了准的心结，当准没有遗憾时，塞拉的灵魂也在准的意识中逐渐消失 。</p>
-<p>“赋予你的这道光，是跨越了很长时间，被很多人传承的。得到这个光的人，虽然都失去了一些重要的东西，但却拼命地战斗着。准，你是被这个光选中的，作为这个光的继承者”</p>
-<p>“但是，我有，这个资格吗，是我，害你……”</p>
-<p>“准，我很喜欢你拍的照片，是准你为我记录了，<strong><em>我活在这个世界上的证明，我很高兴，你让我看见了这个世界的光辉，能遇到准我真的很开心，谢谢你，用这个力量，去保护你最重要的人吧</em></strong>”</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/n.jpg" alt="img"></p>
-<p>此刻站起来的不是奈克瑟斯，是仅凭意识支撑起耗尽光芒的身体的准哥！</p>
-<p>“光是纽带，当传到下一个继承者时，它会再次发光！”说完这句话，准就消失了。（大结局最后才透露准还活着）</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/zhun.jpg" alt="img"></p>
-<h3 id="千树怜篇"><a href="#千树怜篇" class="headerlink" title="千树怜篇"></a>千树怜篇</h3><p>怜是“普罗米修斯”计划的产物，是由人类最优秀的基因培育出来的，但是命运是弄人的，恰恰是因为人类最优秀的基因导致的基因缺陷，怜的寿命只有18岁，如果没有相应的治疗药物“拉斐尔”，那怜只有死路一条。他也只是和我年龄相仿的少年，却要面对生命的消亡。</p>
-<p>“永远等待，不会成为天使，不如让自己剩下不多的时间有意义地度过”</p>
-<p>所以，怜在光降临的时刻，主动选择接受了光的力量，他的每一次战斗都是赌上了自己的性命。</p>
-<p>“我无法忍受，只是让别人为我担心，让别人为我伤心，等着不知是否能完成的拉斐尔，就这样而结束我的生命，我实在无法忍受。天使，拉斐尔不会来了。所以我想，反正只剩这么点时间了，不如去一个谁都不知道我会死的地方。不过，我无法理解，光选择了我这个失败的作品，我竟然也没有犹豫，想到自己还能做点事情，就觉得十分开心，在游乐园里，我一直看着小孩、父母和许多人，想到我能保护他们，真的很开心。孤门，我还可以战斗的。<strong><em>只要我在战斗，我就能忘记死亡。</em></strong>”</p>
-<p>风也对怜说过：“你一直以来，都是抱着死也无所谓的态度在战斗，所以完全没有顾及自己受到的伤害，抱着必死的决心战斗和抱着死也无所谓的态度战斗是完全不同的，请为了活下去而战斗吧，即使没有明天！”</p>
-<p>于是就有了奥特曼历史上最悲壮的变身</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/qsl.jpg" alt="img"></p>
-<h3 id="西条风篇-amp-孤门一辉篇"><a href="#西条风篇-amp-孤门一辉篇" class="headerlink" title="西条风篇&amp;孤门一辉篇"></a>西条风篇&amp;孤门一辉篇</h3><p>由于经费和收视率的原因，只有姬矢准的部分是完整的，后面的部分遭到了腰斩，很多剧情和伏笔没办法展开，被迫提前结束，这是奥特曼历史上最大的遗憾。</p>
-<p><strong><del>副队长由于仇恨直接白给</del></strong></p>
-<p>孤门一辉跳入忘川拯救副队长的同时，也和他自救的情景相互照应，忘川的强大力量改写了时空，孤门不仅抓住了西条，也抓住了年幼的自己。光从西条传递到了孤门，也传递到了年幼的自己，孤门在不断地成长，这也符合光在一直进化的设定。</p>
-<p>这一部的人类，虽然没有像之前一样一开始就和奥特曼建立深厚的羁绊，但是，这不代表他们就没有羁绊了。是他们给了孤门力量，最终战胜了黑暗。</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/g1.jpg" alt="img"></p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/g2.jpg" alt="img"></p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/g3.jpg" alt="img"></p>
-<p>(请原谅这个糟糕的画质，B站只有720P的)</p>
-<p>“即使摔倒了也无所谓，只要再站起来，那就是英雄了”。这首op的歌词既是送给准哥的，也是送给奈克瑟斯的，更是送给观众的。（OP《英雄》是唯一在歌词里不提奥特曼的，后面附上《英雄》的部分歌词）</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/gcc.jpg" alt="img"></p>
-<h1 id="毕业季"><a href="#毕业季" class="headerlink" title="毕业季"></a>毕业季</h1><p>真切希望会有<strong><em>更好</em></strong>的结局</p>
-<p>贴上口语部大家的合照：</p>
-<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/by1.jpg" alt="img"></p>
-]]></content>
-      <categories>
-        <category>University</category>
-      </categories>
-      <tags>
-        <tag>University</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>图像编码处理基础</title>
     <url>/2022/04/19/%E5%9B%BE%E5%83%8F%E7%BC%96%E7%A0%81%E5%A4%84%E7%90%86%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<h1 id="图像方向基础"><a href="#图像方向基础" class="headerlink" title="图像方向基础"></a>图像方向基础</h1><h2 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h2><p>结合本人目前科研项目的经历，图像处理是最关键的一环，它的方方面面知识也可能是idea的来源。</p>
@@ -801,21 +729,116 @@ N/L_x \ge 2u_0 \quad,\quad N/L_y \ge 2v_0 \quad (*)</script><p>在符<mjx-contai
       </tags>
   </entry>
   <entry>
-    <title>清明</title>
-    <url>/2022/04/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="记录大二下学期第一次进城"><a href="#记录大二下学期第一次进城" class="headerlink" title="记录大二下学期第一次进城"></a>记录大二下学期第一次进城</h2><span id="more"></span>
-<p>玩一把大的，水完毛概直接润<br>小寨鹿港粤菜：叉烧肉 汤 牛柳 还有CoCo Cafe的柠檬百香果双响炮<br>晚上去了大唐不夜城，夜景音乐喷泉</p>
-<h2 id="青龙寺"><a href="#青龙寺" class="headerlink" title="青龙寺"></a>青龙寺</h2><p>樱花超级好看，每一朵都独具韵味</p>
-<p>寺庙里面的树上挂满了祈福的红带，不过我对这方面也不了解，没敢随意去弄。。。心意到了就可以了（x</p>
-<p>离开时看见一些老大爷和老大妈跳着新疆舞（貌似是），特别有精神，希望我老了也能很有精气神hh</p>
-<p>中午吃了韩式传统烤肉，百去不厌，下午从3点睡到6点（5555），不过充满了干劲，这才叫大学生活（牛马假日）</p>
-<p>该juan了（这就去C楼，溜了）</p>
+    <title>大二春季学期感想</title>
+    <url>/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/</url>
+    <content><![CDATA[<p>两年悄然走过，变成了大三的老油条，附一张18级毕业典礼照片，祝各位学长学姐毕业快乐，前程似锦，心中有火，眼里有光！</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/pg.jpg" alt="img"></p>
+<span id="more"></span>
+<h1 id="学业"><a href="#学业" class="headerlink" title="学业"></a>学业</h1><p><strong><em>非常感谢</em></strong>信号小黄老师、G网卢老师、模电杨老师、计组刘老师、OS李老师、体育课李老师、英语课王老师！本人学艺不精，拜托各位老师了！（惭愧</p>
+<p>可惜只有信号老师和模电老师的照片</p>
+<p>信号老师人美心善，太温柔了，平时分直接拉满，本人信号是大学以来除思政课外唯一突击过的科目，突击三天75飘过~（保研、奖学金都不看，就是赚学分，血赚3.5学分</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/signal.jpg" alt="img"></p>
+<p>模电杨老师，你是我的神！！讲课质量高，和学生们关系好，还有很多分享，是我目前上大学以来印象最深的课程，能上杨老师的模电是我们班的幸运！</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/modian.jpg" alt="img"></p>
+<p>这学期巨累，不必说每周六至七天早八，更不必说每天满课晚上实验，单是这几门课就够计科的伙计们好好学上一阵子，倘若能完成一周的任务，便美美地叫上几个同学，去小四川好好吃一顿。</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/fish.jpg" alt="img"></p>
+<p>做完数电实验的晚上，人已经傻了，脑袋发木，宛然一具没有灵魂的躯壳在实验室的走廊里游荡，什么也不记得，不过最后的成绩还不错（乐</p>
+<h2 id="考试周（差点没顶住"><a href="#考试周（差点没顶住" class="headerlink" title="考试周（差点没顶住"></a>考试周（差点没顶住</h2><p>先在脑袋里过了N遍北理圣经——《考试周破防》，去年我是乐的前仰后合，今年我不仅乐不出来，还想哭，但是哭都哭不出来，太顶了</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/pf.jpg" alt="img"></p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/dz.jpg" alt="img"></p>
+<p>复习G网要看500+页的书，计组年年至少挂一半学生，OSemm，魔电一度让我以为遇到了魔法，安排不合理的事情很多很多，但，这是黎明前的黑暗</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/hg.jpg" alt="img"></p>
+<p>最后一天考计组，很多同学都在C楼通宵了，大家都很难，都不容易，考完就好了，没有压力了，不过考试周的天空和晚霞都很好看</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/sky.jpg" alt="img"></p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/wanx.jpg" alt="img"></p>
+<h1 id="休闲"><a href="#休闲" class="headerlink" title="休闲"></a>休闲</h1><h2 id="逛-amp-吃（吃为主"><a href="#逛-amp-吃（吃为主" class="headerlink" title="逛&amp;吃（吃为主"></a>逛&amp;吃（吃为主</h2><p>青龙寺，小寨，高新区魏客，阳光天地</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/ql.jpg" alt="img"></p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/xz1.jpg" alt="img"></p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/xz2.jpg" alt="img"></p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/gx.jpg" alt="img"></p>
+<h2 id="N刷奈克瑟斯的感想"><a href="#N刷奈克瑟斯的感想" class="headerlink" title="N刷奈克瑟斯的感想"></a>N刷奈克瑟斯的感想</h2><p>很多人说奥特曼很幼稚，我认为不是，那仅仅是没有深入了解造成的主观判断。</p>
+<p>奈克瑟斯奥特曼，是我最喜欢的奥特曼，没有之一，这也就是为什么我的代号是Nexus，它的含义，是纽带。这部剧从初二到现在大二，看了N多遍，每次都有新的感想，这是一部“被腰斩的神作”，是奥特曼历史上最大的遗憾。可能正如断臂的维纳斯，这种遗憾反而成就了这部成人向特摄剧，充满着黑暗的同时也指引着希望和人的成长。</p>
+<p>饰演松永管理官的(堀内正美)那时问我”这个会不会对孩子来说太难接受了“，我说，现在可能是无法理解，但是当他们大一些了，重看的时候，他们会认识到这部作品是<strong>多么深沉</strong>，而且我认为给孩子们留下这样的印象是一部电视作品的使命之一。<br>                                          ——制片人涉谷浩康</p>
+<p>剧中的主人公孤门一辉，日语读起来很像英文的“common”的发音，整部剧以消灭异生兽作为主线，孤门的成长作为暗线贯穿始终。</p>
+<h3 id="姬矢准篇"><a href="#姬矢准篇" class="headerlink" title="姬矢准篇"></a>姬矢准篇</h3><p>第二任适能者：姬矢准，作为战地记者，在异国他乡的村庄居住时认识了小女孩塞拉并结下了深厚的友谊，后来战争爆发，准却意外拍下了塞拉为救他而死的瞬间，也就是在这一瞬间，光引领准到达了遗迹，获得了Nexus的力量。</p>
+<p>在设定中，奥特曼收到的伤会反馈到适能者身上，准的身体伤痕累累，在不断与异生兽的战斗中达到极限，终焉之地一战耗尽了光芒；而且在与夜袭队接触初期，副队长风出于对异生兽的憎恨，甚至把准也认为是异生兽。准太孤独了，太孤立无援了，他把塞拉的死的责任拉到自己的身上，并不断自责，但同时也为不断拯救他人而战斗：救下偶遇浮士德的孤门、打破沟吕木的幻境、救下因女友liko最后化作光芒消失而被即将被黑暗吞噬的孤门……</p>
+<p>“我不能倒下，我的身后是万家灯火” 即使不被理解，也在不断战斗</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/wjdh.jpg" alt="img"></p>
+<p>24集《英雄》中，光把塞拉的灵魂带到了准哥的意识中，解开了准的心结，当准没有遗憾时，塞拉的灵魂也在准的意识中逐渐消失 。</p>
+<p>“赋予你的这道光，是跨越了很长时间，被很多人传承的。得到这个光的人，虽然都失去了一些重要的东西，但却拼命地战斗着。准，你是被这个光选中的，作为这个光的继承者”</p>
+<p>“但是，我有，这个资格吗，是我，害你……”</p>
+<p>“准，我很喜欢你拍的照片，是准你为我记录了，<strong><em>我活在这个世界上的证明，我很高兴，你让我看见了这个世界的光辉，能遇到准我真的很开心，谢谢你，用这个力量，去保护你最重要的人吧</em></strong>”</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/n.jpg" alt="img"></p>
+<p>此刻站起来的不是奈克瑟斯，是仅凭意识支撑起耗尽光芒的身体的准哥！</p>
+<p>“光是纽带，当传到下一个继承者时，它会再次发光！”说完这句话，准就消失了。（大结局最后才透露准还活着）</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/zhun.jpg" alt="img"></p>
+<h3 id="千树怜篇"><a href="#千树怜篇" class="headerlink" title="千树怜篇"></a>千树怜篇</h3><p>怜是“普罗米修斯”计划的产物，是由人类最优秀的基因培育出来的，但是命运是弄人的，恰恰是因为人类最优秀的基因导致的基因缺陷，怜的寿命只有18岁，如果没有相应的治疗药物“拉斐尔”，那怜只有死路一条。他也只是和我年龄相仿的少年，却要面对生命的消亡。</p>
+<p>“永远等待，不会成为天使，不如让自己剩下不多的时间有意义地度过”</p>
+<p>所以，怜在光降临的时刻，主动选择接受了光的力量，他的每一次战斗都是赌上了自己的性命。</p>
+<p>“我无法忍受，只是让别人为我担心，让别人为我伤心，等着不知是否能完成的拉斐尔，就这样而结束我的生命，我实在无法忍受。天使，拉斐尔不会来了。所以我想，反正只剩这么点时间了，不如去一个谁都不知道我会死的地方。不过，我无法理解，光选择了我这个失败的作品，我竟然也没有犹豫，想到自己还能做点事情，就觉得十分开心，在游乐园里，我一直看着小孩、父母和许多人，想到我能保护他们，真的很开心。孤门，我还可以战斗的。<strong><em>只要我在战斗，我就能忘记死亡。</em></strong>”</p>
+<p>风也对怜说过：“你一直以来，都是抱着死也无所谓的态度在战斗，所以完全没有顾及自己受到的伤害，抱着必死的决心战斗和抱着死也无所谓的态度战斗是完全不同的，请为了活下去而战斗吧，即使没有明天！”</p>
+<p>于是就有了奥特曼历史上最悲壮的变身</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/qsl.jpg" alt="img"></p>
+<h3 id="西条风篇-amp-孤门一辉篇"><a href="#西条风篇-amp-孤门一辉篇" class="headerlink" title="西条风篇&amp;孤门一辉篇"></a>西条风篇&amp;孤门一辉篇</h3><p>由于经费和收视率的原因，只有姬矢准的部分是完整的，后面的部分遭到了腰斩，很多剧情和伏笔没办法展开，被迫提前结束，这是奥特曼历史上最大的遗憾。</p>
+<p><strong><del>副队长由于仇恨直接白给</del></strong></p>
+<p>孤门一辉跳入忘川拯救副队长的同时，也和他自救的情景相互照应，忘川的强大力量改写了时空，孤门不仅抓住了西条，也抓住了年幼的自己。光从西条传递到了孤门，也传递到了年幼的自己，孤门在不断地成长，这也符合光在一直进化的设定。</p>
+<p>这一部的人类，虽然没有像之前一样一开始就和奥特曼建立深厚的羁绊，但是，这不代表他们就没有羁绊了。是他们给了孤门力量，最终战胜了黑暗。</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/g1.jpg" alt="img"></p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/g2.jpg" alt="img"></p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/g3.jpg" alt="img"></p>
+<p>(请原谅这个糟糕的画质，B站只有720P的)</p>
+<p>“即使摔倒了也无所谓，只要再站起来，那就是英雄了”。这首op的歌词既是送给准哥的，也是送给奈克瑟斯的，更是送给观众的。（OP《英雄》是唯一在歌词里不提奥特曼的，后面附上《英雄》的部分歌词）</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/gcc.jpg" alt="img"></p>
+<h1 id="毕业季"><a href="#毕业季" class="headerlink" title="毕业季"></a>毕业季</h1><p>真切希望会有<strong><em>更好</em></strong>的结局</p>
+<p>贴上口语部大家的合照：</p>
+<p><img src="/2022/06/25/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%AD%A3%E5%AD%A6%E6%9C%9F%E6%84%9F%E6%83%B3/by1.jpg" alt="img"></p>
 ]]></content>
       <categories>
-        <category>Holiday</category>
+        <category>University</category>
       </categories>
       <tags>
-        <tag>生活</tag>
+        <tag>University</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文献阅读综述</title>
+    <url>/2022/04/04/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%BB%BC%E8%BF%B0/</url>
+    <content><![CDATA[<h2 id="文章脉络解析"><a href="#文章脉络解析" class="headerlink" title="文章脉络解析"></a><strong>文章脉络解析</strong></h2><span id="more"></span>
+<h3 id="1-精读摘要"><a href="#1-精读摘要" class="headerlink" title="1  精读摘要"></a><strong>1</strong>  <strong>精读摘要</strong></h3><p>摘要部分一般分为2-3 段</p>
+<p>第一段，1、背景；2-3、综述现在存在的问题；4、总结句</p>
+<p>第二段，1、概述；2-4、分别简介各组件，及解决方案的逻辑思路；5，点明文中所提解决方案的亮点；6，宏观描述实验效果（6 可以作为第三段）</p>
+<h3 id="2-泛读-Introduction"><a href="#2-泛读-Introduction" class="headerlink" title="2  泛读 Introduction"></a><strong>2</strong>  <strong>泛读</strong> <strong>Introduction</strong></h3><p>Introduction 重在脉络和文章的研究思路：通过背景介绍，引出研究问题，论述研究现状，（这两句可以换顺序），引入our idea（解决问题的逻辑思路），challenges；Contributions.</p>
+<p>（这部分描述一般较为简略，是在逻辑层面论述）</p>
+<p>（自己写作的时候，强烈另开一个Section, Motivation and challenges / Limitations。通过图公式等形式，或与别人工作对比，详细阐述研究问题细节，可以区分开别人工作、能人所不能的亮点。）（这个Section 非常重要，做的好，能为说服审稿人起到大半的作用）</p>
+<h3 id="3-related-work"><a href="#3-related-work" class="headerlink" title="3   related work"></a><strong>3</strong>   <strong>related work</strong></h3><p>阅读时可暂时忽略，可放后面，conclusion 前</p>
+<h3 id="4-问题-模型的-formulation-（公式化）-formalization-形式化"><a href="#4-问题-模型的-formulation-（公式化）-formalization-形式化" class="headerlink" title="4  问题 / 模型的 formulation  （公式化） / formalization(  形式化 )"></a><strong>4</strong>  <strong>问题</strong> / <strong>模型的</strong> <strong>formulation</strong>  <strong>（公式化）</strong> <strong>/ formalization(</strong>  <strong>形式化</strong> <strong>)</strong></h3><p>细读，但一般较为简单。 该部分主要作用是把逻辑问题，形式化为公式或数学模型，为正式具体的解决方案做好准备。</p>
+<h3 id="5-系统模型及具体的-solution-，设计细节"><a href="#5-系统模型及具体的-solution-，设计细节" class="headerlink" title="5  系统模型及具体的 solution ，设计细节"></a><strong>5</strong>  <strong>系统模型及具体的</strong> <strong>solution</strong> <strong>，设计细节</strong></h3><p>系统模型，该部分展示的是整体的系统模型，或解决方案架构。 除系统介绍解决方案外，还应详细论述设计细节及原因。（可与Motivation 进行对比区分，一遍遍在不同层面，讲述自己的设计理念）</p>
+<p>具体的solution，没必要细说，大家怎么做的就可以怎么写。需要的提醒的是，在具体的设计前后，尽量添加必要的逻辑的解释。</p>
+<h3 id="6-实验部分"><a href="#6-实验部分" class="headerlink" title="6  实验部分"></a><strong>6</strong>  <strong>实验部分</strong></h3><p>一般包括数据集，实验设计和设置，及实验效果</p>
+<p>数据集，重点关注，进行数据集积累。一般业内只有很有限的数据集。</p>
+<p>实验设计和设置，可以让你更清晰地认识到，文中解决方案是怎么来应用的，及相关参数值是如何设置的。</p>
+<p>实验效果没必要细说。</p>
+<h1 id="文献阅读需要关注的几个问题"><a href="#文献阅读需要关注的几个问题" class="headerlink" title="文献阅读需要关注的几个问题"></a><strong>文献阅读需要关注的几个问题</strong></h1><h3 id="1-文章研究的问题是什么？"><a href="#1-文章研究的问题是什么？" class="headerlink" title="1.文章研究的问题是什么？"></a><strong>1.文章研究的问题是什么？</strong></h3><p>逻辑层面的研究问题，越准确越细越好。（一般出现在前三章）。观察别人的研究问题，积累并形成新的研究问题。</p>
+<h3 id="2-解决方案的逻辑思路？"><a href="#2-解决方案的逻辑思路？" class="headerlink" title="2. 解决方案的逻辑思路？"></a><strong>2.</strong> <strong>解决方案的逻辑思路？</strong></h3><p>以什么思路，怎么解决的。经得住推敲。（一般出现在前三章）。借鉴别人的研究思路，以创新性地提出自己的解决方案。</p>
+<h3 id="3-具体的解决方案。"><a href="#3-具体的解决方案。" class="headerlink" title="3. 具体的解决方案。"></a><strong>3.</strong> <strong>具体的解决方案。</strong></h3><p>（自己写作的时候，还要加入必要的性能分析，如时间复杂度，收敛性等）</p>
+<h3 id="4-实验部分"><a href="#4-实验部分" class="headerlink" title="4. 实验部分"></a><strong>4.</strong> <strong>实验部分</strong></h3><p>关注点有两个：a. 数据集；b. 文中solution 在实验中是怎么用的，以更清晰地认识solution。根据自己写作需要，可能还会关注实验指标。</p>
+<p>一般阅读时不太需要关注实验效果，因为文中solution 的优势会在设计中解释的很清楚，实验效果就是去验证它。</p>
+<h1 id="根据文献与个人研究相关性不同，对文献的阅读研究程度也不同"><a href="#根据文献与个人研究相关性不同，对文献的阅读研究程度也不同" class="headerlink" title="根据文献与个人研究相关性不同，对文献的阅读研究程度也不同"></a><strong>根据文献与个人研究相关性不同，对文献的阅读研究程度也不同</strong></h1><p><strong>1.</strong> <strong>非常相关</strong></p>
+<p>详细阅读文献，尽可能地搞清楚上述几个问题；</p>
+<p>并进行批判性地讨论，推敲文章的研究问题及解决方案；</p>
+<p>清晰地认清文章的优缺点：优势优在哪儿，劣势劣在哪儿。顺利的话对文章的批判可以产生新的</p>
+<p>idea。</p>
+<p><strong>2.</strong> <strong>一般相关</strong></p>
+<p>问题1 和2 是必须要搞清的；文章研究了什么问题，解决方案的逻辑思路是什么</p>
+<p>问题3 可以粗略掌握，大概知道是怎么解决的，对具体的解决方案有个模糊的认识即可。作用：扩展自己的研究领域，和知识面；借鉴别人的研究思路。</p>
+<p><strong>3.</strong> <strong>不太相关</strong></p>
+<p>把问题1 和2 搞清即可：知道文中研究的问题，及大致的解决方案（解决的逻辑思路）。 阅读目的，了解相关领域还有哪些研究问题，以扩展自身的知识面。</p>
+]]></content>
+      <categories>
+        <category>科研</category>
+      </categories>
+      <tags>
+        <tag>科研</tag>
       </tags>
   </entry>
   <entry>
@@ -880,6 +903,24 @@ N/L_x \ge 2u_0 \quad,\quad N/L_y \ge 2v_0 \quad (*)</script><p>在符<mjx-contai
       </categories>
       <tags>
         <tag>CSer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>清明</title>
+    <url>/2022/04/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="记录大二下学期第一次进城"><a href="#记录大二下学期第一次进城" class="headerlink" title="记录大二下学期第一次进城"></a>记录大二下学期第一次进城</h2><span id="more"></span>
+<p>玩一把大的，水完毛概直接润<br>小寨鹿港粤菜：叉烧肉 汤 牛柳 还有CoCo Cafe的柠檬百香果双响炮<br>晚上去了大唐不夜城，夜景音乐喷泉</p>
+<h2 id="青龙寺"><a href="#青龙寺" class="headerlink" title="青龙寺"></a>青龙寺</h2><p>樱花超级好看，每一朵都独具韵味</p>
+<p>寺庙里面的树上挂满了祈福的红带，不过我对这方面也不了解，没敢随意去弄。。。心意到了就可以了（x</p>
+<p>离开时看见一些老大爷和老大妈跳着新疆舞（貌似是），特别有精神，希望我老了也能很有精气神hh</p>
+<p>中午吃了韩式传统烤肉，百去不厌，下午从3点睡到6点（5555），不过充满了干劲，这才叫大学生活（牛马假日）</p>
+<p>该juan了（这就去C楼，溜了）</p>
+]]></content>
+      <categories>
+        <category>Holiday</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -983,47 +1024,6 @@ s.t.\quad x_1+3*x_2+x_3 <= 12 \\
       </tags>
   </entry>
   <entry>
-    <title>文献阅读综述</title>
-    <url>/2022/04/04/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB%E7%BB%BC%E8%BF%B0/</url>
-    <content><![CDATA[<h2 id="文章脉络解析"><a href="#文章脉络解析" class="headerlink" title="文章脉络解析"></a><strong>文章脉络解析</strong></h2><span id="more"></span>
-<h3 id="1-精读摘要"><a href="#1-精读摘要" class="headerlink" title="1  精读摘要"></a><strong>1</strong>  <strong>精读摘要</strong></h3><p>摘要部分一般分为2-3 段</p>
-<p>第一段，1、背景；2-3、综述现在存在的问题；4、总结句</p>
-<p>第二段，1、概述；2-4、分别简介各组件，及解决方案的逻辑思路；5，点明文中所提解决方案的亮点；6，宏观描述实验效果（6 可以作为第三段）</p>
-<h3 id="2-泛读-Introduction"><a href="#2-泛读-Introduction" class="headerlink" title="2  泛读 Introduction"></a><strong>2</strong>  <strong>泛读</strong> <strong>Introduction</strong></h3><p>Introduction 重在脉络和文章的研究思路：通过背景介绍，引出研究问题，论述研究现状，（这两句可以换顺序），引入our idea（解决问题的逻辑思路），challenges；Contributions.</p>
-<p>（这部分描述一般较为简略，是在逻辑层面论述）</p>
-<p>（自己写作的时候，强烈另开一个Section, Motivation and challenges / Limitations。通过图公式等形式，或与别人工作对比，详细阐述研究问题细节，可以区分开别人工作、能人所不能的亮点。）（这个Section 非常重要，做的好，能为说服审稿人起到大半的作用）</p>
-<h3 id="3-related-work"><a href="#3-related-work" class="headerlink" title="3   related work"></a><strong>3</strong>   <strong>related work</strong></h3><p>阅读时可暂时忽略，可放后面，conclusion 前</p>
-<h3 id="4-问题-模型的-formulation-（公式化）-formalization-形式化"><a href="#4-问题-模型的-formulation-（公式化）-formalization-形式化" class="headerlink" title="4  问题 / 模型的 formulation  （公式化） / formalization(  形式化 )"></a><strong>4</strong>  <strong>问题</strong> / <strong>模型的</strong> <strong>formulation</strong>  <strong>（公式化）</strong> <strong>/ formalization(</strong>  <strong>形式化</strong> <strong>)</strong></h3><p>细读，但一般较为简单。 该部分主要作用是把逻辑问题，形式化为公式或数学模型，为正式具体的解决方案做好准备。</p>
-<h3 id="5-系统模型及具体的-solution-，设计细节"><a href="#5-系统模型及具体的-solution-，设计细节" class="headerlink" title="5  系统模型及具体的 solution ，设计细节"></a><strong>5</strong>  <strong>系统模型及具体的</strong> <strong>solution</strong> <strong>，设计细节</strong></h3><p>系统模型，该部分展示的是整体的系统模型，或解决方案架构。 除系统介绍解决方案外，还应详细论述设计细节及原因。（可与Motivation 进行对比区分，一遍遍在不同层面，讲述自己的设计理念）</p>
-<p>具体的solution，没必要细说，大家怎么做的就可以怎么写。需要的提醒的是，在具体的设计前后，尽量添加必要的逻辑的解释。</p>
-<h3 id="6-实验部分"><a href="#6-实验部分" class="headerlink" title="6  实验部分"></a><strong>6</strong>  <strong>实验部分</strong></h3><p>一般包括数据集，实验设计和设置，及实验效果</p>
-<p>数据集，重点关注，进行数据集积累。一般业内只有很有限的数据集。</p>
-<p>实验设计和设置，可以让你更清晰地认识到，文中解决方案是怎么来应用的，及相关参数值是如何设置的。</p>
-<p>实验效果没必要细说。</p>
-<h1 id="文献阅读需要关注的几个问题"><a href="#文献阅读需要关注的几个问题" class="headerlink" title="文献阅读需要关注的几个问题"></a><strong>文献阅读需要关注的几个问题</strong></h1><h3 id="1-文章研究的问题是什么？"><a href="#1-文章研究的问题是什么？" class="headerlink" title="1.文章研究的问题是什么？"></a><strong>1.文章研究的问题是什么？</strong></h3><p>逻辑层面的研究问题，越准确越细越好。（一般出现在前三章）。观察别人的研究问题，积累并形成新的研究问题。</p>
-<h3 id="2-解决方案的逻辑思路？"><a href="#2-解决方案的逻辑思路？" class="headerlink" title="2. 解决方案的逻辑思路？"></a><strong>2.</strong> <strong>解决方案的逻辑思路？</strong></h3><p>以什么思路，怎么解决的。经得住推敲。（一般出现在前三章）。借鉴别人的研究思路，以创新性地提出自己的解决方案。</p>
-<h3 id="3-具体的解决方案。"><a href="#3-具体的解决方案。" class="headerlink" title="3. 具体的解决方案。"></a><strong>3.</strong> <strong>具体的解决方案。</strong></h3><p>（自己写作的时候，还要加入必要的性能分析，如时间复杂度，收敛性等）</p>
-<h3 id="4-实验部分"><a href="#4-实验部分" class="headerlink" title="4. 实验部分"></a><strong>4.</strong> <strong>实验部分</strong></h3><p>关注点有两个：a. 数据集；b. 文中solution 在实验中是怎么用的，以更清晰地认识solution。根据自己写作需要，可能还会关注实验指标。</p>
-<p>一般阅读时不太需要关注实验效果，因为文中solution 的优势会在设计中解释的很清楚，实验效果就是去验证它。</p>
-<h1 id="根据文献与个人研究相关性不同，对文献的阅读研究程度也不同"><a href="#根据文献与个人研究相关性不同，对文献的阅读研究程度也不同" class="headerlink" title="根据文献与个人研究相关性不同，对文献的阅读研究程度也不同"></a><strong>根据文献与个人研究相关性不同，对文献的阅读研究程度也不同</strong></h1><p><strong>1.</strong> <strong>非常相关</strong></p>
-<p>详细阅读文献，尽可能地搞清楚上述几个问题；</p>
-<p>并进行批判性地讨论，推敲文章的研究问题及解决方案；</p>
-<p>清晰地认清文章的优缺点：优势优在哪儿，劣势劣在哪儿。顺利的话对文章的批判可以产生新的</p>
-<p>idea。</p>
-<p><strong>2.</strong> <strong>一般相关</strong></p>
-<p>问题1 和2 是必须要搞清的；文章研究了什么问题，解决方案的逻辑思路是什么</p>
-<p>问题3 可以粗略掌握，大概知道是怎么解决的，对具体的解决方案有个模糊的认识即可。作用：扩展自己的研究领域，和知识面；借鉴别人的研究思路。</p>
-<p><strong>3.</strong> <strong>不太相关</strong></p>
-<p>把问题1 和2 搞清即可：知道文中研究的问题，及大致的解决方案（解决的逻辑思路）。 阅读目的，了解相关领域还有哪些研究问题，以扩展自身的知识面。</p>
-]]></content>
-      <categories>
-        <category>科研</category>
-      </categories>
-      <tags>
-        <tag>科研</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>端午小结</title>
     <url>/2022/06/05/%E7%AB%AF%E5%8D%88%E5%B0%8F%E7%BB%93/</url>
     <content><![CDATA[<h1 id="端午小结"><a href="#端午小结" class="headerlink" title="端午小结"></a>端午小结</h1><p>放假+复习+歌单更新</p>
@@ -1064,11 +1064,6 @@ s.t.\quad x_1+3*x_2+x_3 <= 12 \\
       <tags>
         <tag>University</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>随机模型</title>
-    <url>/2022/07/14/%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>计科杂谈</title>
@@ -1238,5 +1233,10 @@ s.t.\quad x_1+3*x_2+x_3 <= 12 \\
       <tags>
         <tag>CSer</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>随机模型</title>
+    <url>/2022/07/14/%E9%9A%8F%E6%9C%BA%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
