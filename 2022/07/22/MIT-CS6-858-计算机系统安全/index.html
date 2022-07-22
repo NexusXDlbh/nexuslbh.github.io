@@ -27,11 +27,11 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://nexuslbh.top/2022/07/22/MIT-CS6-858-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8/01.jpg">
 <meta property="og:image" content="http://nexuslbh.top/2022/07/22/MIT-CS6-858-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8/stack.jpg">
-<meta property="og:image" content="http://nexuslbh.top/2022/07/22/MIT-CS6-858-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8/jsp.png">
+<meta property="og:image" content="http://nexuslbh.top/2022/07/22/MIT-CS6-858-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8/j.png">
 <meta property="og:image" content="http://nexuslbh.top/2022/07/22/MIT-CS6-858-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8/heap.png">
 <meta property="og:image" content="http://nexuslbh.top/2022/07/22/MIT-CS6-858-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8/fp.png">
 <meta property="article:published_time" content="2022-07-22T00:41:58.000Z">
-<meta property="article:modified_time" content="2022-07-22T02:58:12.474Z">
+<meta property="article:modified_time" content="2022-07-22T03:01:46.639Z">
 <meta property="article:author" content="NexusXDlbh">
 <meta property="article:tag" content="CSer">
 <meta name="twitter:card" content="summary">
@@ -335,7 +335,7 @@ mjx-container[display="true"] + br {
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-07-22 08:41:58 / 修改时间：10:58:12" itemprop="dateCreated datePublished" datetime="2022-07-22T08:41:58+08:00">2022-07-22</time>
+              <time title="创建时间：2022-07-22 08:41:58 / 修改时间：11:01:46" itemprop="dateCreated datePublished" datetime="2022-07-22T08:41:58+08:00">2022-07-22</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -442,8 +442,8 @@ mjx-container[display="true"] + br {
 <p>Prevents memory corruption errors by not exposing raw memory addresses to the programmer, and by automatically handling garbage collection.</p>
 <p>Bad:</p>
 <p>Still    have a lot of legacy    code in unsafe languages (eg:FORTRAN).</p>
-<h3 id="Mitigation"><a href="#Mitigation" class="headerlink" title="Mitigation"></a>Mitigation</h3><h4 id="Approach-1-canaries-栈金丝雀"><a href="#Approach-1-canaries-栈金丝雀" class="headerlink" title="Approach 1:canaries(栈金丝雀)"></a>Approach 1:canaries(栈金丝雀)</h4><p>过去煤矿工人下井时会带一只金丝雀，因为金丝雀对煤矿中的瓦斯气体非常敏感，如果进入煤矿后，金丝雀死亡，说明瓦斯超标，矿工会立即撤出煤矿，金丝雀作为煤矿中瓦斯预警器来使用。在 Linux 中我们将 cookie 信息称为 Canary。Canary 与 Windows 下的 GS 保护都是缓解栈溢出攻击的有效手段，它的出现很大程度上增加了栈溢出攻击的难度，并且由于它几乎并不消耗系统资源，所以现在成了 Linux 下保护机制的标配。</p>
-<p><img src="/2022/07/22/MIT-CS6-858-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8/jsp.png" alt="img"></p>
+<h3 id="Mitigation"><a href="#Mitigation" class="headerlink" title="Mitigation"></a>Mitigation</h3><h4 id="Approach-1-canaries-栈金丝雀"><a href="#Approach-1-canaries-栈金丝雀" class="headerlink" title="Approach 1:canaries(栈金丝雀)"></a>Approach 1:canaries(栈金丝雀)</h4><p><img src="/2022/07/22/MIT-CS6-858-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%AE%89%E5%85%A8/j.png" alt="img"></p>
+<p>过去煤矿工人下井时会带一只金丝雀，因为金丝雀对煤矿中的瓦斯气体非常敏感，如果进入煤矿后，金丝雀死亡，说明瓦斯超标，矿工会立即撤出煤矿，金丝雀作为煤矿中瓦斯预警器来使用。在 Linux 中我们将 cookie 信息称为 Canary。Canary 与 Windows 下的 GS 保护都是缓解栈溢出攻击的有效手段，它的出现很大程度上增加了栈溢出攻击的难度，并且由于它几乎并不消耗系统资源，所以现在成了 Linux 下保护机制的标配。</p>
 <p>原理：函数被调用之后，立即在栈帧中插入一个随机数，函数执行完在返回之前，程序通过检查这个随机数是否改变来判断是否存在栈溢出。</p>
 <p>Canary must go “in front of” return address on the stack,so that any overflow which rewrites return address will also rewrite canary.</p>
 <p>“in front of”解释：地址在ret address的前一个</p>
